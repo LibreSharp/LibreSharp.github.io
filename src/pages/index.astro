@@ -1,0 +1,149 @@
+---
+import Base from "../layouts/Base.astro";
+import { CATEGORIES } from "../lib/categories";
+import { getPackages, realAlternatives } from "../lib/data";
+import { formatDownloads, getNuGetStats } from "../lib/nuget";
+import { formatChanged } from "../lib/site";
+
+const packages = await getPackages();
+const rows = await Promise.all(
+  packages.map(async (p) => {
+    const stats = await getNuGetStats(p.nuget[0]);
+    const alts = realAlternatives(p).map((a) => a.name);
+    return {
+      p,
+      alts,
+      downloads: stats ? formatDownloads(stats.totalDownloads) : null,
+      downloadsRaw: stats?.totalDownloads ?? 0,
+      search: [p.name, ...p.nuget, ...alts, p.newModel].join(" ").toLowerCase(),
+    };
+  }),
+);
+rows.sort((a, b) => b.downloadsRaw - a.downloadsRaw);
+---
+
+<Base>
+  <section class="hero">
+    <h1>.NET packages that stopped being free, and what to use instead</h1>
+    <p class="lead">
+      Some popular open source .NET libraries have moved to commercial licences or paid models.
+      This free list shows what changed, the last free version, and the free alternatives:
+      community forks, replacements, and features built into .NET.
+    </p>
+    <p class="muted">
+      We are not against maintainers getting paid. Open source maintenance is real work. If a paid
+      licence is right for your team, buy it. This list exists so everyone, including students,
+      small teams and non-profits, knows their options.
+    </p>
+  </section>
+
+  <section>
+    <div class="filters">
+      <input id="q" type="search" placeholder="Search packages or alternatives…" aria-label="Search packages" />
+      <select id="category" aria-label="Filter by type of change">
+        <option value="all">All changes</option>
+        {Object.entries(CATEGORIES).map(([key, c]) => <option value={key}>{c.label}</option>)}
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="downloads">Most downloaded</option>
+        <option value="changed">Most recent change</option>
+        <option value="name">Name</option>
+      </select>
+    </div>
+
+    <p class="muted small">
+      Showing <span id="count">{rows.length}</span> of {rows.length} packages.
+    </p>
+
+    <div class="table-scroll">
+      <table class="packages">
+        <thead>
+          <tr>
+            <th>Package</th>
+            <th>What changed</th>
+            <th>Last free version</th>
+            <th>Changed</th>
+            <th>Free alternatives</th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          {
+            rows.map(({ p, alts, downloads, downloadsRaw, search }) => (
+              <tr
+                data-search={search}
+                data-category={p.category}
+                data-downloads={downloadsRaw}
+                data-changed={p.changed}
+                data-name={p.name.toLowerCase()}
+              >
+                <td>
+                  <a href={`/packages/${p.slug}/`} class="pkg-name">{p.name}</a>
+                  {downloads && <div class="muted small">{downloads} downloads</div>}
+                  {!p.checked && <div class="badge badge-unchecked">Needs checking</div>}
+                </td>
+                <td>
+                  <span class={`badge badge-${p.category}`}>{CATEGORIES[p.category].short}</span>
+                  <div class="muted small">was {p.oldLicense}</div>
+                </td>
+                <td>
+                  {/^\d/.test(p.lastFreeVersion) ? <code>{p.lastFreeVersion}</code> : p.lastFreeVersion}
+                </td>
+                <td class="nowrap">{formatChanged(p.changed)}</td>
+                <td>{alts.join(", ")}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="legend">
+    <h2>Types of change</h2>
+    <dl>
+      {
+        Object.entries(CATEGORIES).map(([key, c]) => (
+          <div>
+            <dt><span class={`badge badge-${key}`}>{c.label}</span></dt>
+            <dd>{c.description}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+</Base>
+
+<script>
+  // Client-side search, filter and sort. The table is fully rendered without JavaScript.
+  const q = document.querySelector<HTMLInputElement>("#q")!;
+  const category = document.querySelector<HTMLSelectElement>("#category")!;
+  const sort = document.querySelector<HTMLSelectElement>("#sort")!;
+  const tbody = document.querySelector<HTMLTableSectionElement>("#rows")!;
+  const count = document.querySelector<HTMLSpanElement>("#count")!;
+  const rows = Array.from(tbody.querySelectorAll<HTMLTableRowElement>("tr"));
+
+  function update() {
+    const text = q.value.trim().toLowerCase();
+    const cat = category.value;
+    let shown = 0;
+    for (const r of rows) {
+      const match =
+        (cat === "all" || r.dataset.category === cat) && (!text || r.dataset.search!.includes(text));
+      r.hidden = !match;
+      if (match) shown++;
+    }
+    count.textContent = String(shown);
+
+    const by = sort.value;
+    const sorted = [...rows].sort((a, b) => {
+      if (by === "name") return a.dataset.name!.localeCompare(b.dataset.name!);
+      if (by === "changed") return b.dataset.changed!.localeCompare(a.dataset.changed!);
+      return Number(b.dataset.downloads) - Number(a.dataset.downloads);
+    });
+    tbody.append(...sorted);
+  }
+
+  q.addEventListener("input", update);
+  category.addEventListener("change", update);
+  sort.addEventListener("change", update);
+</script>

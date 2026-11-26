@@ -1,0 +1,59 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../lib/site";
+
+const example = `slug: example-lib
+name: ExampleLib
+nuget: [ExampleLib]
+repo: https://github.com/example/ExampleLib
+category: relicensed        # relicensed | revenue-capped | maintenance-fee | abandoned | trust
+oldLicense: MIT
+newModel: Commercial licence from version 5
+lastFreeVersion: 4.2.0
+firstPaidVersion: 5.0.0
+changed: 2026-03            # YYYY, YYYY-MM or YYYY-MM-DD
+freeTier: Free for non-commercial use
+summary: One or two plain sentences on what changed.
+alternatives:
+  - name: OtherLib
+    kind: replacement        # fork | replacement | built-in | pin | pay
+    url: https://github.com/example/OtherLib
+    nuget: OtherLib
+    license: MIT
+    note: Why it is a good alternative.
+sources:
+  - title: ExampleLib licence announcement
+    url: https://example.com/announcement
+checked: 2026-11-26         # leave out if you have not checked the sources`;
+---
+
+<Base title="Contribute" description="How to add or correct a package on LibreSharp.">
+  <article class="prose">
+    <h1>Contribute</h1>
+    <p class="lead">
+      Every package is one small YAML file in the
+      <a href={`${SITE.repo}/tree/main/data/packages`}>data/packages</a> folder. To add or fix an
+      entry, edit the file and open a pull request.
+    </p>
+
+    <h2>Quick fixes</h2>
+    <p>
+      Every package page has an "Edit this page on GitHub" link. GitHub will fork the repository
+      and open a pull request for you.
+    </p>
+
+    <h2>Adding a package</h2>
+    <p>Create <code>data/packages/&lt;slug&gt;.yml</code> following this example:</p>
+    <pre><code>{example}</code></pre>
+
+    <h2>Rules for entries</h2>
+    <ul>
+      <li>Every fact needs a source: the project's own licence, announcement or NuGet page is best.</li>
+      <li>Keep the tone neutral and respectful to maintainers.</li>
+      <li>Only list alternatives that are free and open source, or built into .NET.</li>
+      <li>Only set <code>checked</code> when you have confirmed the facts against the sources.</li>
+    </ul>
+
+    <p>Not sure about something? <a href={`${SITE.repo}/issues/new`}>Open an issue</a> instead.</p>
+  </article>
+</Base>

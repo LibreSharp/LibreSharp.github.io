@@ -1,0 +1,28 @@
+slug: itextsharp
+name: iTextSharp / iText
+nuget: [iTextSharp, itext]
+repo: https://github.com/itext/itext-dotnet
+category: relicensed
+oldLicense: LGPL / MPL
+newModel: AGPL-3.0 or a commercial licence (iText 5 and later)
+lastFreeVersion: 4.1.x
+changed: 2009
+summary: From version 5, iText is AGPL, which means you must open source your whole application (including web apps) or buy a commercial licence. Version 4.1.x was the last LGPL release.
+alternatives:
+  - name: PDFsharp and MigraDoc
+    kind: replacement
+    url: https://github.com/empira/PDFsharp
+    nuget: PDFsharp-MigraDoc
+    license: MIT
+    note: MIT-licensed PDF creation library.
+  - name: PdfPig
+    kind: replacement
+    url: https://github.com/UglyToad/PdfPig
+    nuget: PdfPig
+    license: Apache-2.0
+    note: Reading and extracting text from PDFs.
+notes:
+  - iTextSharp 4.1.x is very old. Don't use it for new work.
+sources:
+  - title: iText for .NET on GitHub
+    url: https://github.com/itext/itext-dotnet

@@ -1,0 +1,50 @@
+slug: automapper
+name: AutoMapper
+nuget: [AutoMapper]
+repo: https://github.com/LuckyPennySoftware/AutoMapper
+category: relicensed
+oldLicense: MIT
+newModel: Dual licence, RPL-1.5 or a commercial licence from Lucky Penny Software (from version 15)
+lastFreeVersion: 14.0.0
+firstPaidVersion: 15.0.0
+changed: 2025-07
+freeTier: A free Community licence is offered to organisations under $5M annual revenue, non-profits, education and non-production use. Check the current terms.
+summary: AutoMapper moved from MIT to a commercial licence (or RPL-1.5) in July 2025. Version 14.0.0 is the last MIT release.
+security:
+  - id: CVE-2026-32933
+    url: https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+    text: Denial-of-service through uncontrolled recursion (CVSS 7.5). Fixed in the commercial versions 15.1.1 and 16.1.1. Advisories list 14.0.0, the last free version, as affected.
+alternatives:
+  - name: Mapperly
+    kind: replacement
+    url: https://github.com/riok/mapperly
+    nuget: Riok.Mapperly
+    license: Apache-2.0
+    note: Source generator. Mapping code is generated at compile time, so there is no runtime reflection. The most popular replacement.
+  - name: Mapster
+    kind: replacement
+    url: https://github.com/MapsterMapper/Mapster
+    nuget: Mapster
+    license: MIT
+    note: Runtime mapper with an API close to AutoMapper. Also has a code generation mode.
+  - name: Manual mapping
+    kind: built-in
+    note: Plain C# mapping methods or extension methods. No dependency at all, and easy for AI coding tools to write.
+  - name: FastCSharp.Mapper
+    kind: fork
+    url: https://github.com/pmartins/FastCSharp.Mapper
+    note: A small, early fork that aims to stay binary compatible with AutoMapper 14.0. Check its activity before depending on it.
+  - name: Pin 14.0.0
+    kind: pin
+    note: Stays MIT, but has the unpatched CVE above.
+notes:
+  - Versions already published under MIT stay MIT. The change only affects new versions.
+  - MediatR, by the same author, changed licence at the same time.
+sources:
+  - title: "FOSSED: AutoMapper"
+    url: https://dariusz-wozniak.github.io/fossed/library/automapper
+  - title: "Stop your AI agent picking the wrong .NET libraries (Sep 2026)"
+    url: https://codewithmukesh.com/blog/ai-agent-nuget-package-guardrails-dotnet/
+  - title: GitHub advisory GHSA-rvv3-g6hj-g44x
+    url: https://github.com/advisories/GHSA-rvv3-g6hj-g44x
+checked: 2026-11-26

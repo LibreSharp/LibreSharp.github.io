@@ -1,0 +1,51 @@
+slug: masstransit
+name: MassTransit
+nuget: [MassTransit]
+repo: https://github.com/MassTransit/MassTransit
+category: relicensed
+oldLicense: Apache-2.0
+newModel: Commercial licence from Massient, Inc. (version 9 and later). Needs a licence key at runtime.
+lastFreeVersion: 8.x
+firstPaidVersion: 9.0.0
+changed: 2026-01
+freeTier: Reported discounts for organisations under about $1M revenue, but the terms have been described as unclear. Check the current pricing page.
+summary: MassTransit version 9 is commercial. Version 8 stays Apache-2.0 and was promised security patches until at least the end of 2026.
+alternatives:
+  - name: OpenTransit
+    kind: fork
+    url: https://opentransitlab.github.io/OpenTransit
+    note: Community fork of MassTransit v8, targeting .NET 10 and later. The first production release is planned for when MassTransit v8 support ends.
+  - name: Wolverine
+    kind: replacement
+    url: https://github.com/JasperFx/wolverine
+    nuget: WolverineFx
+    license: MIT
+    note: Messaging framework supporting RabbitMQ, Azure Service Bus, Amazon SQS, Kafka and more.
+  - name: Rebus
+    kind: replacement
+    url: https://github.com/rebus-org/Rebus
+    nuget: Rebus
+    license: MIT
+    note: Mature, lean service bus.
+  - name: Brighter
+    kind: replacement
+    url: https://github.com/BrighterCommand/Brighter
+    nuget: Paramore.Brighter
+    license: MIT
+    note: Command processor and messaging framework.
+  - name: PublicTransit
+    kind: fork
+    url: https://www.nuget.org/packages/PublicTransit
+    nuget: PublicTransit
+    note: Another non-commercial fork of MassTransit v8. Check its activity before depending on it.
+  - name: Stay on v8
+    kind: pin
+    note: Apache-2.0 and patched until at least the end of 2026. Plan your move before support ends.
+sources:
+  - title: "FOSSED: MassTransit"
+    url: https://dariusz-wozniak.github.io/fossed/library/masstransit
+  - title: "MediatR and MassTransit going commercial (Milan Jovanović)"
+    url: https://milanjovanovic.tech/blog/mediatr-and-masstransit-going-commercial-what-this-means-for-you
+  - title: "Introducing OpenTransit"
+    url: https://dev.to/nakib/introducing-opentransit-a-free-open-source-fork-of-masstransit-v8-2eb3
+checked: 2026-11-26

@@ -1,0 +1,20 @@
+slug: specflow
+name: SpecFlow
+nuget: [SpecFlow]
+repo: https://github.com/SpecFlowOSS/SpecFlow
+category: abandoned
+oldLicense: BSD-3-Clause
+newModel: Ended by its owner, Tricentis (end of 2024)
+lastFreeVersion: 3.9.74
+changed: 2024-12
+summary: Tricentis stopped SpecFlow at the end of 2024. Reqnroll, started by SpecFlow's original creator, continues it as open source.
+alternatives:
+  - name: Reqnroll
+    kind: fork
+    url: https://github.com/reqnroll/Reqnroll
+    nuget: Reqnroll
+    license: BSD-3-Clause
+    note: Open source successor to SpecFlow, created by SpecFlow's original author. Designed for an easy switch.
+sources:
+  - title: Reqnroll
+    url: https://reqnroll.net

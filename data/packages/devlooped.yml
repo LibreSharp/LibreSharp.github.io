@@ -1,0 +1,37 @@
+slug: devlooped
+name: Devlooped packages (GitInfo, ThisAssembly and others)
+nuget: [GitInfo, ThisAssembly]
+repo: https://github.com/devlooped
+category: maintenance-fee
+oldLicense: MIT
+newModel: Open Source Maintenance Fee EULA on the official packages (about 30 packages)
+lastFreeVersion: Releases before mid-October 2025
+changed: 2025-10
+summary: Daniel Cazzulino's Devlooped packages, including GitInfo and ThisAssembly, use the Open Source Maintenance Fee.
+alternatives:
+  - name: MinVer
+    kind: replacement
+    url: https://github.com/adamralph/minver
+    nuget: MinVer
+    license: Apache-2.0
+    note: Versioning from Git tags.
+  - name: Nerdbank.GitVersioning
+    kind: replacement
+    url: https://github.com/dotnet/Nerdbank.GitVersioning
+    nuget: Nerdbank.GitVersioning
+    license: MIT
+    note: Versioning and Git information in your assemblies.
+  - name: GitVersion
+    kind: replacement
+    url: https://github.com/GitTools/GitVersion
+    nuget: GitVersion.MsBuild
+    license: MIT
+    note: Semantic versioning from Git history.
+  - name: Pay the fee
+    kind: pay
+    note: The fee supports the maintainer and keeps the packages open source.
+sources:
+  - title: Open Source Maintenance Fee project list
+    url: https://opensourcemaintenancefee.org/consumers/list/
+  - title: "FOSSED: Devlooped"
+    url: https://dariusz-wozniak.github.io/fossed/

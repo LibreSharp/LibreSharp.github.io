@@ -1,0 +1,30 @@
+slug: servicestack
+name: ServiceStack
+nuget: [ServiceStack]
+repo: https://github.com/ServiceStack/ServiceStack
+category: relicensed
+oldLicense: BSD
+newModel: Commercial licence (version 4 and later), with free-use limits
+lastFreeVersion: 3.9.71
+firstPaidVersion: 4.0.0
+changed: 2013
+summary: From version 4, ServiceStack is a commercial product with a limited free tier. Version 3.9.71 was the last BSD release.
+alternatives:
+  - name: ASP.NET Core Minimal APIs
+    kind: built-in
+    note: Built-in, lightweight HTTP APIs.
+  - name: FastEndpoints
+    kind: replacement
+    url: https://github.com/FastEndpoints/FastEndpoints
+    nuget: FastEndpoints
+    license: MIT
+    note: Request-endpoint-response style APIs on ASP.NET Core.
+  - name: Wolverine HTTP
+    kind: replacement
+    url: https://github.com/JasperFx/wolverine
+    nuget: WolverineFx.Http
+    license: MIT
+    note: HTTP endpoints with Wolverine's handler model.
+sources:
+  - title: ServiceStack pricing
+    url: https://servicestack.net/pricing

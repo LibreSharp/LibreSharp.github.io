@@ -1,0 +1,35 @@
+slug: wix-toolset
+name: WiX Toolset
+nuget: [WixToolset.Sdk]
+repo: https://github.com/wixtoolset/wix
+category: maintenance-fee
+oldLicense: MS-RL
+newModel: Open Source Maintenance Fee on the official binaries
+lastFreeVersion: 5.0.2
+changed: 2025
+summary: WiX, the tool for building Windows Installer (MSI) packages, uses the Open Source Maintenance Fee. Revenue-generating users of the official binaries are asked to pay.
+alternatives:
+  - name: Velopack
+    kind: replacement
+    url: https://github.com/velopack/velopack
+    nuget: Velopack
+    license: MIT
+    note: Installer and auto-update framework for desktop apps.
+  - name: Inno Setup
+    kind: replacement
+    url: https://jrsoftware.org/isinfo.php
+    note: Free installer builder for Windows (not a .NET library).
+  - name: NSIS
+    kind: replacement
+    url: https://nsis.sourceforge.io
+    note: Free scriptable installer system for Windows.
+  - name: Pay the fee
+    kind: pay
+    note: The fee supports the maintainers and keeps WiX open source.
+notes:
+  - Which version first carried the fee, and the date, still need checking.
+sources:
+  - title: Open Source Maintenance Fee project list
+    url: https://opensourcemaintenancefee.org/consumers/list/
+  - title: "FOSSED: WiX Toolset"
+    url: https://dariusz-wozniak.github.io/fossed/

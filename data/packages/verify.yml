@@ -1,0 +1,23 @@
+slug: verify
+name: Verify
+nuget: [Verify]
+repo: https://github.com/VerifyTests/Verify
+category: maintenance-fee
+oldLicense: MIT
+newModel: Maintenance fee terms on new releases (from version 33)
+lastFreeVersion: 32.0.1
+firstPaidVersion: 33.0.0
+changed: 2026-09
+summary: The Verify snapshot testing library added maintenance fee terms for releases after 1 September 2026. The exact terms still need checking.
+alternatives:
+  - name: Snapshooter
+    kind: replacement
+    url: https://github.com/SwissLife-OSS/snapshooter
+    nuget: Snapshooter.Xunit
+    note: Snapshot testing for xUnit, NUnit and MSTest.
+  - name: Pin 32.0.1
+    kind: pin
+    note: Last release before the new terms.
+sources:
+  - title: "FOSSED: Verify"
+    url: https://dariusz-wozniak.github.io/fossed/

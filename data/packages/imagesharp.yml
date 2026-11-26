@@ -1,0 +1,39 @@
+slug: imagesharp
+name: ImageSharp
+nuget: [SixLabors.ImageSharp]
+repo: https://github.com/SixLabors/ImageSharp
+category: revenue-capped
+oldLicense: Apache-2.0
+newModel: Six Labors Split Licence (version 3 and later)
+lastFreeVersion: 2.1.13
+firstPaidVersion: 3.0.0
+changed: 2023-03
+freeTier: Free under Apache-2.0 terms for open source projects and for organisations under a revenue limit (about US$1M). Others need a commercial licence.
+summary: From version 3, ImageSharp is free only for open source and smaller organisations. Version 2.x is the last Apache-2.0 line for everyone.
+alternatives:
+  - name: SkiaSharp
+    kind: replacement
+    url: https://github.com/mono/SkiaSharp
+    nuget: SkiaSharp
+    license: MIT
+    note: .NET bindings for Google's Skia graphics library. Fast and widely used.
+  - name: Magick.NET
+    kind: replacement
+    url: https://github.com/dlemstra/Magick.NET
+    nuget: Magick.NET-Q8-AnyCPU
+    license: Apache-2.0
+    note: .NET wrapper for ImageMagick. Supports a huge number of formats.
+  - name: NetVips
+    kind: replacement
+    url: https://github.com/kleisauke/net-vips
+    nuget: NetVips
+    license: MIT
+    note: .NET bindings for libvips. Very fast and low on memory.
+  - name: Pin 2.1.13
+    kind: pin
+    note: Stays Apache-2.0.
+sources:
+  - title: "FOSSED: ImageSharp"
+    url: https://dariusz-wozniak.github.io/fossed/
+  - title: Six Labors pricing
+    url: https://sixlabors.com/pricing/

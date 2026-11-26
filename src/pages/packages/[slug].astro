@@ -1,0 +1,134 @@
+---
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import { ALTERNATIVE_KINDS, CATEGORIES } from "../../lib/categories";
+import { getPackages } from "../../lib/data";
+import { formatDownloads, getNuGetStats } from "../../lib/nuget";
+import { formatChanged, isExactVersion, SITE } from "../../lib/site";
+import type { Package } from "../../lib/types";
+
+export const getStaticPaths = (async () => {
+  const packages = await getPackages();
+  return packages.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}) satisfies GetStaticPaths;
+
+const { p } = Astro.props as { p: Package };
+const stats = await getNuGetStats(p.nuget[0]);
+const category = CATEGORIES[p.category];
+const editUrl = `${SITE.repo}/edit/main/data/packages/${p.slug}.yml`;
+const pin = `<PackageReference Include="${p.nuget[0]}" Version="[${p.lastFreeVersion}]" />`;
+---
+
+<Base title={`${p.name} licence change and free alternatives`} description={`${p.name}: ${p.summary}`}>
+  <article class="package">
+    <p class="small"><a href="/">← All packages</a></p>
+    <h1>{p.name}</h1>
+    <p>
+      <span class={`badge badge-${p.category}`}>{category.label}</span>{" "}
+      {
+        p.checked ? (
+          <span class="muted small">Facts checked {formatChanged(p.checked)}</span>
+        ) : (
+          <span class="badge badge-unchecked">Needs checking</span>
+        )
+      }
+    </p>
+    <p class="lead">{p.summary}</p>
+
+    <dl class="facts">
+      <dt>Was</dt>
+      <dd>{p.oldLicense}</dd>
+      <dt>Now</dt>
+      <dd>{p.newModel}</dd>
+      <dt>Last free version</dt>
+      <dd><code>{p.lastFreeVersion}</code></dd>
+      {p.firstPaidVersion && <><dt>First paid version</dt><dd><code>{p.firstPaidVersion}</code></dd></>}
+      <dt>Changed</dt>
+      <dd>{formatChanged(p.changed)}</dd>
+      {p.freeTier && <><dt>Still free for</dt><dd>{p.freeTier}</dd></>}
+      <dt>NuGet</dt>
+      <dd>
+        {p.nuget.map((id, i) => <>{i > 0 && ", "}<a href={`https://www.nuget.org/packages/${id}`}>{id}</a></>)}
+        {stats && <span class="muted"> (latest {stats.version}, {formatDownloads(stats.totalDownloads)} downloads)</span>}
+      </dd>
+      {p.repo && <><dt>Source</dt><dd><a href={p.repo}>{p.repo.replace(/^https?:\/\//, "")}</a></dd></>}
+    </dl>
+
+    {
+      p.category === "maintenance-fee" && (
+        <div class="callout">
+          <strong>This project is still open source.</strong> The fee helps the maintainer keep it
+          that way. If your organisation is above the revenue limit and can afford it, please
+          consider paying before switching.
+        </div>
+      )
+    }
+
+    {
+      p.security && p.security.length > 0 && (
+        <section class="callout callout-warn">
+          <h2>Security note</h2>
+          <ul>
+            {p.security.map((s) => (
+              <li>
+                <strong>{s.url ? <a href={s.url}>{s.id}</a> : s.id}:</strong> {s.text}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <section>
+      <h2>Free alternatives</h2>
+      <ul class="alternatives">
+        {
+          p.alternatives.map((a) => (
+            <li>
+              <div class="alt-head">
+                <strong>{a.url ? <a href={a.url}>{a.name}</a> : a.name}</strong>
+                <span class={`badge badge-kind-${a.kind}`}>{ALTERNATIVE_KINDS[a.kind]}</span>
+                {a.license && <span class="muted small">{a.license}</span>}
+              </div>
+              {a.note && <p>{a.note}</p>}
+              {a.nuget && (
+                <p class="small">
+                  NuGet: <a href={`https://www.nuget.org/packages/${a.nuget}`}>{a.nuget}</a>
+                </p>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    {
+      isExactVersion(p.lastFreeVersion) && (
+        <section>
+          <h2>Staying on the last free version</h2>
+          <p>Pin the exact version so an update can't move you onto the paid licence by accident:</p>
+          <pre><code>{pin}</code></pre>
+          <p class="muted small">
+            A pinned version gets no new fixes. Check for security advisories before relying on it
+            long term.
+          </p>
+        </section>
+      )
+    }
+
+    {
+      p.notes && p.notes.length > 0 && (
+        <section>
+          <h2>Notes</h2>
+          <ul>{p.notes.map((n) => <li>{n}</li>)}</ul>
+        </section>
+      )
+    }
+
+    <section>
+      <h2>Sources</h2>
+      <ul>{p.sources.map((s) => <li><a href={s.url}>{s.title}</a></li>)}</ul>
+      <p class="small">Something wrong or out of date? <a href={editUrl}>Edit this page on GitHub</a>.</p>
+    </section>
+  </article>
+</Base>

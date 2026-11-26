@@ -1,0 +1,28 @@
+slug: moq
+name: Moq
+nuget: [Moq]
+repo: https://github.com/devlooped/moq
+category: trust
+oldLicense: BSD-3-Clause
+newModel: Licence unchanged (BSD-3-Clause)
+lastFreeVersion: 4.18.4
+changed: 2023-08
+summary: Moq's licence never changed, but version 4.20.0 shipped SponsorLink, which collected a hash of developers' Git email addresses during builds. It was later removed, but many teams moved away.
+alternatives:
+  - name: NSubstitute
+    kind: replacement
+    url: https://github.com/nsubstitute/NSubstitute
+    nuget: NSubstitute
+    license: BSD-3-Clause
+    note: Popular mocking library with a simple syntax.
+  - name: FakeItEasy
+    kind: replacement
+    url: https://github.com/FakeItEasy/FakeItEasy
+    nuget: FakeItEasy
+    license: MIT
+    note: Mature mocking library.
+notes:
+  - Moq is still open source and still free. This entry is here because many people ask about it.
+sources:
+  - title: "FOSSED: Moq"
+    url: https://dariusz-wozniak.github.io/fossed/

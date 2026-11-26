@@ -1,0 +1,41 @@
+---
+import Base from "../layouts/Base.astro";
+import { SITE } from "../lib/site";
+---
+
+<Base title="About" description="Why LibreSharp exists and the principles it follows.">
+  <article class="prose">
+    <h1>About LibreSharp</h1>
+    <p class="lead">
+      LibreSharp is a non-profit, community project. Its goal is to help keep the .NET ecosystem
+      free, open and safe to use.
+    </p>
+
+    <h2>Why this list exists</h2>
+    <p>
+      Since 2020, and especially in 2025 and 2026, many popular .NET libraries have moved from free
+      open source licences to commercial licences, revenue-limited licences or maintenance fees.
+      Together these packages have billions of downloads. Many teams only find out when a routine
+      update changes the licence, or when a security fix is only released in the paid version.
+    </p>
+    <p>
+      This site lists those changes in one place, with the last free version of each package and
+      the free alternatives that exist today.
+    </p>
+
+    <h2>Our principles</h2>
+    <ol>
+      <li><strong>Respect maintainers.</strong> Maintaining open source is hard, often unpaid work. We never criticise maintainers for changing their licence, and we credit original authors.</li>
+      <li><strong>Be accurate and fair.</strong> Every entry lists its sources. Entries we have not confirmed yet are marked "Needs checking".</li>
+      <li><strong>Maintenance fees are different.</strong> Projects that charge a maintenance fee are still open source. If you can afford the fee, please pay it.</li>
+      <li><strong>Point to healthy alternatives first.</strong> A well-maintained replacement is usually better than a fork.</li>
+      <li><strong>Support existing forks.</strong> Where a community fork already exists, we point people to it and help it rather than starting a competing one.</li>
+    </ol>
+
+    <h2>Get involved</h2>
+    <p>
+      LibreSharp lives on GitHub at <a href={SITE.org}>github.com/LibreSharp</a>. Corrections, new
+      entries and help are welcome. See <a href="/contribute/">how to contribute</a>.
+    </p>
+  </article>
+</Base>

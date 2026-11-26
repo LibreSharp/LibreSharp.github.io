@@ -1,0 +1,18 @@
+import { getCollection } from "astro:content";
+import type { Package } from "./types";
+
+/** All packages, sorted by name. Fails the build if a slug doesn't match its file name. */
+export async function getPackages(): Promise<Package[]> {
+  const entries = await getCollection("packages");
+  for (const e of entries) {
+    if (e.data.slug !== e.id) {
+      throw new Error(`data/packages/${e.id}.yml: slug "${e.data.slug}" must match the file name`);
+    }
+  }
+  return entries.map((e) => e.data).sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/** Alternatives worth naming in lists (not "pin" or "pay"). */
+export function realAlternatives(p: Package) {
+  return p.alternatives.filter((a) => a.kind !== "pin" && a.kind !== "pay");
+}

@@ -1,0 +1,25 @@
+slug: nbomber
+name: NBomber
+nuget: [NBomber]
+repo: https://github.com/PragmaticFlow/NBomber
+category: relicensed
+oldLicense: Apache-2.0
+newModel: Commercial licence for business use (version 5 and later)
+lastFreeVersion: 4.1.2
+firstPaidVersion: 5.0.0
+changed: 2023-06
+summary: The NBomber load testing framework moved to a commercial licence for organisations. Version 4.x is the last Apache-2.0 line.
+alternatives:
+  - name: k6
+    kind: replacement
+    url: https://github.com/grafana/k6
+    license: AGPL-3.0
+    note: Popular load testing tool. Tests are written in JavaScript, not C#.
+  - name: Pin 4.1.2
+    kind: pin
+    note: Stays Apache-2.0.
+notes:
+  - The free-tier terms still need checking. The date is when version 5.0.0 was published on NuGet.
+sources:
+  - title: "FOSSED: NBomber"
+    url: https://dariusz-wozniak.github.io/fossed/

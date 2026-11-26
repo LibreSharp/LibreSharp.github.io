@@ -1,0 +1,38 @@
+slug: epplus
+name: EPPlus
+nuget: [EPPlus]
+repo: https://github.com/EPPlusSoftware/EPPlus
+category: relicensed
+oldLicense: LGPL
+newModel: Polyform Noncommercial licence or a commercial licence (version 5 and later)
+lastFreeVersion: 4.5.3.3
+firstPaidVersion: 5.0.0
+changed: 2020
+freeTier: Free for non-commercial use only.
+summary: From version 5, EPPlus is free only for non-commercial use. Version 4.5.3.3 is the last LGPL release.
+alternatives:
+  - name: ClosedXML
+    kind: replacement
+    url: https://github.com/ClosedXML/ClosedXML
+    nuget: ClosedXML
+    license: MIT
+    note: The closest free replacement for creating and editing .xlsx files.
+  - name: MiniExcel
+    kind: replacement
+    url: https://github.com/mini-software/MiniExcel
+    nuget: MiniExcel
+    license: Apache-2.0
+    note: Fast, low-memory reading and writing of Excel files.
+  - name: Open XML SDK
+    kind: replacement
+    url: https://github.com/dotnet/Open-XML-SDK
+    nuget: DocumentFormat.OpenXml
+    license: MIT
+    note: Microsoft's low-level library for Office files.
+  - name: Pin 4.5.3.3
+    kind: pin
+    note: Stays LGPL, but it is old and gets no fixes.
+sources:
+  - title: EPPlus licence change (EPPlus wiki)
+    url: https://github.com/EPPlusSoftware/EPPlus/wiki/License-change
+checked: 2026-11-26

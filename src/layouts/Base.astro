@@ -1,0 +1,63 @@
+---
+import { SITE } from "../lib/site";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description = SITE.description } = Astro.props;
+const fullTitle = title
+  ? `${title} | LibreSharp`
+  : "LibreSharp: free alternatives to .NET packages that went commercial";
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a href="/" class="logo">Libre<span>Sharp</span></a>
+        <nav>
+          <a href="/">Packages</a>
+          <a href="/about/">About</a>
+          <a href="/contribute/">Contribute</a>
+          <a href={SITE.org}>GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          LibreSharp is a non-profit, community project. It is not affiliated with any of the
+          projects listed. Licences change: always check a package's own licence before relying on
+          this list.
+        </p>
+        <p>
+          Data is free to reuse (<a href="/packages.json">JSON</a>, CC BY 4.0). Site code is MIT.
+          <a href={SITE.repo}>Edit on GitHub</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

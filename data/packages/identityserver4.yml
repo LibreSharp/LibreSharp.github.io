@@ -1,0 +1,33 @@
+slug: identityserver4
+name: IdentityServer4
+nuget: [IdentityServer4, Duende.IdentityServer]
+repo: https://github.com/IdentityServer/IdentityServer4
+category: relicensed
+oldLicense: Apache-2.0
+newModel: Continued as Duende IdentityServer under a commercial licence
+lastFreeVersion: 4.1.2
+changed: 2020-10
+freeTier: Duende offers a free Community Edition for smaller organisations. Check its current terms.
+summary: IdentityServer4 was replaced by the commercial Duende IdentityServer. IdentityServer4 itself is no longer maintained.
+alternatives:
+  - name: OpenIddict
+    kind: replacement
+    url: https://github.com/openiddict/openiddict-core
+    nuget: OpenIddict
+    license: Apache-2.0
+    note: OpenID Connect server and client for ASP.NET Core. The main free replacement.
+  - name: Keycloak
+    kind: replacement
+    url: https://github.com/keycloak/keycloak
+    license: Apache-2.0
+    note: Self-hosted identity server (Java). You connect to it from .NET; you don't embed it.
+  - name: ASP.NET Core Identity
+    kind: built-in
+    note: Built-in user accounts, cookies and bearer tokens. Enough when you don't need to be an OAuth/OpenID Connect provider.
+notes:
+  - IdentityServer4 is out of support. Staying on it is a security risk.
+sources:
+  - title: "FOSSED: IdentityServer"
+    url: https://dariusz-wozniak.github.io/fossed/
+  - title: Duende IdentityServer
+    url: https://duendesoftware.com/products/identityserver

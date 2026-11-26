@@ -1,0 +1,32 @@
+slug: prism
+name: Prism
+nuget: [Prism.Core, Prism.Wpf, Prism.Maui]
+repo: https://github.com/PrismLibrary/Prism
+category: revenue-capped
+oldLicense: MIT
+newModel: Prism Community licence or a commercial licence (version 9 and later)
+lastFreeVersion: 8.1.97
+firstPaidVersion: "9.0"
+changed: 2024-08
+freeTier: Free for organisations under US$1M annual gross revenue that have never received more than US$3M in outside capital.
+summary: From version 9, the Prism MVVM framework for WPF, MAUI and other XAML platforms is free only for smaller organisations. Version 8.1.97 is the last MIT release.
+alternatives:
+  - name: CommunityToolkit.Mvvm
+    kind: replacement
+    url: https://github.com/CommunityToolkit/dotnet
+    nuget: CommunityToolkit.Mvvm
+    license: MIT
+    note: Microsoft-supported MVVM toolkit with source generators. Lighter than Prism, with no regions or modules.
+  - name: ReactiveUI
+    kind: replacement
+    url: https://github.com/reactiveui/ReactiveUI
+    nuget: ReactiveUI
+    license: MIT
+    note: Reactive MVVM framework for most .NET UI platforms.
+  - name: Pin 8.1.97
+    kind: pin
+    note: Stays MIT.
+sources:
+  - title: Prism.Maui 9 licence on NuGet
+    url: https://www.nuget.org/packages/Prism.Maui/9.0.537/License
+checked: 2026-11-26

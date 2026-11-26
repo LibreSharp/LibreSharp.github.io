@@ -1,0 +1,37 @@
+slug: json-everything
+name: json-everything (JsonSchema.Net and friends)
+nuget: [JsonSchema.Net, JsonPath.Net, JsonPatch.Net, JsonPointer.Net]
+repo: https://github.com/json-everything/json-everything
+category: maintenance-fee
+oldLicense: MIT
+newModel: Source stays MIT. The official NuGet packages include an Open Source Maintenance Fee EULA.
+lastFreeVersion: Releases before 1 Feb 2026
+changed: 2026-02-01
+freeTier: Organisations with under US$10,000 annual gross revenue are exempt. The fee is paid through GitHub Sponsors.
+summary: The json-everything libraries are still MIT open source, but revenue-generating users of the official packages are asked to pay a maintenance fee.
+alternatives:
+  - name: NJsonSchema
+    kind: replacement
+    url: https://github.com/RicoSuter/NJsonSchema
+    nuget: NJsonSchema
+    license: MIT
+    note: JSON Schema reading, validation and code generation.
+  - name: Corvus.JsonSchema
+    kind: replacement
+    url: https://github.com/corvus-dotnet/Corvus.JsonSchema
+    note: High-performance JSON Schema validation and code generation.
+  - name: Microsoft.AspNetCore.JsonPatch
+    kind: built-in
+    nuget: Microsoft.AspNetCore.JsonPatch
+    note: Microsoft's JSON Patch support for ASP.NET Core.
+  - name: Pay the fee
+    kind: pay
+    note: The fee supports the maintainer and keeps the libraries open source.
+sources:
+  - title: JsonSchema.Net licence on NuGet
+    url: https://www.nuget.org/packages/JsonSchema.Net/9.3.0/License
+  - title: Open Source Maintenance Fee project list
+    url: https://opensourcemaintenancefee.org/consumers/list/
+  - title: "FOSSED: json-everything"
+    url: https://dariusz-wozniak.github.io/fossed/
+checked: 2026-11-26

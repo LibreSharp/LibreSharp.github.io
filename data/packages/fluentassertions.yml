@@ -1,0 +1,37 @@
+slug: fluentassertions
+name: FluentAssertions
+nuget: [FluentAssertions]
+repo: https://github.com/fluentassertions/fluentassertions
+category: relicensed
+oldLicense: Apache-2.0
+newModel: Xceed commercial licence (version 8 and later)
+lastFreeVersion: 7.2.2
+firstPaidVersion: 8.0.0
+changed: 2025-01
+freeTier: Free for open source and non-commercial use only.
+summary: From version 8, FluentAssertions needs a paid licence for commercial use. The 7.x line stays Apache-2.0.
+alternatives:
+  - name: AwesomeAssertions
+    kind: fork
+    url: https://github.com/AwesomeAssertions/AwesomeAssertions
+    nuget: AwesomeAssertions
+    license: Apache-2.0
+    note: Community fork of FluentAssertions 7, actively maintained and widely used. Keeps the same API, so switching is mostly a package swap.
+  - name: Shouldly
+    kind: replacement
+    url: https://github.com/shouldly/shouldly
+    nuget: Shouldly
+    license: BSD-3-Clause
+    note: Popular assertion library with a different, simple style.
+  - name: Built-in Assert
+    kind: built-in
+    note: xUnit, NUnit and MSTest all have their own assertions.
+  - name: Pin 7.2.2
+    kind: pin
+    note: Stays Apache-2.0.
+sources:
+  - title: "FOSSED: FluentAssertions"
+    url: https://dariusz-wozniak.github.io/fossed/
+  - title: AwesomeAssertions on NuGet
+    url: https://www.nuget.org/packages/AwesomeAssertions
+checked: 2026-11-26

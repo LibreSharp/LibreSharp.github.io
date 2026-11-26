@@ -1,0 +1,52 @@
+slug: mediatr
+name: MediatR
+nuget: [MediatR]
+repo: https://github.com/LuckyPennySoftware/MediatR
+category: relicensed
+oldLicense: Apache-2.0
+newModel: Dual licence, RPL-1.5 or a commercial licence from Lucky Penny Software (from version 13)
+lastFreeVersion: 12.5.0
+firstPaidVersion: 13.0.0
+changed: 2025-07
+freeTier: A free Community licence is offered to organisations under $5M annual revenue, non-profits, education and non-production use. Check the current terms.
+summary: MediatR moved to a commercial licence (or RPL-1.5) in July 2025. Version 12.5.0 is the last Apache-2.0 release.
+alternatives:
+  - name: Mediator
+    kind: replacement
+    url: https://github.com/martinothamar/Mediator
+    nuget: Mediator.SourceGenerator
+    license: MIT
+    note: Source-generated mediator with an API very close to MediatR. The main change is that handlers return ValueTask instead of Task.
+  - name: Wolverine
+    kind: replacement
+    url: https://github.com/JasperFx/wolverine
+    nuget: WolverineFx
+    license: MIT
+    note: A full messaging and command framework, not a drop-in swap. A good fit if you also need messaging.
+  - name: Brighter
+    kind: replacement
+    url: https://github.com/BrighterCommand/Brighter
+    nuget: Paramore.Brighter
+    license: MIT
+    note: Command dispatcher and processor with messaging support.
+  - name: Write your own
+    kind: built-in
+    note: A basic request dispatcher is about 50 lines of C# using dependency injection. Many projects only use MediatR as a simple pass-through and can remove it.
+  - name: Questy
+    kind: fork
+    nuget: Questy
+    note: A small fork of MediatR from before the licence change. Early stage.
+  - name: Pin 12.5.0
+    kind: pin
+    note: Stays Apache-2.0.
+notes:
+  - Versions already published under Apache-2.0 stay Apache-2.0.
+  - AutoMapper, by the same author, changed licence at the same time.
+sources:
+  - title: "FOSSED: MediatR"
+    url: https://dariusz-wozniak.github.io/fossed/library/mediatr
+  - title: "MediatR and MassTransit going commercial (Milan Jovanović)"
+    url: https://milanjovanovic.tech/blog/mediatr-and-masstransit-going-commercial-what-this-means-for-you
+  - title: "MediatR went commercial: replace it, pay for it, or write it yourself (Sep 2026)"
+    url: https://umamaheswaran.com/2026/09/09/mediatr-commercial-license-alternatives-migration/
+checked: 2026-11-26

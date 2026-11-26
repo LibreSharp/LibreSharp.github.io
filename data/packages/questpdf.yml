@@ -1,0 +1,35 @@
+slug: questpdf
+name: QuestPDF
+nuget: [QuestPDF]
+repo: https://github.com/QuestPDF/QuestPDF
+category: revenue-capped
+oldLicense: MIT
+newModel: Free Community licence for smaller organisations, paid Professional and Enterprise licences for larger ones (from 2023.4)
+lastFreeVersion: 2022.12.15
+firstPaidVersion: 2023.4.0
+changed: 2023-05
+freeTier: Free for organisations under US$1M annual gross revenue, individuals, non-profits and open source projects. Check the current terms for exclusions.
+summary: From release 2023.4, QuestPDF is free only below a revenue limit. Larger organisations need a paid licence. Release 2022.12.15 is the last MIT-only release.
+alternatives:
+  - name: PDFsharp and MigraDoc
+    kind: replacement
+    url: https://github.com/empira/PDFsharp
+    nuget: PDFsharp-MigraDoc
+    license: MIT
+    note: Long-standing PDF creation library. MigraDoc adds a document model with paragraphs and tables.
+  - name: HTML to PDF with Playwright
+    kind: replacement
+    url: https://github.com/microsoft/playwright-dotnet
+    nuget: Microsoft.Playwright
+    note: Render an HTML page in a headless browser and print it to PDF. Good when you already have HTML templates.
+  - name: Pin 2022.12.15
+    kind: pin
+    note: Stays MIT, but misses newer features and fixes.
+notes:
+  - Most small teams can still use QuestPDF for free under the Community licence.
+sources:
+  - title: QuestPDF Community licence
+    url: https://www.questpdf.com/license/community.html
+  - title: "FOSSED: QuestPDF"
+    url: https://dariusz-wozniak.github.io/fossed/
+checked: 2026-11-26

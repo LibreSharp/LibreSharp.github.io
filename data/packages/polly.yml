@@ -1,0 +1,37 @@
+slug: polly
+name: Polly
+nuget: [Polly, Polly.Core]
+repo: https://github.com/App-vNext/Polly
+category: maintenance-fee
+oldLicense: BSD-3-Clause
+newModel: Still BSD-3-Clause, plus an Open Source Maintenance Fee for the official packages
+lastFreeVersion: 8.x (check Polly's README)
+changed: 2026-11-16
+freeTier: Reported as $20 a month per organisation earning $20,000 or more from a product that uses Polly. Individuals, students, non-profits and smaller organisations pay nothing. Only direct references count, not Polly pulled in by another package.
+summary: Polly stays open source, but from 16 November 2026 organisations above a revenue limit are asked to pay a small maintenance fee to use the official packages.
+alternatives:
+  - name: Microsoft.Extensions.Http.Resilience
+    kind: built-in
+    url: https://www.nuget.org/packages/Microsoft.Extensions.Http.Resilience
+    nuget: Microsoft.Extensions.Http.Resilience
+    license: MIT
+    note: Microsoft's resilience package for HttpClient. It uses Polly internally, but the fee only covers direct references.
+  - name: Fences
+    kind: fork
+    url: https://www.nuget.org/packages/Paramore.Fences
+    nuget: Paramore.Fences
+    license: BSD-3-Clause
+    note: Community fork of Polly maintained by the Brighter team.
+  - name: Pay the fee
+    kind: pay
+    note: At about $20 a month per organisation, paying is often the simplest option, and it keeps Polly open source.
+notes:
+  - Sources disagree on exactly which versions the fee covers. Check Polly's README before deciding.
+sources:
+  - title: "FOSSED: Polly"
+    url: https://dariusz-wozniak.github.io/fossed/
+  - title: ".NET Foundation statement on Open Source Maintenance Fees"
+    url: https://dotnetfoundation.org/news-events/detail/.net-foundation-statement-on-open-source-maintenance-fees
+  - title: "Stop your AI agent picking the wrong .NET libraries (Sep 2026)"
+    url: https://codewithmukesh.com/blog/ai-agent-nuget-package-guardrails-dotnet/
+checked: 2026-11-26
