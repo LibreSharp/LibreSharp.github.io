@@ -1,0 +1,48 @@
+slug: libresharp-wolverinefx-react
+name: WolverineFx + React (LibreSharp)
+url: https://www.nuget.org/packages/LibreSharp.Templates.WolverineFxReact
+repo: https://github.com/LibreSharp/WolverineFx-React
+license: MIT
+openSource: true
+status: active
+statusNote: Maintained by LibreSharp. First release (v0.1.0) on 26 November 2026.
+dotnet: .NET 11
+frontend: [React (Vite, TypeScript, Tailwind)]
+database: [PostgreSQL (Marten or EF Core)]
+install: |
+  dotnet new install LibreSharp.Templates.WolverineFxReact
+  dotnet new wolverine-react -n MyApp --Persistence efcore --Identity true
+summary: A Wolverine backend and a React front end in one deployable ASP.NET Core host. It covers the jobs often given to MediatR and MassTransit (in-process messaging, a message bus and a transactional outbox) using only free, open source packages.
+features:
+  auth:
+    status: yes
+    note: "Optional (--Identity true): JWT access tokens with rotating refresh tokens and reuse detection"
+  multiTenancy:
+    status: no
+  billing:
+    status: no
+  adminUi:
+    status: no
+  email:
+    status: no
+  backgroundJobs:
+    status: yes
+    note: "Wolverine durable local queues with a transactional outbox; messages are handled in the background and survive restarts"
+  deploy:
+    status: partial
+    note: "Single deployable host: dotnet publish builds the React client and pre-generates Wolverine code. Docker Compose runs Postgres for development; no hosting setup"
+  tests:
+    status: yes
+    note: "xUnit, Alba and Testcontainers against a real Postgres. CI builds and tests all 8 option combinations"
+notes:
+  - "Also includes event sourcing (with Marten), FluentValidation, real-time updates with SignalR, React Router, TanStack Query and a typed API client generated from OpenAPI."
+  - "Every dependency is MIT, Apache-2.0 or the PostgreSQL licence."
+  - "Maintained by LibreSharp, the project behind this site."
+sources:
+  - title: README
+    url: https://github.com/LibreSharp/WolverineFx-React
+  - title: Roadmap
+    url: https://github.com/LibreSharp/WolverineFx-React/blob/main/ROADMAP.md
+  - title: NuGet package
+    url: https://www.nuget.org/packages/LibreSharp.Templates.WolverineFxReact
+checked: 2026-11-26
