@@ -1,0 +1,79 @@
+# Settings for scripts/update-popular.mjs, which builds data/popular.json.
+# The Popular page lists community .NET open source projects, so packages
+# published by Microsoft and by cloud vendors' SDK teams are left out.
+
+# How many NuGet packages (by total downloads) to scan.
+scan: 2000
+# How many projects (GitHub repositories) to show.
+limit: 100
+
+# Packages owned by any of these NuGet accounts are excluded.
+excludeOwners:
+  - Microsoft
+  - dotnetframework
+  - aspnet
+  - Xamarin
+  - azure-sdk
+  - AzureAD
+  - EntityFramework
+  - RoslynTeam
+  - PowerShellTeam
+  - VisualStudioExtensibility
+  - MSTestFramework
+  - nuget
+  - AppInsightsSdk
+  - aziotdevsdk
+  - kiota
+  - OData
+  - durabletask
+  - awsdotnet
+  - google-apis-packages
+  - google-cloud
+
+# Display names for repositories (owner/name: Name). Otherwise the most
+# downloaded package ID is used.
+names:
+  JamesNK/Newtonsoft.Json: Newtonsoft.Json (Json.NET)
+  open-telemetry/opentelemetry-dotnet: OpenTelemetry .NET
+  open-telemetry/opentelemetry-dotnet-contrib: OpenTelemetry .NET Contrib
+  grpc/grpc-dotnet: gRPC for .NET
+  grpc/grpc: gRPC (C# tools)
+  ericsink/SQLitePCL.raw: SQLitePCLRaw
+  dotnet/aspnet-api-versioning: ASP.NET API Versioning
+  StephenCleary/AsyncEx: AsyncEx
+  StephenCleary/Disposables: Nito.Disposables
+  castleproject/Core: Castle Core
+  Xabaril/AspNetCore.Diagnostics.HealthChecks: AspNetCore.Diagnostics.HealthChecks
+  danielpalme/ReportGenerator: ReportGenerator
+  morelinq/MoreLINQ: MoreLINQ
+
+# Repositories maintained by a company for its own product or service
+# (database drivers, vendor SDKs). They don't depend on community support.
+excludeRepos:
+  - mongodb/mongo-csharp-driver
+  - elastic/elasticsearch-net
+  - confluentinc/confluent-kafka-dotnet
+  - confluentinc/librdkafka
+  - newrelic/newrelic-dotnet-agent
+  - sendgrid/sendgrid-csharp
+  - JetBrains/JetBrains.Annotations
+  - protocolbuffers/protobuf
+  - dotnet/Open-XML-SDK
+  - mono/t4
+  - StockSharp/Ecng
+  - sourcegear/sqlite-builds
+  - getsentry/sentry-dotnet
+  - twilio/twilio-csharp
+  - starkbank/ecdsa-dotnet
+  # Front-end packages published to NuGet (not .NET projects).
+  - twbs/bootstrap
+
+# When a package's metadata points at the wrong repository (package ID: owner/name).
+repoOverrides:
+  Moq: devlooped/moq
+
+# Licences GitHub can't detect automatically (owner/name: SPDX ID). Check each by hand.
+licenseOverrides:
+  HangfireIO/Hangfire: LGPL-3.0
+  bchavez/Bogus: MIT
+  antlr/antlrcs: BSD-3-Clause

@@ -136,3 +136,9 @@ table.templates td .badge { margin-top: 0.25rem; margin-right: 0.25rem; }
 .template-card h2 { margin-bottom: 0.25rem; }
 .template-card .facts { grid-template-columns: 260px 1fr; }
 @media (max-width: 640px) { .template-card .facts { grid-template-columns: 1fr; } }
+
+/* Popular page */
+table.popular td .badge { margin-top: 0.3rem; text-decoration: none; }
+ul.excluded { columns: 2; column-gap: 2rem; padding-left: 1.1rem; }
+@media (max-width: 640px) { ul.excluded { columns: 1; } }
+.clamp { display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 46ch; }

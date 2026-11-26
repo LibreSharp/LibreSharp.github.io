@@ -8,7 +8,8 @@ LibreSharp is a non-profit, community project. We respect maintainers: open sour
 
 - A searchable list of affected packages: what changed, when, the last free version, and free alternatives (community forks, replacements, and features built into .NET).
 - A page per package with sources, security notes and a version-pinning snippet.
-- Open data: [`/packages.json`](https://libresharp.github.io/packages.json) and [`/llms.txt`](https://libresharp.github.io/llms.txt) for AI coding assistants.
+- A Popular page: the 100 most downloaded community .NET open source projects, with licences, activity and sponsor links. Built by `scripts/update-popular.mjs` (settings in `data/popular-config.yml`), refreshed weekly.
+- Open data: [`/packages.json`](https://libresharp.github.io/packages.json) and [`/llms.txt`](https://libresharp.github.io/llms.txt) for AI coding assistants, plus `/templates.json` and `/popular.json`.
 
 ## Contributing
 
@@ -21,6 +22,7 @@ npm install
 npm run dev     # http://localhost:4321
 npm run check   # type check
 npm run build   # static site in dist/
+GITHUB_TOKEN=$(gh auth token) node scripts/update-popular.mjs   # refresh data/popular.json
 ```
 
 The build fetches download counts from the NuGet API. If NuGet can't be reached, the site still builds without them.

@@ -1,0 +1,47 @@
+slug: efcore-bulkextensions
+name: EFCore.BulkExtensions
+nuget: [EFCore.BulkExtensions]
+repo: https://github.com/borisdj/EFCore.BulkExtensions
+category: revenue-capped
+oldLicense: MIT
+newModel: Dual licence, a free community licence or a paid commercial licence (from 6.7.0)
+lastFreeVersion: 6.6.5
+firstPaidVersion: 6.7.0
+changed: 2023-01
+freeTier: Free for companies and individuals under US$1M annual gross revenue, non-profits and registered charities, and use in free open source software. Everyone else needs a commercial licence.
+summary: The popular bulk insert, update and delete library for Entity Framework Core moved from MIT to a dual licence in January 2023. Version 6.6.5 is the last MIT release.
+alternatives:
+  - name: EFCore.BulkExtensions.MIT
+    kind: fork
+    url: https://github.com/videokojot/EFCore.BulkExtensions.MIT
+    nuget: EFCore.BulkExtensions.MIT
+    license: MIT
+    note: Community fork of the last MIT version (January 2023), kept up to date with new EF Core versions and with extra bug fixes. Over 1M downloads.
+  - name: linq2db.EntityFrameworkCore
+    kind: replacement
+    url: https://github.com/linq2db/linq2db
+    nuget: linq2db.EntityFrameworkCore
+    license: MIT
+    note: Adds linq2db's fast BulkCopy and bulk update/delete to your existing EF Core DbContext.
+  - name: PhenX.EntityFrameworkCore.BulkInsert
+    kind: replacement
+    url: https://github.com/PhenX/PhenX.EntityFrameworkCore.BulkInsert
+    nuget: PhenX.EntityFrameworkCore.BulkInsert
+    license: MIT
+    note: A newer, focused bulk insert library for EF Core. Still pre-1.0.
+  - name: ExecuteUpdate and ExecuteDelete
+    kind: built-in
+    note: EF Core 7 and later can update and delete many rows in one SQL statement without loading them. Bulk insert is not covered.
+  - name: Pin 6.6.5
+    kind: pin
+    note: Stays MIT, but only supports older EF Core versions.
+notes:
+  - The current licence text (Dual Licence Agreement v1.0) is dated January 2024; the NuGet packages switched from MIT to a licence file at 6.7.0 in January 2023.
+sources:
+  - title: EFCore.BulkExtensions licence
+    url: https://github.com/borisdj/EFCore.BulkExtensions/blob/master/LICENSE.txt
+  - title: EFCore.BulkExtensions 6.6.5 (last MIT release) on NuGet
+    url: https://www.nuget.org/packages/EFCore.BulkExtensions/6.6.5
+  - title: EFCore.BulkExtensions.MIT fork
+    url: https://github.com/videokojot/EFCore.BulkExtensions.MIT
+checked: 2026-11-26

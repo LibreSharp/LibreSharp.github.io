@@ -1,0 +1,48 @@
+slug: sonaranalyzer
+name: SonarAnalyzer for C# and VB.NET
+nuget: [SonarAnalyzer.CSharp, SonarAnalyzer.VisualBasic]
+repo: https://github.com/SonarSource/sonar-dotnet
+category: relicensed
+oldLicense: LGPL-3.0
+newModel: SONAR Source-Available Licence v1.0 (from 10.3)
+lastFreeVersion: 9.32.0.97167
+firstPaidVersion: 10.3.0.106239
+changed: 2024-11
+freeTier: Still free of charge, but only for "non-competitive purposes". The licence excludes offering anything that competes with SonarQube, and also excludes using outside AI tools to analyse or interact with the data the analyzer produces.
+summary: Sonar's Roslyn code analyzers moved from LGPL-3.0 to a source-available licence in November 2024. They are still free to use, but no longer open source, and the licence limits some uses, including feeding the results to outside AI tools.
+alternatives:
+  - name: .NET built-in code analysis
+    kind: built-in
+    url: https://learn.microsoft.com/dotnet/fundamentals/code-analysis/overview
+    nuget: Microsoft.CodeAnalysis.NetAnalyzers
+    license: MIT
+    note: Included in the .NET SDK. Turn on more rules with AnalysisLevel and AnalysisMode in your project file.
+  - name: Roslynator
+    kind: replacement
+    url: https://github.com/dotnet/roslynator
+    nuget: Roslynator.Analyzers
+    license: Apache-2.0
+    note: 500+ analyzers, refactorings and fixes. A .NET Foundation project.
+  - name: Meziantou.Analyzer
+    kind: replacement
+    url: https://github.com/meziantou/Meziantou.Analyzer
+    nuget: Meziantou.Analyzer
+    license: MIT
+    note: Analyzers for good practices in performance, security and design.
+  - name: StyleCop.Analyzers
+    kind: replacement
+    url: https://github.com/DotNetAnalyzers/StyleCopAnalyzers
+    nuget: StyleCop.Analyzers
+    license: MIT
+    note: Style and consistency rules.
+  - name: Pin 9.32.0.97167
+    kind: pin
+    note: The last LGPL-3.0 release (August 2024).
+notes:
+  - If you use AI coding assistants that read analyzer output, check the licence's "Non-competitive Purpose" definition before relying on version 10.3 or later.
+sources:
+  - title: SONAR Source-Available Licence v1.0 (sonar-dotnet repository)
+    url: https://github.com/SonarSource/sonar-dotnet/blob/master/LICENSE.txt
+  - title: SonarAnalyzer.CSharp 9.32.0.97167 (last LGPL release) on NuGet
+    url: https://www.nuget.org/packages/SonarAnalyzer.CSharp/9.32.0.97167
+checked: 2026-11-26

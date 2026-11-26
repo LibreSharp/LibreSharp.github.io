@@ -1,0 +1,201 @@
+---
+import Base from "../layouts/Base.astro";
+import { CATEGORIES } from "../lib/categories";
+import { getPackages } from "../lib/data";
+import { formatStars } from "../lib/github";
+import { formatDownloads } from "../lib/nuget";
+import { getPopular, platformLabel } from "../lib/popular";
+import { formatChanged, SITE } from "../lib/site";
+
+const data = getPopular();
+const packages = await getPackages();
+
+// Link projects to entries on our licence-change list, by NuGet ID or repository.
+const repoOf = (url?: string) => url?.match(/github\.com\/([^/]+\/[^/#?]+)/i)?.[1]?.toLowerCase();
+function onOurList(ids: string[], repo: string) {
+  const idSet = new Set(ids.map((i) => i.toLowerCase()));
+  return packages.find(
+    (p) => p.nuget.some((n) => idSet.has(n.toLowerCase())) || repoOf(p.repo) === repo.toLowerCase(),
+  );
+}
+
+const generated = new Date(data.generated);
+const yearAgo = new Date(generated);
+yearAgo.setFullYear(yearAgo.getFullYear() - 1);
+
+const rows = data.projects.map((p, i) => ({
+  p,
+  rank: i + 1,
+  listed: onOurList(p.packages, p.repo),
+  quiet: p.lastActivity ? new Date(p.lastActivity) < yearAgo : false,
+}));
+const excluded = data.excluded
+  .filter((e) => e.reason !== "Repository is archived")
+  .map((e) => ({ e, listed: onOurList(e.packages, e.repo) }));
+const withFunding = data.projects.filter((p) => p.funding.length > 0).length;
+---
+
+<Base
+  title="Most popular .NET open source projects"
+  description="The 100 most downloaded community .NET open source projects on NuGet, with licences, activity and links to sponsor them."
+>
+  <section class="hero">
+    <h1>The most popular .NET open source projects</h1>
+    <p class="lead">
+      The {data.count} most downloaded community .NET open source projects on NuGet. Almost every
+      .NET app depends on some of them, and many are maintained by a handful of volunteers.
+    </p>
+    <p>
+      <strong>{withFunding} of these projects accept sponsorship.</strong> If your work depends on
+      them, sponsoring is the best way to keep them free and open source.
+    </p>
+    <p class="muted small">
+      Ranked by the downloads of each project's most downloaded package. Packages published by
+      Microsoft, cloud vendor SDKs and companies' own product SDKs are left out.
+      {`Updated ${formatChanged(data.generated.slice(0, 10))}.`}
+    </p>
+  </section>
+
+  <section>
+    <div class="filters">
+      <input id="q" type="search" placeholder="Search projects…" aria-label="Search projects" />
+      <select id="show" aria-label="Filter">
+        <option value="all">All projects</option>
+        <option value="funding">Accepts sponsorship</option>
+        <option value="listed">On our licence-change list</option>
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="rank">Most downloaded</option>
+        <option value="stars">Most GitHub stars</option>
+        <option value="activity">Most recently active</option>
+        <option value="name">Name</option>
+      </select>
+    </div>
+    <p class="muted small">Showing <span id="count">{rows.length}</span> of {rows.length} projects.</p>
+
+    <div class="table-scroll">
+      <table class="packages popular">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Project</th>
+            <th>Downloads</th>
+            <th>Stars</th>
+            <th>Licence</th>
+            <th>Last activity</th>
+            <th>Support</th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          {
+            rows.map(({ p, rank, listed, quiet }) => (
+              <tr
+                data-search={[p.name, p.repo, p.description, ...p.packages].join(" ").toLowerCase()}
+                data-rank={rank}
+                data-stars={p.stars}
+                data-activity={p.lastActivity ?? ""}
+                data-name={p.name.toLowerCase()}
+                data-funding={p.funding.length > 0 ? "1" : "0"}
+                data-listed={listed ? "1" : "0"}
+              >
+                <td class="muted">{rank}</td>
+                <td>
+                  <a href={p.url} class="pkg-name">{p.name}</a>
+                  <div class="muted small clamp">{p.description}</div>
+                  {listed && (
+                    <a href={`/packages/${listed.slug}/`} class={`badge badge-${listed.category}`}>
+                      {CATEGORIES[listed.category].short}
+                    </a>
+                  )}
+                  {p.relatedRepos.length > 0 && (
+                    <div class="muted small">+ {p.relatedRepos.length} related {p.relatedRepos.length === 1 ? "repo" : "repos"}</div>
+                  )}
+                </td>
+                <td class="nowrap">{formatDownloads(p.downloads)}</td>
+                <td class="nowrap">★ {formatStars(p.stars)}</td>
+                <td class="small">{p.license.replace(/ OR /g, " / ")}</td>
+                <td class="nowrap small">
+                  {p.lastActivity ? formatChanged(p.lastActivity) : "–"}
+                  {quiet && <div class="badge badge-abandoned">Quiet for 1+ year</div>}
+                </td>
+                <td class="small">
+                  {p.funding.length > 0
+                    ? p.funding.map((f, i) => <>{i > 0 && <br />}<a href={f.url}>{platformLabel(f.platform, f.url)}</a></>)
+                    : <span class="muted">–</span>}
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="callout">
+    <strong>"Quiet" doesn't mean abandoned.</strong> Some libraries are simply finished. But a
+    popular project with no activity for a year may need new maintainers. Check before you depend
+    on it for something new.
+  </section>
+
+  <section>
+    <h2>Popular, but not counted here</h2>
+    <p class="muted">
+      These packages are in the top downloads, but we couldn't confirm an open source licence
+      automatically. Some have moved to commercial or source-available licences; others just have a
+      licence file GitHub can't read. If one of these is open source,
+      <a href={`${SITE.repo}/blob/main/data/popular-config.yml`}>add a licence override</a>.
+    </p>
+    <ul class="excluded">
+      {
+        excluded.map(({ e, listed }) => (
+          <li>
+            <a href={`https://github.com/${e.repo}`}>{e.name}</a>{" "}
+            <span class="muted small">({formatDownloads(e.downloads)} downloads)</span>
+            {listed && <> · <a href={`/packages/${listed.slug}/`}>see licence change</a></>}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <p class="small muted">
+    Data: <a href="/popular.json">popular.json</a>. Built by
+    <a href={`${SITE.repo}/blob/main/scripts/update-popular.mjs`}>this script</a> from the NuGet and
+    GitHub APIs.
+  </p>
+</Base>
+
+<script>
+  const q = document.querySelector<HTMLInputElement>("#q")!;
+  const show = document.querySelector<HTMLSelectElement>("#show")!;
+  const sort = document.querySelector<HTMLSelectElement>("#sort")!;
+  const tbody = document.querySelector<HTMLTableSectionElement>("#rows")!;
+  const count = document.querySelector<HTMLSpanElement>("#count")!;
+  const rows = Array.from(tbody.querySelectorAll<HTMLTableRowElement>("tr"));
+
+  function update() {
+    const text = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const r of rows) {
+      const match =
+        (!text || r.dataset.search!.includes(text)) &&
+        (show.value === "all" ||
+          (show.value === "funding" && r.dataset.funding === "1") ||
+          (show.value === "listed" && r.dataset.listed === "1"));
+      r.hidden = !match;
+      if (match) shown++;
+    }
+    count.textContent = String(shown);
+    const by = sort.value;
+    const sorted = [...rows].sort((a, b) => {
+      if (by === "stars") return Number(b.dataset.stars) - Number(a.dataset.stars);
+      if (by === "activity") return b.dataset.activity!.localeCompare(a.dataset.activity!);
+      if (by === "name") return a.dataset.name!.localeCompare(b.dataset.name!);
+      return Number(a.dataset.rank) - Number(b.dataset.rank);
+    });
+    tbody.append(...sorted);
+  }
+  q.addEventListener("input", update);
+  show.addEventListener("change", update);
+  sort.addEventListener("change", update);
+</script>

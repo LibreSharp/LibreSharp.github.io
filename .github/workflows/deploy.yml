@@ -28,6 +28,14 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      # Weekly (and on manual runs), refresh the Popular page data from NuGet and GitHub.
+      # On other builds the committed data/popular.json is used as-is.
+      - name: Refresh popular projects
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        continue-on-error: true
+        run: node scripts/update-popular.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # The build checks every data/packages/*.yml file against the schema and fails on bad data.
       - run: npm run check
       - run: npm run build

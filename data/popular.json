@@ -1,0 +1,2737 @@
+{
+  "generated": "2026-11-26T08:23:32.334Z",
+  "note": "Most downloaded community .NET open source projects on NuGet. Packages from Microsoft and cloud vendor SDK accounts are excluded. Downloads are for the most downloaded package in each repository.",
+  "count": 100,
+  "projects": [
+    {
+      "name": "Newtonsoft.Json (Json.NET)",
+      "repo": "JamesNK/Newtonsoft.Json",
+      "url": "https://github.com/JamesNK/Newtonsoft.Json",
+      "homepage": "https://www.newtonsoft.com/json",
+      "description": "Json.NET is a popular high-performance JSON framework for .NET",
+      "license": "MIT",
+      "stars": 11323,
+      "archived": false,
+      "lastActivity": "2026-11-10",
+      "funding": [],
+      "downloads": 9965332189,
+      "topPackage": "Newtonsoft.Json",
+      "packages": [
+        "Newtonsoft.Json",
+        "Newtonsoft.Json.Bson",
+        "Newtonsoft.Json.Schema"
+      ],
+      "relatedRepos": [
+        "JamesNK/Newtonsoft.Json.Bson",
+        "JamesNK/Newtonsoft.Json.Schema"
+      ]
+    },
+    {
+      "name": "Serilog",
+      "repo": "serilog/serilog",
+      "url": "https://github.com/serilog/serilog",
+      "homepage": "https://serilog.net",
+      "description": "Simple .NET logging with fully-structured events",
+      "license": "Apache-2.0",
+      "stars": 8063,
+      "archived": false,
+      "lastActivity": "2026-10-23",
+      "funding": [],
+      "downloads": 3679870345,
+      "topPackage": "Serilog",
+      "packages": [
+        "Serilog",
+        "Serilog.Sinks.File",
+        "Serilog.Sinks.Console",
+        "Serilog.Extensions.Logging",
+        "Serilog.Settings.Configuration",
+        "Serilog.Formatting.Compact",
+        "Serilog.Extensions.Hosting",
+        "Serilog.AspNetCore",
+        "Serilog.Sinks.Debug",
+        "Serilog.Sinks.PeriodicBatching",
+        "Serilog.Enrichers.Environment",
+        "Serilog.Enrichers.Thread",
+        "Serilog.Sinks.Async",
+        "Serilog.Sinks.EventLog",
+        "Serilog.Expressions",
+        "Serilog.Enrichers.Process",
+        "Serilog.Sinks.OpenTelemetry",
+        "Serilog.Formatting.Compact.Reader",
+        "Serilog.Settings.AppSettings"
+      ],
+      "relatedRepos": [
+        "serilog/serilog-sinks-file",
+        "serilog/serilog-sinks-console",
+        "serilog/serilog-extensions-logging",
+        "serilog/serilog-settings-configuration",
+        "serilog/serilog-formatting-compact",
+        "serilog/serilog-extensions-hosting",
+        "serilog/serilog-aspnetcore",
+        "serilog/serilog-sinks-debug",
+        "serilog/serilog-sinks-periodicbatching",
+        "serilog/serilog-enrichers-environment",
+        "serilog/serilog-enrichers-thread",
+        "serilog/serilog-sinks-async",
+        "serilog/serilog-expressions",
+        "serilog/serilog-enrichers-process",
+        "serilog/serilog-sinks-opentelemetry",
+        "serilog/serilog-formatting-compact-reader",
+        "serilog/serilog-settings-appsettings"
+      ]
+    },
+    {
+      "name": "Castle Core",
+      "repo": "castleproject/Core",
+      "url": "https://github.com/castleproject/Core",
+      "homepage": "http://www.castleproject.org/",
+      "description": "Castle Core, including Castle DynamicProxy, Logging Services and DictionaryAdapter",
+      "license": "Apache-2.0",
+      "stars": 2305,
+      "archived": false,
+      "lastActivity": "2026-04-14",
+      "funding": [],
+      "downloads": 1887967364,
+      "topPackage": "Castle.Core",
+      "packages": [
+        "Castle.Core"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Polly",
+      "repo": "App-vNext/Polly",
+      "url": "https://github.com/App-vNext/Polly",
+      "homepage": "https://www.thepollyproject.org",
+      "description": "Polly is a .NET resilience and transient-fault-handling library that allows developers to express policies such as Retry, Circuit Breaker, Timeout, Bulkhead Isolation, and Fallback in a fluent and thread-safe manner. From version 6.0.1, Polly targets .NET Standard 1.1 and 2.0+.",
+      "license": "BSD-3-Clause",
+      "stars": 14258,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/App-vNext"
+        }
+      ],
+      "downloads": 1829740257,
+      "topPackage": "Polly",
+      "packages": [
+        "Polly",
+        "Polly.Core",
+        "Polly.Extensions",
+        "Polly.RateLimiting",
+        "Polly-Signed",
+        "Polly.Extensions.Http"
+      ],
+      "relatedRepos": [
+        "App-vNext/Polly.Extensions.Http"
+      ]
+    },
+    {
+      "name": "Swashbuckle.AspNetCore",
+      "repo": "domaindrivendev/Swashbuckle.AspNetCore",
+      "url": "https://github.com/domaindrivendev/Swashbuckle.AspNetCore",
+      "homepage": null,
+      "description": "Swagger tools for documenting API's built on ASP.NET Core",
+      "license": "MIT",
+      "stars": 5497,
+      "archived": false,
+      "lastActivity": "2026-11-26",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/martincostello"
+        }
+      ],
+      "downloads": 1677509841,
+      "topPackage": "Swashbuckle.AspNetCore.SwaggerGen",
+      "packages": [
+        "Swashbuckle.AspNetCore.SwaggerGen",
+        "Swashbuckle.AspNetCore.Swagger",
+        "Swashbuckle.AspNetCore.SwaggerUI",
+        "Swashbuckle.AspNetCore",
+        "Swashbuckle.AspNetCore.Annotations",
+        "Swashbuckle.AspNetCore.Newtonsoft",
+        "Swashbuckle.AspNetCore.Cli",
+        "Swashbuckle.AspNetCore.ReDoc"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "StackExchange.Redis",
+      "repo": "seredis/StackExchange.Redis",
+      "url": "https://github.com/seredis/StackExchange.Redis",
+      "homepage": "http://seredis.dev/",
+      "description": "The Redis client for .NET",
+      "license": "MIT",
+      "stars": 6206,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [],
+      "downloads": 1365139990,
+      "topPackage": "StackExchange.Redis",
+      "packages": [
+        "StackExchange.Redis",
+        "StackExchange.Redis.StrongName",
+        "RESPite"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Moq",
+      "repo": "devlooped/moq",
+      "url": "https://github.com/devlooped/moq",
+      "homepage": null,
+      "description": "The most popular and friendly mocking framework for .NET",
+      "license": "MIT",
+      "stars": 6410,
+      "archived": false,
+      "lastActivity": "2026-11-26",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/devlooped"
+        }
+      ],
+      "downloads": 1331174389,
+      "topPackage": "Moq",
+      "packages": [
+        "Moq"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "gRPC for .NET",
+      "repo": "grpc/grpc-dotnet",
+      "url": "https://github.com/grpc/grpc-dotnet",
+      "homepage": null,
+      "description": "gRPC for .NET",
+      "license": "Apache-2.0",
+      "stars": 4485,
+      "archived": false,
+      "lastActivity": "2026-10-31",
+      "funding": [],
+      "downloads": 1305681485,
+      "topPackage": "Grpc.Core.Api",
+      "packages": [
+        "Grpc.Core.Api",
+        "Grpc.Net.Common",
+        "Grpc.Net.Client",
+        "Grpc.Net.ClientFactory",
+        "Grpc.AspNetCore.Server",
+        "Grpc.AspNetCore.Server.ClientFactory",
+        "Grpc.AspNetCore",
+        "Grpc.Auth",
+        "Grpc.Reflection",
+        "Grpc.AspNetCore.Server.Reflection",
+        "Grpc.HealthCheck",
+        "Grpc.Net.Client.Web",
+        "Grpc.AspNetCore.HealthChecks"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Humanizer",
+      "repo": "Humanizr/Humanizer",
+      "url": "https://github.com/Humanizr/Humanizer",
+      "homepage": null,
+      "description": "Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities",
+      "license": "MIT",
+      "stars": 10002,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/clairernovotny"
+        }
+      ],
+      "downloads": 1255009331,
+      "topPackage": "Humanizer.Core",
+      "packages": [
+        "Humanizer.Core",
+        "Humanizer",
+        "Humanizer.Core.uk",
+        "Humanizer.Core.fr",
+        "Humanizer.Core.de",
+        "Humanizer.Core.es",
+        "Humanizer.Core.ru",
+        "Humanizer.Core.pt",
+        "Humanizer.Core.zh-CN",
+        "Humanizer.Core.it",
+        "Humanizer.Core.nl",
+        "Humanizer.Core.zh-Hans",
+        "Humanizer.Core.zh-Hant",
+        "Humanizer.Core.pl",
+        "Humanizer.Core.ja",
+        "Humanizer.Core.sv",
+        "Humanizer.Core.cs",
+        "Humanizer.Core.da",
+        "Humanizer.Core.id",
+        "Humanizer.Core.tr",
+        "Humanizer.Core.he",
+        "Humanizer.Core.hr",
+        "Humanizer.Core.ro",
+        "Humanizer.Core.el",
+        "Humanizer.Core.fa",
+        "Humanizer.Core.hu",
+        "Humanizer.Core.ar",
+        "Humanizer.Core.nb",
+        "Humanizer.Core.sk",
+        "Humanizer.Core.uz-Cyrl-UZ",
+        "Humanizer.Core.sl",
+        "Humanizer.Core.bg",
+        "Humanizer.Core.sr-Latn",
+        "Humanizer.Core.vi",
+        "Humanizer.Core.sr",
+        "Humanizer.Core.uz-Latn-UZ",
+        "Humanizer.Core.af",
+        "Humanizer.Core.lv",
+        "Humanizer.Core.mt",
+        "Humanizer.Core.nb-NO",
+        "Humanizer.Core.hy",
+        "Humanizer.Core.fi-FI",
+        "Humanizer.Core.fr-BE",
+        "Humanizer.Core.bn-BD",
+        "Humanizer.Core.az",
+        "Humanizer.Core.ms-MY",
+        "Humanizer.Core.ku",
+        "Humanizer.Core.is",
+        "Humanizer.Core.ko-KR",
+        "Humanizer.Core.th-TH"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "coverlet",
+      "repo": "coverlet-coverage/coverlet",
+      "url": "https://github.com/coverlet-coverage/coverlet",
+      "homepage": null,
+      "description": "Cross platform code coverage for .NET",
+      "license": "MIT",
+      "stars": 3181,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [],
+      "downloads": 1169533825,
+      "topPackage": "coverlet.collector",
+      "packages": [
+        "coverlet.collector",
+        "coverlet.msbuild",
+        "coverlet.console"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "xunit",
+      "repo": "xunit/xunit",
+      "url": "https://github.com/xunit/xunit",
+      "homepage": "https://xunit.net/",
+      "description": "xUnit.net is a free, open source, community-focused unit testing tool for .NET.",
+      "license": "Apache-2.0",
+      "stars": 4618,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/xunit"
+        }
+      ],
+      "downloads": 1166673402,
+      "topPackage": "xunit",
+      "packages": [
+        "xunit",
+        "xunit.v3.extensibility.core",
+        "xunit.v3.common",
+        "xunit.v3.assert",
+        "xunit.v3.runner.common",
+        "xunit.v3.runner.inproc.console",
+        "xunit.v3",
+        "xunit.runner.console",
+        "dotnet-xunit",
+        "xunit.v3.core.mtp-v1",
+        "xunit.v3.mtp-v1",
+        "xunit.v3.core.mtp-v2",
+        "xunit.v3.mtp-v2",
+        "xunit.runner.utility",
+        "xunit.v3.core"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "FluentValidation",
+      "repo": "FluentValidation/FluentValidation",
+      "url": "https://github.com/FluentValidation/FluentValidation",
+      "homepage": "https://fluentvalidation.net",
+      "description": "A popular .NET validation library for building strongly-typed validation rules.",
+      "license": "Apache-2.0",
+      "stars": 9780,
+      "archived": false,
+      "lastActivity": "2026-11-13",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/JeremySkinner"
+        },
+        {
+          "platform": "OPEN_COLLECTIVE",
+          "url": "https://opencollective.com/FluentValidation"
+        }
+      ],
+      "downloads": 1163507400,
+      "topPackage": "FluentValidation",
+      "packages": [
+        "FluentValidation",
+        "FluentValidation.DependencyInjectionExtensions",
+        "FluentValidation.AspNetCore"
+      ],
+      "relatedRepos": [
+        "FluentValidation/FluentValidation.AspNetCore"
+      ]
+    },
+    {
+      "name": "Npgsql",
+      "repo": "npgsql/npgsql",
+      "url": "https://github.com/npgsql/npgsql",
+      "homepage": "http://www.npgsql.org",
+      "description": "Npgsql is the .NET data provider for PostgreSQL.",
+      "license": "PostgreSQL",
+      "stars": 3767,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 1148427137,
+      "topPackage": "Npgsql",
+      "packages": [
+        "Npgsql",
+        "Npgsql.OpenTelemetry",
+        "Npgsql.NetTopologySuite",
+        "Npgsql.Json.NET",
+        "Npgsql.NodaTime",
+        "Npgsql.DependencyInjection",
+        "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite"
+      ],
+      "relatedRepos": [
+        "npgsql/efcore.pg"
+      ]
+    },
+    {
+      "name": "OpenTelemetry .NET",
+      "repo": "open-telemetry/opentelemetry-dotnet",
+      "url": "https://github.com/open-telemetry/opentelemetry-dotnet",
+      "homepage": "https://opentelemetry.io",
+      "description": "The OpenTelemetry .NET Client",
+      "license": "Apache-2.0",
+      "stars": 3770,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 1018756768,
+      "topPackage": "OpenTelemetry.Api",
+      "packages": [
+        "OpenTelemetry.Api",
+        "OpenTelemetry",
+        "OpenTelemetry.Api.ProviderBuilderExtensions",
+        "OpenTelemetry.Extensions.Hosting",
+        "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+        "OpenTelemetry.Exporter.Console",
+        "OpenTelemetry.Exporter.Jaeger",
+        "OpenTelemetry.Exporter.Zipkin",
+        "OpenTelemetry.Extensions.Propagators"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Pipelines.Sockets.Unofficial",
+      "repo": "mgravell/Pipelines.Sockets.Unofficial",
+      "url": "https://github.com/mgravell/Pipelines.Sockets.Unofficial",
+      "homepage": null,
+      "description": ".NET managed sockets wrapper using the new \"Pipelines\" API",
+      "license": "MIT",
+      "stars": 446,
+      "archived": false,
+      "lastActivity": "2026-05-22",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/mgravell"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://www.buymeacoffee.com/marcgravell"
+        }
+      ],
+      "downloads": 1007014470,
+      "topPackage": "Pipelines.Sockets.Unofficial",
+      "packages": [
+        "Pipelines.Sockets.Unofficial"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Dapper",
+      "repo": "DapperLib/Dapper",
+      "url": "https://github.com/DapperLib/Dapper",
+      "homepage": "https://www.learndapper.com/",
+      "description": "Dapper - a simple object mapper for .Net",
+      "license": "Apache-2.0",
+      "stars": 18416,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/mgravell"
+        },
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/DapperLib"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://www.buymeacoffee.com/marcgravell"
+        }
+      ],
+      "downloads": 845406736,
+      "topPackage": "Dapper",
+      "packages": [
+        "Dapper",
+        "Dapper.Contrib",
+        "Dapper.SqlBuilder"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NUnit",
+      "repo": "nunit/nunit",
+      "url": "https://github.com/nunit/nunit",
+      "homepage": "https://nunit.org/",
+      "description": "NUnit Framework",
+      "license": "MIT",
+      "stars": 2631,
+      "archived": false,
+      "lastActivity": "2026-11-26",
+      "funding": [],
+      "downloads": 752128585,
+      "topPackage": "NUnit",
+      "packages": [
+        "NUnit",
+        "NUnit.Analyzers",
+        "NUnit.ConsoleRunner",
+        "NUnit.Console"
+      ],
+      "relatedRepos": [
+        "nunit/nunit.analyzers",
+        "nunit/nunit-console"
+      ]
+    },
+    {
+      "name": "CsvHelper",
+      "repo": "JoshClose/CsvHelper",
+      "url": "https://github.com/JoshClose/CsvHelper",
+      "homepage": "http://joshclose.github.io/CsvHelper/",
+      "description": "Library to help reading and writing CSV files",
+      "license": "MS-PL OR Apache-2.0",
+      "stars": 5224,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/JoshClose"
+        }
+      ],
+      "downloads": 746669688,
+      "topPackage": "CsvHelper",
+      "packages": [
+        "CsvHelper"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NLog",
+      "repo": "NLog/NLog",
+      "url": "https://github.com/NLog/NLog",
+      "homepage": "https://nlog-project.org",
+      "description": "NLog - Flexible and Structured Logging for various .NET Platforms",
+      "license": "BSD-3-Clause",
+      "stars": 6548,
+      "archived": false,
+      "lastActivity": "2026-11-23",
+      "funding": [],
+      "downloads": 672544796,
+      "topPackage": "NLog",
+      "packages": [
+        "NLog",
+        "NLog.Schema",
+        "NLog.Config",
+        "NLog.Extensions.Logging",
+        "NLog.Web.AspNetCore"
+      ],
+      "relatedRepos": [
+        "NLog/NLog.Extensions.Logging",
+        "NLog/NLog.Web"
+      ]
+    },
+    {
+      "name": "YamlDotNet",
+      "repo": "aaubry/YamlDotNet",
+      "url": "https://github.com/aaubry/YamlDotNet",
+      "homepage": null,
+      "description": "YamlDotNet is a .NET library for YAML",
+      "license": "MIT",
+      "stars": 2878,
+      "archived": false,
+      "lastActivity": "2026-11-01",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/EdwardCooke"
+        }
+      ],
+      "downloads": 641956627,
+      "topPackage": "YamlDotNet",
+      "packages": [
+        "YamlDotNet"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "RestSharp",
+      "repo": "restsharp/RestSharp",
+      "url": "https://github.com/restsharp/RestSharp",
+      "homepage": "https://restsharp.dev",
+      "description": "Simple REST and HTTP API Client for .NET",
+      "license": "Apache-2.0",
+      "stars": 9805,
+      "archived": false,
+      "lastActivity": "2026-11-17",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/restsharp"
+        }
+      ],
+      "downloads": 630775137,
+      "topPackage": "RestSharp",
+      "packages": [
+        "RestSharp",
+        "RestSharp.Serializers.NewtonsoftJson"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Autofac",
+      "repo": "autofac/Autofac",
+      "url": "https://github.com/autofac/Autofac",
+      "homepage": "https://autofac.org",
+      "description": "An addictive .NET IoC container",
+      "license": "MIT",
+      "stars": 4658,
+      "archived": false,
+      "lastActivity": "2026-11-26",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/tillig"
+        }
+      ],
+      "downloads": 623119332,
+      "topPackage": "Autofac",
+      "packages": [
+        "Autofac",
+        "Autofac.Extensions.DependencyInjection"
+      ],
+      "relatedRepos": [
+        "autofac/Autofac.Extensions.DependencyInjection"
+      ]
+    },
+    {
+      "name": "NUnit3TestAdapter",
+      "repo": "nunit/nunit3-vs-adapter",
+      "url": "https://github.com/nunit/nunit3-vs-adapter",
+      "homepage": "https://nunit.org",
+      "description": "NUnit 3.0 Visual Studio test adapter for use under VS 2012 or later",
+      "license": "MIT",
+      "stars": 216,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [],
+      "downloads": 610356545,
+      "topPackage": "NUnit3TestAdapter",
+      "packages": [
+        "NUnit3TestAdapter"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "SharpZipLib",
+      "repo": "icsharpcode/SharpZipLib",
+      "url": "https://github.com/icsharpcode/SharpZipLib",
+      "homepage": "http://icsharpcode.github.io/SharpZipLib/",
+      "description": "#ziplib is a Zip, GZip, Tar and BZip2 library written entirely in C# for the .NET platform.",
+      "license": "MIT",
+      "stars": 3934,
+      "archived": false,
+      "lastActivity": "2024-09-03",
+      "funding": [],
+      "downloads": 576432599,
+      "topPackage": "SharpZipLib",
+      "packages": [
+        "SharpZipLib"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "RabbitMQ.Client",
+      "repo": "rabbitmq/rabbitmq-dotnet-client",
+      "url": "https://github.com/rabbitmq/rabbitmq-dotnet-client",
+      "homepage": "https://www.rabbitmq.com/dotnet.html",
+      "description": "RabbitMQ .NET client for .NET Standard 2.0+ and .NET 4.6.2+",
+      "license": "Apache-2.0 OR MPL-2.0",
+      "stars": 2290,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 566362572,
+      "topPackage": "RabbitMQ.Client",
+      "packages": [
+        "RabbitMQ.Client"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "BouncyCastle.Cryptography",
+      "repo": "bcgit/bc-csharp",
+      "url": "https://github.com/bcgit/bc-csharp",
+      "homepage": "https://www.bouncycastle.org/csharp",
+      "description": "BouncyCastle.NET Cryptography Library (Mirror)",
+      "license": "MIT",
+      "stars": 1934,
+      "archived": false,
+      "lastActivity": "2026-11-18",
+      "funding": [],
+      "downloads": 559621440,
+      "topPackage": "BouncyCastle.Cryptography",
+      "packages": [
+        "BouncyCastle.Cryptography"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "SQLitePCLRaw",
+      "repo": "ericsink/SQLitePCL.raw",
+      "url": "https://github.com/ericsink/SQLitePCL.raw",
+      "homepage": null,
+      "description": "A Portable Class Library (PCL) for low-level (raw) access to SQLite",
+      "license": "Apache-2.0",
+      "stars": 626,
+      "archived": false,
+      "lastActivity": "2026-10-13",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/ericsink"
+        }
+      ],
+      "downloads": 553872760,
+      "topPackage": "SQLitePCLRaw.core",
+      "packages": [
+        "SQLitePCLRaw.core",
+        "SQLitePCLRaw.bundle_e_sqlite3",
+        "SQLitePCLRaw.provider.e_sqlite3",
+        "SQLitePCLRaw.provider.dynamic_cdecl",
+        "SQLitePCLRaw.bundle_green",
+        "SQLitePCLRaw.lib.e_sqlite3.linux",
+        "SQLitePCLRaw.lib.e_sqlite3.v110_xp",
+        "SQLitePCLRaw.lib.e_sqlite3.osx",
+        "SQLitePCLRaw.provider.e_sqlite3.netstandard11"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "DnsClient",
+      "repo": "MichaCo/DnsClient.NET",
+      "url": "https://github.com/MichaCo/DnsClient.NET",
+      "homepage": "https://dnsclient.michaco.net",
+      "description": "DnsClient.NET is a simple yet very powerful and high performant open source library for the .NET Framework to do DNS lookups",
+      "license": "Apache-2.0",
+      "stars": 880,
+      "archived": false,
+      "lastActivity": "2026-11-01",
+      "funding": [],
+      "downloads": 544406184,
+      "topPackage": "DnsClient",
+      "packages": [
+        "DnsClient"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "OpenTelemetry .NET Contrib",
+      "repo": "open-telemetry/opentelemetry-dotnet-contrib",
+      "url": "https://github.com/open-telemetry/opentelemetry-dotnet-contrib",
+      "homepage": "https://opentelemetry.io",
+      "description": "This repository contains set of components extending functionality of the OpenTelemetry .NET SDK. Instrumentation libraries, exporters, and other components can find their home here.",
+      "license": "Apache-2.0",
+      "stars": 681,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 486725279,
+      "topPackage": "OpenTelemetry.Instrumentation.AspNetCore",
+      "packages": [
+        "OpenTelemetry.Instrumentation.AspNetCore",
+        "OpenTelemetry.Instrumentation.Http",
+        "OpenTelemetry.Instrumentation.Runtime",
+        "OpenTelemetry.Instrumentation.SqlClient",
+        "OpenTelemetry.PersistentStorage.FileSystem",
+        "OpenTelemetry.PersistentStorage.Abstractions",
+        "OpenTelemetry.Contrib.Extensions.AWSXRay",
+        "OpenTelemetry.Contrib.Instrumentation.AWS",
+        "OpenTelemetry.Extensions.AWS"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "System.Reactive",
+      "repo": "dotnet/reactive",
+      "url": "https://github.com/dotnet/reactive",
+      "homepage": "http://reactivex.io",
+      "description": "The Reactive Extensions for .NET",
+      "license": "MIT",
+      "stars": 7193,
+      "archived": false,
+      "lastActivity": "2026-11-20",
+      "funding": [],
+      "downloads": 472190255,
+      "topPackage": "System.Reactive",
+      "packages": [
+        "System.Reactive",
+        "System.Linq.Async",
+        "System.Interactive.Async",
+        "System.Reactive.Linq",
+        "System.Reactive.Core",
+        "System.Reactive.Interfaces",
+        "System.Reactive.PlatformServices",
+        "System.Reactive.Providers",
+        "System.Reactive.Compatibility",
+        "System.Interactive",
+        "Microsoft.Reactive.Testing"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Hangfire",
+      "repo": "HangfireIO/Hangfire",
+      "url": "https://github.com/HangfireIO/Hangfire",
+      "homepage": "https://www.hangfire.io",
+      "description": "An easy way to perform background job processing in .NET and .NET Core applications. No Windows Service or separate process required",
+      "license": "LGPL-3.0",
+      "stars": 10160,
+      "archived": false,
+      "lastActivity": "2026-10-30",
+      "funding": [],
+      "downloads": 455450664,
+      "topPackage": "Hangfire.Core",
+      "packages": [
+        "Hangfire.Core",
+        "Hangfire.AspNetCore",
+        "Hangfire.SqlServer",
+        "Hangfire.NetCore",
+        "Hangfire"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "log4net",
+      "repo": "apache/logging-log4net",
+      "url": "https://github.com/apache/logging-log4net",
+      "homepage": "https://logging.apache.org/log4net",
+      "description": "Apache Log4net is a versatile, feature-rich, efficient logging API and backend for .NET",
+      "license": "Apache-2.0",
+      "stars": 937,
+      "archived": false,
+      "lastActivity": "2026-11-23",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/fluffynuts"
+        },
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/FreeAndNil"
+        }
+      ],
+      "downloads": 452070672,
+      "topPackage": "log4net",
+      "packages": [
+        "log4net"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NJsonSchema",
+      "repo": "RicoSuter/NJsonSchema",
+      "url": "https://github.com/RicoSuter/NJsonSchema",
+      "homepage": "http://NJsonSchema.org",
+      "description": "JSON Schema reader, generator and validator for .NET",
+      "license": "MIT",
+      "stars": 1586,
+      "archived": false,
+      "lastActivity": "2026-11-11",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/RicoSuter"
+        }
+      ],
+      "downloads": 434615067,
+      "topPackage": "NJsonSchema",
+      "packages": [
+        "NJsonSchema",
+        "NJsonSchema.Annotations",
+        "NJsonSchema.Yaml",
+        "NJsonSchema.NewtonsoftJson",
+        "NJsonSchema.CodeGeneration",
+        "NJsonSchema.CodeGeneration.CSharp"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "gRPC (C# tools)",
+      "repo": "grpc/grpc",
+      "url": "https://github.com/grpc/grpc",
+      "homepage": "https://grpc.io",
+      "description": "C++ based gRPC (C++, Python, Ruby, Objective-C, PHP, C#)",
+      "license": "Apache-2.0",
+      "stars": 45459,
+      "archived": false,
+      "lastActivity": "2026-11-26",
+      "funding": [],
+      "downloads": 424817934,
+      "topPackage": "Grpc.Tools",
+      "packages": [
+        "Grpc.Tools",
+        "Grpc.Core",
+        "Grpc"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "SharpCompress",
+      "repo": "adamhathcock/sharpcompress",
+      "url": "https://github.com/adamhathcock/sharpcompress",
+      "homepage": null,
+      "description": "SharpCompress is a fully managed C# library to deal with many compression types and formats.",
+      "license": "MIT",
+      "stars": 2599,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 415793627,
+      "topPackage": "SharpCompress",
+      "packages": [
+        "SharpCompress"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "SSH.NET",
+      "repo": "sshnet/SSH.NET",
+      "url": "https://github.com/sshnet/SSH.NET",
+      "homepage": "http://sshnet.github.io/SSH.NET/",
+      "description": "SSH.NET is a Secure Shell (SSH) library for .NET, optimized for parallelism.",
+      "license": "MIT",
+      "stars": 4399,
+      "archived": false,
+      "lastActivity": "2026-11-15",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/sshnet"
+        }
+      ],
+      "downloads": 398595450,
+      "topPackage": "SSH.NET",
+      "packages": [
+        "SSH.NET"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "HtmlAgilityPack",
+      "repo": "zzzprojects/html-agility-pack",
+      "url": "https://github.com/zzzprojects/html-agility-pack",
+      "homepage": "https://html-agility-pack.net",
+      "description": "Html Agility Pack (HAP) is a free and open-source HTML parser written in C# to read/write DOM and supports plain XPATH or XSLT. It is a .NET code library that allows you to parse \"out of the web\" HTML files.",
+      "license": "MIT",
+      "stars": 2850,
+      "archived": false,
+      "lastActivity": "2026-10-12",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/zzzprojects"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://zzzprojects.com/contribute"
+        }
+      ],
+      "downloads": 390340212,
+      "topPackage": "HtmlAgilityPack",
+      "packages": [
+        "HtmlAgilityPack"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "AngleSharp",
+      "repo": "AngleSharp/AngleSharp",
+      "url": "https://github.com/AngleSharp/AngleSharp",
+      "homepage": "https://anglesharp.github.io",
+      "description": ":angel: The ultimate angle brackets parser library parsing HTML5, MathML, SVG and CSS to construct a DOM based on the official W3C specifications.",
+      "license": "MIT",
+      "stars": 5551,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/FlorianRappl"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://www.paypal.me/FlorianRappl"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://buymeacoffee.com/florianrappl"
+        }
+      ],
+      "downloads": 383977486,
+      "topPackage": "AngleSharp",
+      "packages": [
+        "AngleSharp",
+        "AngleSharp.Css"
+      ],
+      "relatedRepos": [
+        "AngleSharp/AngleSharp.Css"
+      ]
+    },
+    {
+      "name": "MessagePack",
+      "repo": "MessagePack-CSharp/MessagePack-CSharp",
+      "url": "https://github.com/MessagePack-CSharp/MessagePack-CSharp",
+      "homepage": null,
+      "description": "Extremely Fast MessagePack Serializer for C#(.NET, .NET Core, Unity, Xamarin). / msgpack.org[C#]",
+      "license": "MIT",
+      "stars": 6812,
+      "archived": false,
+      "lastActivity": "2026-11-20",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/neuecc"
+        },
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/AArnott"
+        }
+      ],
+      "downloads": 377110204,
+      "topPackage": "MessagePack",
+      "packages": [
+        "MessagePack",
+        "MessagePack.Annotations",
+        "MessagePackAnalyzer"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Fare",
+      "repo": "moodmosaic/Fare",
+      "url": "https://github.com/moodmosaic/Fare",
+      "homepage": "http://www.brics.dk/automaton/",
+      "description": "Port of Java dk.brics.automaton and xeger, mostly used for generating strings that match a specific regular expression.",
+      "license": "MIT",
+      "stars": 192,
+      "archived": false,
+      "lastActivity": "2026-04-13",
+      "funding": [],
+      "downloads": 373273594,
+      "topPackage": "Fare",
+      "packages": [
+        "Fare"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NodaTime",
+      "repo": "nodatime/nodatime",
+      "url": "https://github.com/nodatime/nodatime",
+      "homepage": "https://nodatime.org",
+      "description": "A better date and time API for .NET",
+      "license": "Apache-2.0",
+      "stars": 3008,
+      "archived": false,
+      "lastActivity": "2026-11-07",
+      "funding": [],
+      "downloads": 363631101,
+      "topPackage": "NodaTime",
+      "packages": [
+        "NodaTime",
+        "NodaTime.Serialization.JsonNet",
+        "NodaTime.Serialization.SystemTextJson"
+      ],
+      "relatedRepos": [
+        "nodatime/nodatime.serialization"
+      ]
+    },
+    {
+      "name": "TimeZoneConverter",
+      "repo": "mattjohnsonpint/TimeZoneConverter",
+      "url": "https://github.com/mattjohnsonpint/TimeZoneConverter",
+      "homepage": null,
+      "description": "Lightweight libraries to convert between IANA, Windows, Rails, and POSIX time zones.",
+      "license": "MIT",
+      "stars": 906,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 362059020,
+      "topPackage": "TimeZoneConverter",
+      "packages": [
+        "TimeZoneConverter"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "MimeKit",
+      "repo": "jstedfast/MimeKit",
+      "url": "https://github.com/jstedfast/MimeKit",
+      "homepage": "http://www.mimekit.net",
+      "description": "A .NET MIME creation and parser library with support for S/MIME, PGP, DKIM, TNEF and Unix mbox spools.",
+      "license": "MIT",
+      "stars": 2015,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/jstedfast"
+        }
+      ],
+      "downloads": 358078689,
+      "topPackage": "MimeKit",
+      "packages": [
+        "MimeKit",
+        "MimeKitLite"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "System.Linq.Dynamic.Core",
+      "repo": "zzzprojects/System.Linq.Dynamic.Core",
+      "url": "https://github.com/zzzprojects/System.Linq.Dynamic.Core",
+      "homepage": "https://dynamic-linq.net/",
+      "description": "The .NET Standard / .NET Core version from the System Linq Dynamic functionality.",
+      "license": "Apache-2.0",
+      "stars": 1714,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/zzzprojects"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://zzzprojects.com/contribute"
+        }
+      ],
+      "downloads": 356403008,
+      "topPackage": "System.Linq.Dynamic.Core",
+      "packages": [
+        "System.Linq.Dynamic.Core",
+        "System.Linq.Dynamic"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "prometheus-net",
+      "repo": "prometheus-net/prometheus-net",
+      "url": "https://github.com/prometheus-net/prometheus-net",
+      "homepage": "https://prometheus.io",
+      "description": ".NET library to instrument your code with Prometheus metrics",
+      "license": "MIT",
+      "stars": 2094,
+      "archived": false,
+      "lastActivity": "2024-04-11",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/sandersaares"
+        }
+      ],
+      "downloads": 356284081,
+      "topPackage": "prometheus-net",
+      "packages": [
+        "prometheus-net",
+        "prometheus-net.AspNetCore",
+        "prometheus-net.AspNetCore.HealthChecks"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Namotion.Reflection",
+      "repo": "RicoSuter/Namotion.Reflection",
+      "url": "https://github.com/RicoSuter/Namotion.Reflection",
+      "homepage": null,
+      "description": ".NET library with advanced reflection APIs.",
+      "license": "MIT",
+      "stars": 234,
+      "archived": false,
+      "lastActivity": "2026-11-11",
+      "funding": [],
+      "downloads": 351824733,
+      "topPackage": "Namotion.Reflection",
+      "packages": [
+        "Namotion.Reflection"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "AutoFixture",
+      "repo": "AutoFixture/AutoFixture",
+      "url": "https://github.com/AutoFixture/AutoFixture",
+      "homepage": null,
+      "description": "AutoFixture is an open source library for .NET designed to minimize the 'Arrange' phase of your unit tests in order to maximize maintainability. Its primary goal is to allow developers to focus on what is being tested rather than how to setup the test scenario, by making it easier to create object graphs containing test data.",
+      "license": "MIT",
+      "stars": 3539,
+      "archived": false,
+      "lastActivity": "2026-09-06",
+      "funding": [],
+      "downloads": 351081706,
+      "topPackage": "AutoFixture",
+      "packages": [
+        "AutoFixture",
+        "AutoFixture.AutoMoq",
+        "AutoFixture.Xunit2",
+        "AutoFixture.AutoNSubstitute",
+        "AutoFixture.NUnit3"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NSubstitute",
+      "repo": "nsubstitute/NSubstitute",
+      "url": "https://github.com/nsubstitute/NSubstitute",
+      "homepage": "https://nsubstitute.github.io",
+      "description": "A friendly substitute for .NET mocking libraries.",
+      "license": "BSD-3-Clause",
+      "stars": 2980,
+      "archived": false,
+      "lastActivity": "2026-11-16",
+      "funding": [],
+      "downloads": 346491806,
+      "topPackage": "NSubstitute",
+      "packages": [
+        "NSubstitute"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Scrutor",
+      "repo": "khellang/Scrutor",
+      "url": "https://github.com/khellang/Scrutor",
+      "homepage": null,
+      "description": "Assembly scanning and decoration extensions for Microsoft.Extensions.DependencyInjection",
+      "license": "MIT",
+      "stars": 4355,
+      "archived": false,
+      "lastActivity": "2026-01-23",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/khellang"
+        },
+        {
+          "platform": "TIDELIFT",
+          "url": "https://tidelift.com/funding/github/nuget/scrutor"
+        },
+        {
+          "platform": "BUY_ME_A_COFFEE",
+          "url": "https://buymeacoffee.com/khellang"
+        }
+      ],
+      "downloads": 336436859,
+      "topPackage": "Scrutor",
+      "packages": [
+        "Scrutor"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "ZstdSharp",
+      "repo": "oleg-st/ZstdSharp",
+      "url": "https://github.com/oleg-st/ZstdSharp",
+      "homepage": null,
+      "description": "Port of zstd compression library to c#",
+      "license": "MIT",
+      "stars": 391,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [],
+      "downloads": 308953673,
+      "topPackage": "ZstdSharp.Port",
+      "packages": [
+        "ZstdSharp.Port"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "MailKit",
+      "repo": "jstedfast/MailKit",
+      "url": "https://github.com/jstedfast/MailKit",
+      "homepage": "http://www.mimekit.net",
+      "description": "A cross-platform .NET library for IMAP, POP3, and SMTP.",
+      "license": "MIT",
+      "stars": 6879,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/jstedfast"
+        }
+      ],
+      "downloads": 300309568,
+      "topPackage": "MailKit",
+      "packages": [
+        "MailKit"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Bogus",
+      "repo": "bchavez/Bogus",
+      "url": "https://github.com/bchavez/Bogus",
+      "homepage": null,
+      "description": ":card_index: A simple fake data generator for C#, F#, and VB.NET. Based on and ported from the famed faker.js.",
+      "license": "MIT",
+      "stars": 9751,
+      "archived": false,
+      "lastActivity": "2025-12-22",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/bchavez"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://github.com/bchavez/Bogus/wiki/Bogus-Premium"
+        }
+      ],
+      "downloads": 297815056,
+      "topPackage": "Bogus",
+      "packages": [
+        "Bogus"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "protobuf-net",
+      "repo": "protobuf-net/protobuf-net",
+      "url": "https://github.com/protobuf-net/protobuf-net",
+      "homepage": "https://docs.protobuf-net.dev/",
+      "description": "Protocol Buffers library for idiomatic .NET ",
+      "license": "Apache-2.0",
+      "stars": 4976,
+      "archived": false,
+      "lastActivity": "2026-11-20",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/protobuf-net"
+        },
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/mgravell"
+        },
+        {
+          "platform": "BUY_ME_A_COFFEE",
+          "url": "https://buymeacoffee.com/marcgravell"
+        }
+      ],
+      "downloads": 296214992,
+      "topPackage": "protobuf-net",
+      "packages": [
+        "protobuf-net",
+        "protobuf-net.Core",
+        "protobuf-net.Reflection"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "StyleCop.Analyzers",
+      "repo": "DotNetAnalyzers/StyleCopAnalyzers",
+      "url": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers",
+      "homepage": "https://dotnetanalyzers.github.io/StyleCopAnalyzers/",
+      "description": "An implementation of StyleCop rules using the .NET Compiler Platform",
+      "license": "MIT",
+      "stars": 2875,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 294177107,
+      "topPackage": "StyleCop.Analyzers",
+      "packages": [
+        "StyleCop.Analyzers",
+        "StyleCop.Analyzers.Unstable"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "ASP.NET API Versioning",
+      "repo": "dotnet/aspnet-api-versioning",
+      "url": "https://github.com/dotnet/aspnet-api-versioning",
+      "homepage": "https://dotnet.github.io/aspnet-api-versioning/",
+      "description": "Provides a set of libraries which add service API versioning to ASP.NET Core Minimal APIs, Controllers, gRPC, OData, and Web API (Classic).",
+      "license": "MIT",
+      "stars": 3207,
+      "archived": false,
+      "lastActivity": "2026-11-09",
+      "funding": [],
+      "downloads": 290360276,
+      "topPackage": "Microsoft.AspNetCore.Mvc.Versioning",
+      "packages": [
+        "Microsoft.AspNetCore.Mvc.Versioning",
+        "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer",
+        "Asp.Versioning.Http",
+        "Asp.Versioning.Abstractions",
+        "Asp.Versioning.Mvc",
+        "Asp.Versioning.Mvc.ApiExplorer"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "MySqlConnector",
+      "repo": "mysql-net/MySqlConnector",
+      "url": "https://github.com/mysql-net/MySqlConnector",
+      "homepage": "https://mysqlconnector.net",
+      "description": "MySQL Connector for .NET",
+      "license": "MIT",
+      "stars": 1506,
+      "archived": false,
+      "lastActivity": "2026-11-14",
+      "funding": [],
+      "downloads": 280668423,
+      "topPackage": "MySqlConnector",
+      "packages": [
+        "MySqlConnector"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "CommandLine",
+      "repo": "commandlineparser/commandline",
+      "url": "https://github.com/commandlineparser/commandline",
+      "homepage": null,
+      "description": "The best C# command line parser that brings standardized *nix getopt style, for .NET.  Includes F# support",
+      "license": "MIT",
+      "stars": 4816,
+      "archived": false,
+      "lastActivity": "2024-02-29",
+      "funding": [],
+      "downloads": 279679264,
+      "topPackage": "CommandLineParser",
+      "packages": [
+        "CommandLineParser"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NetTopologySuite",
+      "repo": "NetTopologySuite/NetTopologySuite",
+      "url": "https://github.com/NetTopologySuite/NetTopologySuite",
+      "homepage": null,
+      "description": "A .NET GIS solution that is fast and reliable for the .NET platform.",
+      "license": "BSD-3-Clause",
+      "stars": 1731,
+      "archived": false,
+      "lastActivity": "2026-11-20",
+      "funding": [],
+      "downloads": 274767258,
+      "topPackage": "NetTopologySuite",
+      "packages": [
+        "NetTopologySuite",
+        "NetTopologySuite.IO.SqlServerBytes"
+      ],
+      "relatedRepos": [
+        "NetTopologySuite/NetTopologySuite.IO.SqlServerBytes"
+      ]
+    },
+    {
+      "name": "ClosedXML",
+      "repo": "ClosedXML/ClosedXML",
+      "url": "https://github.com/ClosedXML/ClosedXML",
+      "homepage": null,
+      "description": "ClosedXML is a .NET library for reading, manipulating and writing Excel 2007+ (.xlsx, .xlsm) files. It aims to provide an intuitive and user-friendly interface to dealing with the underlying OpenXML API.",
+      "license": "MIT",
+      "stars": 5762,
+      "archived": false,
+      "lastActivity": "2026-10-21",
+      "funding": [],
+      "downloads": 257691435,
+      "topPackage": "ClosedXML",
+      "packages": [
+        "ClosedXML",
+        "ClosedXML.Parser"
+      ],
+      "relatedRepos": [
+        "ClosedXML/ClosedXML.Parser"
+      ]
+    },
+    {
+      "name": "Snappier",
+      "repo": "brantburnett/Snappier",
+      "url": "https://github.com/brantburnett/Snappier",
+      "homepage": null,
+      "description": "High performance C# implementation of the Snappy compression algorithm",
+      "license": "BSD-3-Clause",
+      "stars": 107,
+      "archived": false,
+      "lastActivity": "2026-11-23",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/brantburnett"
+        },
+        {
+          "platform": "BUY_ME_A_COFFEE",
+          "url": "https://buymeacoffee.com/brantburnett"
+        }
+      ],
+      "downloads": 248054807,
+      "topPackage": "Snappier",
+      "packages": [
+        "Snappier"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "ExcelNumberFormat",
+      "repo": "andersnm/ExcelNumberFormat",
+      "url": "https://github.com/andersnm/ExcelNumberFormat",
+      "homepage": null,
+      "description": "Parse and render Excel number format strings",
+      "license": "MIT",
+      "stars": 90,
+      "archived": false,
+      "lastActivity": "2026-10-31",
+      "funding": [],
+      "downloads": 238282633,
+      "topPackage": "ExcelNumberFormat",
+      "packages": [
+        "ExcelNumberFormat"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NSwag",
+      "repo": "RicoSuter/NSwag",
+      "url": "https://github.com/RicoSuter/NSwag",
+      "homepage": "http://NSwag.org",
+      "description": "The Swagger/OpenAPI toolchain for .NET, ASP.NET Core and TypeScript. ",
+      "license": "MIT",
+      "stars": 7370,
+      "archived": false,
+      "lastActivity": "2026-11-11",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/RicoSuter"
+        }
+      ],
+      "downloads": 233023298,
+      "topPackage": "NSwag.Core",
+      "packages": [
+        "NSwag.Core",
+        "NSwag.Annotations",
+        "NSwag.Generation",
+        "NSwag.AspNetCore",
+        "NSwag.Generation.AspNetCore",
+        "NSwag.Core.Yaml",
+        "NSwag.MSBuild",
+        "NSwag.ApiDescription.Client",
+        "NSwag.CodeGeneration",
+        "NSwag.CodeGeneration.CSharp"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NCrontab",
+      "repo": "atifaziz/NCrontab",
+      "url": "https://github.com/atifaziz/NCrontab",
+      "homepage": null,
+      "description": "Crontab for .NET",
+      "license": "Apache-2.0",
+      "stars": 989,
+      "archived": false,
+      "lastActivity": "2025-11-27",
+      "funding": [],
+      "downloads": 226290778,
+      "topPackage": "NCrontab.Signed",
+      "packages": [
+        "NCrontab.Signed",
+        "NCrontab"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Nito.Disposables",
+      "repo": "StephenCleary/Disposables",
+      "url": "https://github.com/StephenCleary/Disposables",
+      "homepage": null,
+      "description": "IDisposable helper types.",
+      "license": "MIT",
+      "stars": 141,
+      "archived": false,
+      "lastActivity": "2024-04-05",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/StephenCleary"
+        }
+      ],
+      "downloads": 224441112,
+      "topPackage": "Nito.Disposables",
+      "packages": [
+        "Nito.Disposables"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Refit",
+      "repo": "reactiveui/refit",
+      "url": "https://github.com/reactiveui/refit",
+      "homepage": "https://www.reactiveui.net/documentation/refit/",
+      "description": "The automatic type-safe REST library for .NET. Refit turns a REST API into a C# interface and generates the HttpClient implementation, with support for HttpClientFactory, pluggable serializers and a testing package.",
+      "license": "MIT",
+      "stars": 9589,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/reactivemarbles"
+        },
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/glennawatson"
+        },
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/ChrisPulman"
+        }
+      ],
+      "downloads": 211598117,
+      "topPackage": "Refit",
+      "packages": [
+        "Refit",
+        "Refit.HttpClientFactory",
+        "Refit.Newtonsoft.Json"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "AsyncEx",
+      "repo": "StephenCleary/AsyncEx",
+      "url": "https://github.com/StephenCleary/AsyncEx",
+      "homepage": null,
+      "description": "A helper library for async/await.",
+      "license": "MIT",
+      "stars": 3725,
+      "archived": false,
+      "lastActivity": "2024-01-01",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/StephenCleary"
+        }
+      ],
+      "downloads": 207727821,
+      "topPackage": "Nito.AsyncEx.Tasks",
+      "packages": [
+        "Nito.AsyncEx.Tasks",
+        "Nito.AsyncEx.Context",
+        "Nito.AsyncEx.Coordination",
+        "Nito.AsyncEx",
+        "Nito.AsyncEx.Interop.WaitHandles",
+        "Nito.AsyncEx.Oop"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Serilog.Exceptions",
+      "repo": "RehanSaeed/Serilog.Exceptions",
+      "url": "https://github.com/RehanSaeed/Serilog.Exceptions",
+      "homepage": null,
+      "description": "Log exception details and custom properties that are not output in Exception.ToString().",
+      "license": "MIT",
+      "stars": 538,
+      "archived": false,
+      "lastActivity": "2026-11-11",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/RehanSaeed"
+        },
+        {
+          "platform": "OPEN_COLLECTIVE",
+          "url": "https://opencollective.com/serilog-exceptions"
+        },
+        {
+          "platform": "PATREON",
+          "url": "https://patreon.com/rehansaeed"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://paypal.me/MuhammadRehanSaeed"
+        }
+      ],
+      "downloads": 204050266,
+      "topPackage": "Serilog.Exceptions",
+      "packages": [
+        "Serilog.Exceptions",
+        "Serilog.Exceptions.EntityFrameworkCore"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Quartz",
+      "repo": "quartznet/quartznet",
+      "url": "https://github.com/quartznet/quartznet",
+      "homepage": "http://www.quartz-scheduler.net/",
+      "description": "Quartz Enterprise Scheduler .NET",
+      "license": "Apache-2.0",
+      "stars": 7115,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/lahma"
+        }
+      ],
+      "downloads": 201548368,
+      "topPackage": "Quartz",
+      "packages": [
+        "Quartz",
+        "Quartz.Extensions.DependencyInjection",
+        "Quartz.Extensions.Hosting",
+        "Quartz.Serialization.Json",
+        "Quartz.AspNetCore"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Selenium",
+      "repo": "SeleniumHQ/selenium",
+      "url": "https://github.com/SeleniumHQ/selenium",
+      "homepage": "https://selenium.dev",
+      "description": "A browser automation framework and ecosystem.",
+      "license": "Apache-2.0",
+      "stars": 34616,
+      "archived": false,
+      "lastActivity": "2026-11-26",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/SeleniumHQ"
+        },
+        {
+          "platform": "OPEN_COLLECTIVE",
+          "url": "https://opencollective.com/selenium"
+        }
+      ],
+      "downloads": 194657457,
+      "topPackage": "Selenium.WebDriver",
+      "packages": [
+        "Selenium.WebDriver",
+        "Selenium.Support"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Antlr",
+      "repo": "antlr/antlrcs",
+      "url": "https://github.com/antlr/antlrcs",
+      "homepage": null,
+      "description": "The C# port of ANTLR 3, StringTemplate 3, and StringTemplate 4",
+      "license": "BSD-3-Clause",
+      "stars": 294,
+      "archived": false,
+      "lastActivity": "2024-04-04",
+      "funding": [],
+      "downloads": 194434877,
+      "topPackage": "Antlr",
+      "packages": [
+        "Antlr",
+        "Antlr3.Runtime"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Flurl",
+      "repo": "tmenier/Flurl",
+      "url": "https://github.com/tmenier/Flurl",
+      "homepage": "https://flurl.dev",
+      "description": "Fluent URL builder and testable HTTP client for .NET",
+      "license": "MIT",
+      "stars": 4409,
+      "archived": false,
+      "lastActivity": "2025-01-01",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/tmenier"
+        }
+      ],
+      "downloads": 188579796,
+      "topPackage": "Flurl",
+      "packages": [
+        "Flurl",
+        "Flurl.Http"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Polly.Contrib.WaitAndRetry",
+      "repo": "Polly-Contrib/Polly.Contrib.WaitAndRetry",
+      "url": "https://github.com/Polly-Contrib/Polly.Contrib.WaitAndRetry",
+      "homepage": null,
+      "description": "Polly.Contrib.WaitAndRetry is an extension library for Polly containing helper methods for a variety of wait-and-retry strategies.",
+      "license": "BSD-3-Clause",
+      "stars": 143,
+      "archived": false,
+      "lastActivity": "2022-10-31",
+      "funding": [],
+      "downloads": 186695605,
+      "topPackage": "Polly.Contrib.WaitAndRetry",
+      "packages": [
+        "Polly.Contrib.WaitAndRetry"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "KubernetesClient",
+      "repo": "kubernetes-client/csharp",
+      "url": "https://github.com/kubernetes-client/csharp",
+      "homepage": null,
+      "description": "Officially supported dotnet Kubernetes Client library ",
+      "license": "Apache-2.0",
+      "stars": 1220,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 183854287,
+      "topPackage": "KubernetesClient",
+      "packages": [
+        "KubernetesClient",
+        "KubernetesClient.Models",
+        "KubernetesClient.Basic"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "AspNetCore.Diagnostics.HealthChecks",
+      "repo": "Xabaril/AspNetCore.Diagnostics.HealthChecks",
+      "url": "https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks",
+      "homepage": null,
+      "description": "Enterprise HealthChecks for ASP.NET Core Diagnostics Package",
+      "license": "Apache-2.0",
+      "stars": 4371,
+      "archived": false,
+      "lastActivity": "2026-06-22",
+      "funding": [],
+      "downloads": 182939891,
+      "topPackage": "AspNetCore.HealthChecks.UI.Client",
+      "packages": [
+        "AspNetCore.HealthChecks.UI.Client",
+        "AspNetCore.HealthChecks.UI.Core",
+        "AspNetCore.HealthChecks.SqlServer",
+        "AspNetCore.HealthChecks.Uris",
+        "AspNetCore.HealthChecks.Redis",
+        "AspNetCore.HealthChecks.NpgSql",
+        "AspNetCore.HealthChecks.Rabbitmq",
+        "AspNetCore.HealthChecks.UI",
+        "AspNetCore.HealthChecks.MongoDb",
+        "AspNetCore.HealthChecks.AzureServiceBus",
+        "AspNetCore.HealthChecks.UI.InMemory.Storage",
+        "AspNetCore.HealthChecks.UI.Data",
+        "AspNetCore.HealthChecks.System",
+        "AspNetCore.HealthChecks.AzureStorage",
+        "AspNetCore.HealthChecks.Azure.Storage.Blobs",
+        "AspNetCore.HealthChecks.Publisher.ApplicationInsights"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "DiffEngine",
+      "repo": "VerifyTests/DiffEngine",
+      "url": "https://github.com/VerifyTests/DiffEngine",
+      "homepage": null,
+      "description": "Manages launching and cleanup of diff tools",
+      "license": "MIT",
+      "stars": 241,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/SimonCropp"
+        }
+      ],
+      "downloads": 182501261,
+      "topPackage": "DiffEngine",
+      "packages": [
+        "DiffEngine"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Cake",
+      "repo": "cake-build/cake",
+      "url": "https://github.com/cake-build/cake",
+      "homepage": "https://cakebuild.net",
+      "description": ":cake: Cake (C# Make) is a cross platform build automation system.",
+      "license": "MIT",
+      "stars": 4202,
+      "archived": false,
+      "lastActivity": "2026-11-10",
+      "funding": [
+        {
+          "platform": "OPEN_COLLECTIVE",
+          "url": "https://opencollective.com/cake"
+        }
+      ],
+      "downloads": 179623147,
+      "topPackage": "Cake.Tool",
+      "packages": [
+        "Cake.Tool",
+        "Cake"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Nito.Collections.Deque",
+      "repo": "StephenCleary/Deque",
+      "url": "https://github.com/StephenCleary/Deque",
+      "homepage": null,
+      "description": "Double-ended queue",
+      "license": "MIT",
+      "stars": 142,
+      "archived": false,
+      "lastActivity": "2024-04-05",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/StephenCleary"
+        }
+      ],
+      "downloads": 179510636,
+      "topPackage": "Nito.Collections.Deque",
+      "packages": [
+        "Nito.Collections.Deque"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "EmptyFiles",
+      "repo": "VerifyTests/EmptyFiles",
+      "url": "https://github.com/VerifyTests/EmptyFiles",
+      "homepage": null,
+      "description": "A collection of minimal binary files.",
+      "license": "MIT",
+      "stars": 57,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/VerifyTests"
+        }
+      ],
+      "downloads": 176316319,
+      "topPackage": "EmptyFiles",
+      "packages": [
+        "EmptyFiles"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Serilog.Sinks.ApplicationInsights",
+      "repo": "serilog-contrib/serilog-sinks-applicationinsights",
+      "url": "https://github.com/serilog-contrib/serilog-sinks-applicationinsights",
+      "homepage": null,
+      "description": "A Serilog sink that writes events to Microsoft Azure Application Insights",
+      "license": "Apache-2.0",
+      "stars": 231,
+      "archived": false,
+      "lastActivity": "2026-04-17",
+      "funding": [],
+      "downloads": 172176632,
+      "topPackage": "Serilog.Sinks.ApplicationInsights",
+      "packages": [
+        "Serilog.Sinks.ApplicationInsights"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Serilog.Sinks.Seq",
+      "repo": "datalust/serilog-sinks-seq",
+      "url": "https://github.com/datalust/serilog-sinks-seq",
+      "homepage": "https://datalust.co/seq",
+      "description": "A Serilog sink that writes events to the Seq structured log server",
+      "license": "Apache-2.0",
+      "stars": 259,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 169496622,
+      "topPackage": "Serilog.Sinks.Seq",
+      "packages": [
+        "Serilog.Sinks.Seq"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "SshNet.Security.Cryptography",
+      "repo": "sshnet/Cryptography",
+      "url": "https://github.com/sshnet/Cryptography",
+      "homepage": null,
+      "description": "Cryptography algorithms",
+      "license": "MIT",
+      "stars": 20,
+      "archived": false,
+      "lastActivity": "2023-02-11",
+      "funding": [],
+      "downloads": 164031086,
+      "topPackage": "SshNet.Security.Cryptography",
+      "packages": [
+        "SshNet.Security.Cryptography"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "K4os.Compression.LZ4",
+      "repo": "MiloszKrajewski/K4os.Compression.LZ4",
+      "url": "https://github.com/MiloszKrajewski/K4os.Compression.LZ4",
+      "homepage": null,
+      "description": "LZ4/LH4HC compression for .NET Standard 1.6/2.0 (formerly known as lz4net) ",
+      "license": "MIT",
+      "stars": 818,
+      "archived": false,
+      "lastActivity": "2026-03-28",
+      "funding": [],
+      "downloads": 163578097,
+      "topPackage": "K4os.Compression.LZ4",
+      "packages": [
+        "K4os.Compression.LZ4",
+        "K4os.Compression.LZ4.Streams"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "System.IO.Abstractions",
+      "repo": "TestableIO/System.IO.Abstractions",
+      "url": "https://github.com/TestableIO/System.IO.Abstractions",
+      "homepage": "http://www.nuget.org/packages/System.IO.Abstractions",
+      "description": "Just like System.Web.Abstractions, but for System.IO. Yay for testable IO access!",
+      "license": "MIT",
+      "stars": 1623,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 162004479,
+      "topPackage": "System.IO.Abstractions",
+      "packages": [
+        "System.IO.Abstractions",
+        "TestableIO.System.IO.Abstractions.Wrappers",
+        "TestableIO.System.IO.Abstractions",
+        "System.IO.Abstractions.TestingHelpers",
+        "TestableIO.System.IO.Abstractions.TestingHelpers"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Fractions",
+      "repo": "Fractions-DotNet/Fractions",
+      "url": "https://github.com/Fractions-DotNet/Fractions",
+      "homepage": null,
+      "description": "A fraction data type to calculate with rational numbers.",
+      "license": "MIT",
+      "stars": 64,
+      "archived": false,
+      "lastActivity": "2025-04-18",
+      "funding": [],
+      "downloads": 161758549,
+      "topPackage": "Fractions",
+      "packages": [
+        "Fractions"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "JsonSubTypes",
+      "repo": "manuc66/JsonSubTypes",
+      "url": "https://github.com/manuc66/JsonSubTypes",
+      "homepage": "https://manuc66.github.io/JsonSubTypes/",
+      "description": "Discriminated Json Subtypes Converter implementation for .NET",
+      "license": "MIT",
+      "stars": 435,
+      "archived": false,
+      "lastActivity": "2026-11-16",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/manuc66"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://www.paypal.me/manuc66"
+        }
+      ],
+      "downloads": 160051230,
+      "topPackage": "JsonSubTypes",
+      "packages": [
+        "JsonSubTypes"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Testcontainers",
+      "repo": "testcontainers/testcontainers-dotnet",
+      "url": "https://github.com/testcontainers/testcontainers-dotnet",
+      "homepage": "https://dotnet.testcontainers.org",
+      "description": "A library to support tests with throwaway instances of Docker containers for all compatible .NET Standard versions.",
+      "license": "MIT",
+      "stars": 4378,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/testcontainers"
+        },
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/HofmeisterAn"
+        },
+        {
+          "platform": "KO_FI",
+          "url": "https://ko-fi.com/hofmeister"
+        }
+      ],
+      "downloads": 159211642,
+      "topPackage": "Testcontainers",
+      "packages": [
+        "Testcontainers",
+        "Testcontainers.PostgreSql",
+        "Testcontainers.MsSql",
+        "Testcontainers.Redis"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "HtmlSanitizer",
+      "repo": "mganss/HtmlSanitizer",
+      "url": "https://github.com/mganss/HtmlSanitizer",
+      "homepage": null,
+      "description": "Cleans HTML to avoid XSS attacks",
+      "license": "MIT",
+      "stars": 1715,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 153258278,
+      "topPackage": "HtmlSanitizer",
+      "packages": [
+        "HtmlSanitizer"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "WebActivator",
+      "repo": "davidebbo/WebActivator",
+      "url": "https://github.com/davidebbo/WebActivator",
+      "homepage": null,
+      "description": "A package that allows other packages to execute some startup code in web apps. This package should be used over the older WebActivator, which was not strong named.",
+      "license": "Apache-2.0",
+      "stars": 239,
+      "archived": false,
+      "lastActivity": "2022-04-10",
+      "funding": [],
+      "downloads": 150192843,
+      "topPackage": "WebActivatorEx",
+      "packages": [
+        "WebActivatorEx"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Pomelo.EntityFrameworkCore.MySql",
+      "repo": "PomeloFoundation/Pomelo.EntityFrameworkCore.MySql",
+      "url": "https://github.com/PomeloFoundation/Pomelo.EntityFrameworkCore.MySql",
+      "homepage": null,
+      "description": "Entity Framework Core provider for MySQL and MariaDB built on top of MySqlConnector",
+      "license": "MIT",
+      "stars": 2970,
+      "archived": false,
+      "lastActivity": "2026-11-21",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/lauxjpn"
+        }
+      ],
+      "downloads": 146204027,
+      "topPackage": "Pomelo.EntityFrameworkCore.MySql",
+      "packages": [
+        "Pomelo.EntityFrameworkCore.MySql"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Shouldly",
+      "repo": "shouldly/shouldly",
+      "url": "https://github.com/shouldly/shouldly",
+      "homepage": "https://docs.shouldly.org",
+      "description": "Should testing for .NET—the way assertions should be!",
+      "license": "BSD-3-Clause",
+      "stars": 3427,
+      "archived": false,
+      "lastActivity": "2026-11-23",
+      "funding": [
+        {
+          "platform": "OPEN_COLLECTIVE",
+          "url": "https://opencollective.com/shouldly"
+        }
+      ],
+      "downloads": 144596401,
+      "topPackage": "Shouldly",
+      "packages": [
+        "Shouldly"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Std.UriTemplate",
+      "repo": "std-uritemplate/std-uritemplate",
+      "url": "https://github.com/std-uritemplate/std-uritemplate",
+      "homepage": "https://std-uritemplate.github.io",
+      "description": "A complete and maintained cross-language implementation of the Uri Template specification RFC 6570 Level 4",
+      "license": "Apache-2.0",
+      "stars": 53,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 140463098,
+      "topPackage": "Std.UriTemplate",
+      "packages": [
+        "Std.UriTemplate"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Handlebars.Net",
+      "repo": "Handlebars-Net/Handlebars.Net",
+      "url": "https://github.com/Handlebars-Net/Handlebars.Net",
+      "homepage": null,
+      "description": "A real .NET Handlebars engine",
+      "license": "MIT",
+      "stars": 1469,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 136086259,
+      "topPackage": "Handlebars.Net",
+      "packages": [
+        "Handlebars.Net",
+        "Handlebars.Net.Helpers.Core",
+        "Handlebars.Net.Helpers",
+        "Handlebars.Net.Helpers.XPath",
+        "Handlebars.Net.Helpers.Json",
+        "Handlebars.Net.Helpers.Xeger",
+        "Handlebars.Net.Helpers.Random",
+        "Handlebars.Net.Helpers.Humanizer",
+        "Handlebars.Net.Helpers.Xslt",
+        "Handlebars.Net.Helpers.DynamicLinq"
+      ],
+      "relatedRepos": [
+        "Handlebars-Net/Handlebars.Net.Helpers"
+      ]
+    },
+    {
+      "name": "MoreLINQ",
+      "repo": "morelinq/MoreLINQ",
+      "url": "https://github.com/morelinq/MoreLINQ",
+      "homepage": "https://morelinq.github.io/",
+      "description": "Extensions to LINQ to Objects",
+      "license": "Apache-2.0",
+      "stars": 3832,
+      "archived": false,
+      "lastActivity": "2025-11-25",
+      "funding": [],
+      "downloads": 135167594,
+      "topPackage": "morelinq",
+      "packages": [
+        "morelinq"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "GitVersion",
+      "repo": "GitTools/GitVersion",
+      "url": "https://github.com/GitTools/GitVersion",
+      "homepage": "https://gitversion.net/docs/",
+      "description": "From git log to SemVer in no time",
+      "license": "MIT",
+      "stars": 3148,
+      "archived": false,
+      "lastActivity": "2026-11-25",
+      "funding": [],
+      "downloads": 133991876,
+      "topPackage": "GitVersion.Tool",
+      "packages": [
+        "GitVersion.Tool"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "ReportGenerator",
+      "repo": "danielpalme/ReportGenerator",
+      "url": "https://github.com/danielpalme/ReportGenerator",
+      "homepage": "https://reportgenerator.io",
+      "description": "ReportGenerator converts coverage reports generated by coverlet, OpenCover, dotCover, Visual Studio, NCover, Cobertura, JaCoCo, Clover, gcov or lcov into human readable reports in various formats.",
+      "license": "Apache-2.0",
+      "stars": 3115,
+      "archived": false,
+      "lastActivity": "2026-11-21",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/danielpalme"
+        },
+        {
+          "platform": "CUSTOM",
+          "url": "https://paypal.me/danielpalme82"
+        }
+      ],
+      "downloads": 132084487,
+      "topPackage": "dotnet-reportgenerator-globaltool",
+      "packages": [
+        "dotnet-reportgenerator-globaltool",
+        "ReportGenerator"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "NPOI",
+      "repo": "nissl-lab/npoi",
+      "url": "https://github.com/nissl-lab/npoi",
+      "homepage": "http://nissl-lab.github.io/npoi/",
+      "description": "a .NET library that can read/write Office formats without Microsoft Office installed. No COM+, no interop.",
+      "license": "Apache-2.0",
+      "stars": 6211,
+      "archived": false,
+      "lastActivity": "2026-11-24",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/tonyqus"
+        }
+      ],
+      "downloads": 130760335,
+      "topPackage": "NPOI",
+      "packages": [
+        "NPOI"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Json.More.Net",
+      "repo": "json-everything/json-everything",
+      "url": "https://github.com/json-everything/json-everything",
+      "homepage": "https://json-everything.net/",
+      "description": "System.Text.Json-based support for all of your JSON needs.",
+      "license": "MIT",
+      "stars": 1285,
+      "archived": false,
+      "lastActivity": "2026-11-21",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/gregsdennis"
+        },
+        {
+          "platform": "PATREON",
+          "url": "https://patreon.com/gregsdennis"
+        },
+        {
+          "platform": "KO_FI",
+          "url": "https://ko-fi.com/gregsdennis"
+        }
+      ],
+      "downloads": 130349571,
+      "topPackage": "Json.More.Net",
+      "packages": [
+        "Json.More.Net",
+        "JsonPointer.Net",
+        "JsonSchema.Net",
+        "JsonPatch.Net"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Swashbuckle.AspNetCore.Filters",
+      "repo": "mattfrear/Swashbuckle.AspNetCore.Filters",
+      "url": "https://github.com/mattfrear/Swashbuckle.AspNetCore.Filters",
+      "homepage": null,
+      "description": "A bunch of useful filters for Swashbuckle.AspNetCore",
+      "license": "MIT",
+      "stars": 442,
+      "archived": false,
+      "lastActivity": "2026-11-19",
+      "funding": [],
+      "downloads": 128167601,
+      "topPackage": "Swashbuckle.AspNetCore.Filters",
+      "packages": [
+        "Swashbuckle.AspNetCore.Filters",
+        "Swashbuckle.AspNetCore.Filters.Abstractions"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "Mono.Cecil",
+      "repo": "jbevain/cecil",
+      "url": "https://github.com/jbevain/cecil",
+      "homepage": null,
+      "description": "Cecil is a library to inspect, modify and create .NET programs and libraries.",
+      "license": "MIT",
+      "stars": 3012,
+      "archived": false,
+      "lastActivity": "2026-11-12",
+      "funding": [
+        {
+          "platform": "GITHUB",
+          "url": "https://github.com/jbevain"
+        }
+      ],
+      "downloads": 127945758,
+      "topPackage": "Mono.Cecil",
+      "packages": [
+        "Mono.Cecil"
+      ],
+      "relatedRepos": []
+    },
+    {
+      "name": "ExcelDataReader",
+      "repo": "ExcelDataReader/ExcelDataReader",
+      "url": "https://github.com/ExcelDataReader/ExcelDataReader",
+      "homepage": null,
+      "description": "Lightweight and fast library written in C# for reading Microsoft Excel files",
+      "license": "MIT",
+      "stars": 4434,
+      "archived": false,
+      "lastActivity": "2026-11-21",
+      "funding": [],
+      "downloads": 126516308,
+      "topPackage": "ExcelDataReader",
+      "packages": [
+        "ExcelDataReader",
+        "ExcelDataReader.DataSet"
+      ],
+      "relatedRepos": []
+    }
+  ],
+  "excluded": [
+    {
+      "name": "AutoMapper",
+      "repo": "LuckyPennySoftware/AutoMapper",
+      "downloads": 1204636075,
+      "packages": [
+        "AutoMapper"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "FluentAssertions",
+      "repo": "fluentassertions/fluentassertions",
+      "downloads": 828199215,
+      "packages": [
+        "FluentAssertions"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "Portable.BouncyCastle",
+      "repo": "novotnyllc/bc-csharp",
+      "downloads": 542347561,
+      "packages": [
+        "Portable.BouncyCastle"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "MediatR",
+      "repo": "LuckyPennySoftware/MediatR",
+      "downloads": 529288804,
+      "packages": [
+        "MediatR",
+        "MediatR.Contracts"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "AutoMapper.Extensions.Microsoft.DependencyInjection",
+      "repo": "AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection",
+      "downloads": 378183075,
+      "packages": [
+        "AutoMapper.Extensions.Microsoft.DependencyInjection"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "SixLabors.ImageSharp",
+      "repo": "SixLabors/ImageSharp",
+      "downloads": 344829632,
+      "packages": [
+        "SixLabors.ImageSharp"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "SixLabors.Fonts",
+      "repo": "SixLabors/Fonts",
+      "downloads": 316026859,
+      "packages": [
+        "SixLabors.Fonts"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "EPPlus",
+      "repo": "EPPlusSoftware/EPPlus",
+      "downloads": 221471151,
+      "packages": [
+        "EPPlus"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "MediatR.Extensions.Microsoft.DependencyInjection",
+      "repo": "jbogard/MediatR.Extensions.Microsoft.DependencyInjection",
+      "downloads": 174236769,
+      "packages": [
+        "MediatR.Extensions.Microsoft.DependencyInjection"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "Serilog.Formatting.Elasticsearch",
+      "repo": "serilog-contrib/serilog-sinks-elasticsearch",
+      "downloads": 143695049,
+      "packages": [
+        "Serilog.Formatting.Elasticsearch",
+        "Serilog.Sinks.Elasticsearch"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "SonarAnalyzer.CSharp",
+      "repo": "SonarSource/sonar-dotnet",
+      "downloads": 123518868,
+      "packages": [
+        "SonarAnalyzer.CSharp"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "BouncyCastle.NetCore",
+      "repo": "chrishaly/bc-csharp",
+      "downloads": 102019691,
+      "packages": [
+        "BouncyCastle.NetCore"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "NServiceBus",
+      "repo": "Particular/NServiceBus",
+      "downloads": 92161053,
+      "packages": [
+        "NServiceBus"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "ServiceStack.Text",
+      "repo": "ServiceStack/ServiceStack",
+      "downloads": 90730301,
+      "packages": [
+        "ServiceStack.Text",
+        "ServiceStack.Common",
+        "ServiceStack.Interfaces",
+        "ServiceStack.Redis",
+        "ServiceStack.Client",
+        "ServiceStack"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "NUglify",
+      "repo": "jbest84/NUglify",
+      "downloads": 87612297,
+      "packages": [
+        "NUglify"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "Iesi.Collections",
+      "repo": "nhibernate/iesi.collections",
+      "downloads": 87457269,
+      "packages": [
+        "Iesi.Collections"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "DotNetZip",
+      "repo": "haf/DotNetZip.Semverd",
+      "downloads": 76709112,
+      "packages": [
+        "DotNetZip"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "Ninject",
+      "repo": "ninject/Ninject",
+      "downloads": 76575316,
+      "packages": [
+        "Ninject"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "EFCore.BulkExtensions",
+      "repo": "borisdj/EFCore.BulkExtensions",
+      "downloads": 69841795,
+      "packages": [
+        "EFCore.BulkExtensions",
+        "EFCore.BulkExtensions.Core",
+        "EFCore.BulkExtensions.SqlServer",
+        "EFCore.BulkExtensions.PostgreSql"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "OpenTracing",
+      "repo": "opentracing/opentracing-csharp",
+      "downloads": 69797065,
+      "packages": [
+        "OpenTracing"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "Respond",
+      "repo": "scottjehl/Respond",
+      "downloads": 66795728,
+      "packages": [
+        "Respond"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "SixLabors.ImageSharp.Drawing",
+      "repo": "SixLabors/ImageSharp.Drawing",
+      "downloads": 59963671,
+      "packages": [
+        "SixLabors.ImageSharp.Drawing"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "itext7",
+      "repo": "itext/itext-dotnet",
+      "downloads": 57653376,
+      "packages": [
+        "itext7"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "Utf8Json",
+      "repo": "neuecc/Utf8Json",
+      "downloads": 56308022,
+      "packages": [
+        "Utf8Json"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "Automatonymous",
+      "repo": "MassTransit/Automatonymous",
+      "downloads": 54100694,
+      "packages": [
+        "Automatonymous"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "Remotion.Linq.EagerFetching",
+      "repo": "re-motion/Relinq-EagerFetching",
+      "downloads": 50788130,
+      "packages": [
+        "Remotion.Linq.EagerFetching"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "StructureMap",
+      "repo": "structuremap/structuremap",
+      "downloads": 49338392,
+      "packages": [
+        "StructureMap"
+      ],
+      "reason": "Custom or unrecognised licence"
+    },
+    {
+      "name": "Serilog.Enrichers.CorrelationId",
+      "repo": "ekmsystems/serilog-enrichers-correlation-id",
+      "downloads": 47190324,
+      "packages": [
+        "Serilog.Enrichers.CorrelationId"
+      ],
+      "reason": "Repository is archived"
+    },
+    {
+      "name": "QuestPDF",
+      "repo": "QuestPDF/QuestPDF",
+      "downloads": 46836760,
+      "packages": [
+        "QuestPDF"
+      ],
+      "reason": "Custom or unrecognised licence"
+    }
+  ]
+}
