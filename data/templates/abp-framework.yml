@@ -1,0 +1,55 @@
+slug: abp-framework
+name: ABP Framework (free edition)
+url: https://abp.io
+repo: https://github.com/abpframework/abp
+license: LGPL-3.0
+openSource: true
+status: active
+dotnet: .NET 10
+frontend: [MVC / Razor Pages, Angular, Blazor]
+database: [EF Core (SQL Server, PostgreSQL, MySQL, SQLite, Oracle), MongoDB]
+install: |
+  abp new MyApp --template app
+summary: A large application framework with a free startup template. Includes identity, tenant management, settings, localisation and background jobs. Billing, the SaaS editions module and many admin screens are in the paid Pro tiers.
+features:
+  auth:
+    status: yes
+    note: "Account and Identity modules"
+  multiTenancy:
+    status: yes
+    note: "Free Tenant Management module. The SaaS module with editions is Pro"
+  billing:
+    status: no
+    note: "The Payment module is Pro only"
+  adminUi:
+    status: partial
+    note: "User, role and tenant management. More admin screens are Pro"
+  email:
+    status: yes
+    note: "Framework emailing support"
+  backgroundJobs:
+    status: yes
+    note: "Background jobs with Hangfire, Quartz, RabbitMQ or TickerQ"
+  deploy:
+    status: unknown
+  tests:
+    status: yes
+paidDependencies:
+  - package: AutoMapper
+    version: 14.0.0
+    packageSlug: automapper
+    note: The last free version, but it has an unpatched security advisory. ABP also supports Mapperly.
+  - package: SixLabors.ImageSharp
+    version: 3.1.11
+    packageSlug: imagesharp
+    note: Version 3 is free only for open source and smaller organisations.
+notes:
+  - Paid tiers (ABP Studio, ABP Suite, Pro modules, LeptonX Pro theme) start at about US$2,000–3,000 as a one-time perpetual licence.
+sources:
+  - title: ABP modules (free and Pro)
+    url: https://abp.io/modules
+  - title: ABP pricing
+    url: https://abp.io/pricing
+  - title: ABP CLI
+    url: https://abp.io/docs/latest/cli
+checked: 2026-11-26

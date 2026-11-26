@@ -1,0 +1,48 @@
+slug: eshop
+name: eShop (Microsoft reference app)
+repo: https://github.com/dotnet/eShop
+license: MIT
+openSource: true
+status: reference
+statusNote: A reference application to learn from, not a template to start a product with.
+dotnet: .NET 11
+frontend: [Blazor, .NET MAUI]
+install: |
+  git clone https://github.com/dotnet/eShop.git
+  aspire run
+summary: Microsoft's reference e-commerce app, showing a services-based architecture with Aspire. Great for learning patterns; not designed as a starter kit.
+features:
+  auth:
+    status: yes
+    note: "Identity service built on Duende IdentityServer"
+  multiTenancy:
+    status: no
+  billing:
+    status: no
+  adminUi:
+    status: no
+  email:
+    status: unknown
+  backgroundJobs:
+    status: partial
+    note: "Event-driven background processing between services"
+  deploy:
+    status: partial
+    note: "Aspire"
+  tests:
+    status: yes
+paidDependencies:
+  - package: Duende.IdentityServer
+    version: 8.0.11
+    packageSlug: identityserver4
+    note: Commercial product. Free for development and testing; production use generally needs a Duende licence.
+  - package: MediatR
+    version: 13.1.0
+    packageSlug: mediatr
+    note: Version 13 and later need a Lucky Penny licence for larger organisations.
+sources:
+  - title: README
+    url: https://github.com/dotnet/eShop
+  - title: Directory.Packages.props
+    url: https://github.com/dotnet/eShop/blob/main/Directory.Packages.props
+checked: 2026-11-26

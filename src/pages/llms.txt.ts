@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
 import { CATEGORIES } from "../lib/categories";
-import { getPackages, realAlternatives } from "../lib/data";
+import { getPackages, getTemplates, realAlternatives } from "../lib/data";
 import { SITE } from "../lib/site";
 
 /** Plain-text summary for AI coding assistants, at /llms.txt. */
@@ -25,6 +25,18 @@ export const GET: APIRoute = async () => {
     lines.push(
       `- [${p.name}](${SITE.url}/packages/${p.slug}/): ${CATEGORIES[p.category].label}. ` +
         `Last free version ${p.lastFreeVersion} (${p.oldLicense}). Free alternatives: ${alts || "none listed"}.`,
+    );
+  }
+  lines.push("", "## Free .NET templates", "", `Comparison: ${SITE.url}/templates/ (JSON: ${SITE.url}/templates.json)`, "");
+  for (const t of await getTemplates()) {
+    const has = Object.entries(t.features)
+      .filter(([, f]) => f.status === "yes")
+      .map(([k]) => k)
+      .join(", ");
+    const paid = t.paidDependencies?.map((d) => `${d.package} ${d.version}`).join(", ");
+    lines.push(
+      `- ${t.name} (${t.license}, ${t.status}): ${t.frontend.join("/")}. Includes: ${has || "basics only"}.` +
+        (paid ? ` Uses paid packages: ${paid}.` : ""),
     );
   }
   return new Response(lines.join("\n") + "\n", {

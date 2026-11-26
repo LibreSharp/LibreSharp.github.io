@@ -1,0 +1,39 @@
+slug: ardalis-clean-architecture
+name: Clean Architecture (Ardalis)
+url: https://cleanarchitecture.ardalis.com
+repo: https://github.com/ardalis/CleanArchitecture
+license: MIT
+openSource: true
+status: active
+dotnet: .NET 10
+frontend: [API only]
+install: |
+  dotnet new install Ardalis.CleanArchitecture.Template
+  dotnet new clean-arch -o MyApp
+summary: Two templates, a full multi-project Clean Architecture (DDD, CQRS, FastEndpoints) and a minimal single-project version organised by vertical slices. API only, focused on architecture.
+features:
+  auth:
+    status: unknown
+  multiTenancy:
+    status: no
+  billing:
+    status: no
+  adminUi:
+    status: no
+  email:
+    status: yes
+    note: "Email sending infrastructure"
+  backgroundJobs:
+    status: unknown
+  deploy:
+    status: partial
+    note: "Aspire for local development"
+  tests:
+    status: yes
+    note: "Unit, integration and functional tests"
+notes:
+  - Uses Mediator (source-generated, MIT) rather than MediatR, so there are no paid dependencies to watch.
+sources:
+  - title: README
+    url: https://github.com/ardalis/CleanArchitecture
+checked: 2026-11-26

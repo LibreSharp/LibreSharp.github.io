@@ -1,0 +1,36 @@
+slug: dotnet-built-in
+name: Built-in .NET templates
+url: https://learn.microsoft.com/dotnet/core/tools/dotnet-new-sdk-templates
+license: MIT
+openSource: true
+status: active
+dotnet: Every .NET version
+frontend: [Blazor, Razor Pages, MVC, API only]
+install: |
+  dotnet new blazor --auth Individual -o MyApp
+  dotnet new aspire-starter -o MyApp
+summary: The templates that come with the .NET SDK. A good, minimal baseline with user accounts, but everything else is up to you.
+features:
+  auth:
+    status: yes
+    note: "Individual accounts with ASP.NET Core Identity"
+  multiTenancy:
+    status: no
+  billing:
+    status: no
+  adminUi:
+    status: no
+  email:
+    status: partial
+    note: "Identity email hooks, but no email sender is set up"
+  backgroundJobs:
+    status: no
+  deploy:
+    status: partial
+    note: "Aspire templates can deploy with the Aspire tooling"
+  tests:
+    status: partial
+    note: "Aspire starter can include a test project"
+sources:
+  - title: .NET default templates for dotnet new
+    url: https://learn.microsoft.com/dotnet/core/tools/dotnet-new-sdk-templates

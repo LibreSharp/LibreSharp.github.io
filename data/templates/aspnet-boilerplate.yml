@@ -1,0 +1,36 @@
+slug: aspnet-boilerplate
+name: ASP.NET Boilerplate
+url: https://aspnetboilerplate.com
+repo: https://github.com/aspnetboilerplate/aspnetboilerplate
+license: MIT
+openSource: true
+status: unmaintained
+statusNote: Support ended in May 2026 (except for paying ASP.NET Zero customers). Use ABP Framework for new projects.
+dotnet: .NET (Core) and .NET Framework
+frontend: [Angular, MVC]
+install: |
+  # Download a startup template from aspnetboilerplate.com
+summary: The predecessor of ABP Framework. Mature and multi-tenant, but no longer supported for free users.
+features:
+  auth:
+    status: yes
+  multiTenancy:
+    status: yes
+  billing:
+    status: no
+  adminUi:
+    status: partial
+  email:
+    status: yes
+    note: "MailKit integration"
+  backgroundJobs:
+    status: yes
+    note: "Hangfire or Quartz integration"
+  deploy:
+    status: unknown
+  tests:
+    status: yes
+sources:
+  - title: README (end of support announcement)
+    url: https://github.com/aspnetboilerplate/aspnetboilerplate
+checked: 2026-11-26

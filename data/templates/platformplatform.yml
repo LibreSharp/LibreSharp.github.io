@@ -1,0 +1,44 @@
+slug: platformplatform
+name: PlatformPlatform
+repo: https://github.com/platformplatform/PlatformPlatform
+license: MIT
+openSource: true
+status: active
+dotnet: .NET 10
+frontend: [React]
+database: [PostgreSQL]
+install: |
+  git clone https://github.com/platformplatform/PlatformPlatform.git
+  # then run the developer CLI to start Aspire
+summary: The most complete free SaaS starter found. Sign-up and login, Stripe subscriptions, tenant and user management, feature flags, a back office and full localisation. Deployment is built for Azure only.
+features:
+  auth:
+    status: yes
+    note: "Email one-time password and Google sign-in; sessions; roles"
+  multiTenancy:
+    status: yes
+  billing:
+    status: yes
+    note: "Stripe Checkout, plan upgrades and downgrades, invoices, failed-payment handling"
+  adminUi:
+    status: yes
+    note: "Back office with MRR, accounts, users, invoices and feature flags"
+  email:
+    status: yes
+    note: "Azure Communication Services; local dev mail server"
+  backgroundJobs:
+    status: unknown
+  deploy:
+    status: yes
+    note: "GitHub Actions and Bicep to Azure Container Apps. Azure only"
+  tests:
+    status: yes
+notes:
+  - Pins MediatR 12.5.0 and FluentAssertions 7.2.2 on purpose to stay on the free versions.
+  - Ships rules and agents for Claude Code.
+sources:
+  - title: README
+    url: https://github.com/platformplatform/PlatformPlatform
+  - title: Directory.Packages.props
+    url: https://github.com/platformplatform/PlatformPlatform/blob/main/application/Directory.Packages.props
+checked: 2026-11-26

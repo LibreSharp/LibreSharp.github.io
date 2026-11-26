@@ -9,3 +9,7 @@ export interface NuGetStats {
   version: string;
   totalDownloads: number;
 }
+
+export type Template = CollectionEntry<"templates">["data"];
+export type FeatureKey = keyof Template["features"];
+export type FeatureStatus = Template["features"][FeatureKey]["status"];

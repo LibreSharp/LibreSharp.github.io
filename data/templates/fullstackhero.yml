@@ -1,0 +1,49 @@
+slug: fullstackhero
+name: fullstackhero .NET Starter Kit
+url: https://fullstackhero.net
+repo: https://github.com/fullstackhero/dotnet-starter-kit
+license: MIT
+openSource: true
+status: active
+dotnet: .NET 10
+frontend: [React (admin app), React (tenant app)]
+database: [PostgreSQL]
+install: |
+  dotnet tool install -g FullStackHero.CLI
+  fsh new MyApp
+summary: A modular monolith built as a multi-tenant SaaS starter, with two React apps, identity, billing records, auditing, jobs, files, webhooks and real-time features already wired up.
+features:
+  auth:
+    status: yes
+    note: "JWT and ASP.NET Identity, roles and permissions, sessions, impersonation"
+  multiTenancy:
+    status: yes
+    note: "Finbuckle, with per-tenant migrations and isolation"
+  billing:
+    status: partial
+    note: "Plans, subscriptions, invoices and usage metering, but no payment provider. Payments are marked as paid by hand"
+  adminUi:
+    status: yes
+    note: "Separate React operator console"
+  email:
+    status: yes
+  backgroundJobs:
+    status: yes
+    note: "Hangfire"
+  deploy:
+    status: yes
+    note: "Docker Compose and Terraform for AWS; Aspire for local development"
+  tests:
+    status: yes
+    note: "1,600+ backend tests and 200+ Playwright end-to-end tests"
+paidDependencies:
+  - package: QuestPDF
+    version: 2026.9.1
+    packageSlug: questpdf
+    note: Free under the Community licence for organisations under US$1M revenue; larger organisations need a paid licence.
+sources:
+  - title: README
+    url: https://github.com/fullstackhero/dotnet-starter-kit
+  - title: Billing module rules
+    url: https://github.com/fullstackhero/dotnet-starter-kit/blob/main/.agents/rules/modules/billing.md
+checked: 2026-11-26

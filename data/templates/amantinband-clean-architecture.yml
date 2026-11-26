@@ -1,0 +1,42 @@
+slug: amantinband-clean-architecture
+name: Clean Architecture (Amichai Mantinband)
+repo: https://github.com/amantinband/clean-architecture
+license: MIT
+openSource: true
+status: stale
+statusNote: No updates since July 2024 (.NET 8).
+dotnet: .NET 8
+frontend: [API only]
+install: |
+  dotnet new install Amantinband.CleanArchitecture.Template
+  dotnet new clean-arch -o MyApp
+summary: A well-documented Clean Architecture template with a worked example domain, several authorisation styles and a full testing strategy.
+features:
+  auth:
+    status: yes
+    note: "JWT with role, permission and policy-based authorisation"
+  multiTenancy:
+    status: no
+  billing:
+    status: no
+    note: "Has a \"subscriptions\" example domain, but no payments"
+  adminUi:
+    status: no
+  email:
+    status: yes
+    note: "Reminder emails from a background service"
+  backgroundJobs:
+    status: yes
+    note: "Background service"
+  deploy:
+    status: partial
+    note: "Runs with Docker"
+  tests:
+    status: yes
+    note: "Unit, subcutaneous and integration tests"
+notes:
+  - Uses MediatR 12.2.0 and FluentAssertions 6.12.0, both free versions. Upgrading either to the latest major would need a paid licence for larger organisations.
+sources:
+  - title: README
+    url: https://github.com/amantinband/clean-architecture
+checked: 2026-11-26

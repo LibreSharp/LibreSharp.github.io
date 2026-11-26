@@ -30,6 +30,10 @@ Create `data/packages/<slug>.yml`. The slug must match the file name and use low
 | `sources` | yes | List of `title`, `url`. Prefer the project's own licence or announcement |
 | `checked` | no | `YYYY-MM-DD` you confirmed the facts against the sources. Leave out if you haven't |
 
+## Adding a template
+
+Templates live in `data/templates/<slug>.yml`, checked against the schema in `src/content.config.ts`. Copy an existing file. Each feature (`auth`, `multiTenancy`, `billing`, `adminUi`, `email`, `backgroundJobs`, `deploy`, `tests`) has a `status` of `yes`, `partial`, `no` or `unknown`, plus an optional `note`. Use `unknown` rather than guessing. List any paid packages the template depends on under `paidDependencies`.
+
 ## Rules
 
 - Every fact needs a source.

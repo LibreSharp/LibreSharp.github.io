@@ -31,6 +31,9 @@ jobs:
       # The build checks every data/packages/*.yml file against the schema and fails on bad data.
       - run: npm run check
       - run: npm run build
+        env:
+          # Used to read GitHub star counts for the templates page.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'pull_request'
         with:

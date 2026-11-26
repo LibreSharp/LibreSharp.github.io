@@ -1,0 +1,49 @@
+slug: jason-taylor-clean-architecture
+name: Clean Architecture (Jason Taylor)
+url: https://cleanarchitecture.jasontaylor.dev
+repo: https://github.com/jasontaylordev/CleanArchitecture
+license: MIT
+openSource: true
+status: active
+dotnet: .NET 10 or 11
+frontend: [Angular, React, API only]
+database: [PostgreSQL, SQLite, SQL Server]
+install: |
+  dotnet new install Clean.Architecture.Solution.Template
+  dotnet new ca-sln -cf react -db postgresql -o MyApp
+summary: The most popular .NET architecture template. A clean, well-structured starting point with a choice of front end and database, but no SaaS features such as tenants or billing.
+features:
+  auth:
+    status: yes
+    note: "ASP.NET Core Identity"
+  multiTenancy:
+    status: no
+  billing:
+    status: no
+  adminUi:
+    status: no
+  email:
+    status: no
+  backgroundJobs:
+    status: no
+  deploy:
+    status: partial
+    note: "Aspire for local development and a CI build workflow; no hosting setup"
+  tests:
+    status: yes
+    note: "Unit and functional tests (NUnit, Shouldly, Moq, Respawn)"
+paidDependencies:
+  - package: MediatR
+    version: 15.0.0
+    packageSlug: mediatr
+    note: Version 13 and later need a Lucky Penny licence for larger organisations. Swap for a free mediator or pin 12.5.0.
+  - package: AutoMapper
+    version: 17.0.0
+    packageSlug: automapper
+    note: Version 15 and later need a Lucky Penny licence for larger organisations. Swap for Mapperly or Mapster.
+sources:
+  - title: README
+    url: https://github.com/jasontaylordev/CleanArchitecture
+  - title: Directory.Packages.props
+    url: https://github.com/jasontaylordev/CleanArchitecture/blob/main/Directory.Packages.props
+checked: 2026-11-26

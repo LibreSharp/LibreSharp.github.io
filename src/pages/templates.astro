@@ -1,0 +1,178 @@
+---
+import Base from "../layouts/Base.astro";
+import { getTemplates } from "../lib/data";
+import { formatStars, getStars, repoPath } from "../lib/github";
+import { formatChanged, SITE } from "../lib/site";
+import { FEATURE_STATUS, FEATURES, TEMPLATE_STATUS } from "../lib/templates";
+
+const templates = await getTemplates();
+const rows = await Promise.all(
+  templates.map(async (t) => {
+    const repo = t.starsRepo ?? repoPath(t.repo);
+    const stars = repo ? await getStars(repo) : null;
+    const score = Object.values(t.features).filter((f) => f.status === "yes").length;
+    return { t, stars, score };
+  }),
+);
+// Active templates first, then by how much they include, then by stars.
+const order = { active: 0, reference: 1, stale: 2, unmaintained: 3 } as const;
+rows.sort(
+  (a, b) =>
+    order[a.t.status] - order[b.t.status] || b.score - a.score || (b.stars ?? 0) - (a.stars ?? 0),
+);
+---
+
+<Base
+  title="Free .NET templates compared"
+  description="Free .NET starter templates compared: sign-in, multi-tenancy, billing, admin screens, email, background jobs, deployment and tests."
+>
+  <section class="hero">
+    <h1>Free .NET templates compared</h1>
+    <p class="lead">
+      Paid .NET starter kits cost from about $99 to $3,000 or more. Before you buy one, check
+      whether a free template already includes what you need.
+    </p>
+    <p class="muted">
+      We also list the paid packages each template depends on, so you know about licence costs
+      before your app grows.
+    </p>
+  </section>
+
+  <section>
+    <p class="legend-inline small">
+      {
+        Object.entries(FEATURE_STATUS).map(([key, s]) => (
+          <span>
+            <span class={`feat feat-${key}`}>{s.symbol}</span> {s.label}
+          </span>
+        ))
+      }
+    </p>
+    <div class="table-scroll">
+      <table class="packages templates">
+        <thead>
+          <tr>
+            <th>Template</th>
+            <th>Front end</th>
+            {FEATURES.map((f) => <th class="center" title={f.label}>{f.short}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {
+            rows.map(({ t, stars }) => (
+              <tr>
+                <td>
+                  <a href={`#${t.slug}`} class="pkg-name">{t.name}</a>
+                  <div class="muted small">
+                    {t.license}
+                    {stars !== null && <> · ★ {formatStars(stars)}</>}
+                  </div>
+                  {t.status !== "active" && <div class="badge badge-abandoned">{TEMPLATE_STATUS[t.status]}</div>}
+                  {!t.openSource && <div class="badge badge-revenue-capped">Source-available</div>}
+                  {t.paidDependencies && t.paidDependencies.length > 0 && (
+                    <div class="badge badge-unchecked">Uses paid packages</div>
+                  )}
+                </td>
+                <td class="small">{t.frontend.join(", ")}</td>
+                {FEATURES.map((f) => {
+                  const v = t.features[f.key];
+                  const tip = `${f.label}: ${FEATURE_STATUS[v.status].label}${v.note ? `. ${v.note}` : ""}`;
+                  return (
+                    <td class="center">
+                      <span class={`feat feat-${v.status}`} title={tip} aria-label={tip}>
+                        {FEATURE_STATUS[v.status].symbol}
+                      </span>
+                    </td>
+                  );
+                })}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small">Hover over a symbol for details. Full details for each template are below.</p>
+  </section>
+
+  <section class="callout">
+    <strong>What's still missing?</strong> No free template we found combines Stripe billing with a
+    deployment target other than Azure. PlatformPlatform has Stripe but deploys only to Azure;
+    fullstackhero has billing records and Docker/AWS deployment but no payment provider. If you
+    know one, <a href={`${SITE.repo}/blob/main/CONTRIBUTING.md`}>please add it</a>.
+  </section>
+
+  {
+    rows.map(({ t, stars }) => (
+      <article class="template-card" id={t.slug}>
+        <h2>{t.name}</h2>
+        <p>
+          <span class={`badge ${t.status === "active" ? "badge-maintenance-fee" : "badge-abandoned"}`}>
+            {TEMPLATE_STATUS[t.status]}
+          </span>{" "}
+          <span class="muted small">
+            {t.license}
+            {stars !== null && <> · ★ {formatStars(stars)} on GitHub</>} · {t.dotnet}
+            {t.checked && <> · checked {formatChanged(t.checked)}</>}
+          </span>
+        </p>
+        {t.statusNote && <p class="muted">{t.statusNote}</p>}
+        <p>{t.summary}</p>
+        {t.licenseNote && (
+          <div class="callout">
+            <strong>Licence:</strong> {t.licenseNote}
+          </div>
+        )}
+
+        <dl class="facts">
+          <dt>Front end</dt>
+          <dd>{t.frontend.join(", ")}</dd>
+          {t.database && <><dt>Database</dt><dd>{t.database.join(", ")}</dd></>}
+          {FEATURES.map((f) => {
+            const v = t.features[f.key];
+            return (
+              <>
+                <dt>{f.label}</dt>
+                <dd>
+                  <span class={`feat feat-${v.status}`}>{FEATURE_STATUS[v.status].symbol}</span>{" "}
+                  {v.note ?? FEATURE_STATUS[v.status].label}
+                </dd>
+              </>
+            );
+          })}
+          <dt>Links</dt>
+          <dd>
+            {t.url && <a href={t.url}>Website</a>}
+            {t.url && t.repo && " · "}
+            {t.repo && <a href={t.repo}>Source</a>}
+          </dd>
+        </dl>
+
+        <h3>Get started</h3>
+        <pre><code>{t.install.trim()}</code></pre>
+
+        {t.paidDependencies && t.paidDependencies.length > 0 && (
+          <div class="callout callout-warn">
+            <strong>Paid packages to know about</strong>
+            <ul>
+              {t.paidDependencies.map((d) => (
+                <li>
+                  {d.packageSlug ? <a href={`/packages/${d.packageSlug}/`}>{d.package}</a> : d.package}{" "}
+                  <code>{d.version}</code>: {d.note}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {t.notes && t.notes.length > 0 && (
+          <ul>{t.notes.map((n) => <li>{n}</li>)}</ul>
+        )}
+
+        <p class="small">
+          Sources: {t.sources.map((s, i) => <>{i > 0 && ", "}<a href={s.url}>{s.title}</a></>)} ·{" "}
+          <a href={`${SITE.repo}/edit/main/data/templates/${t.slug}.yml`}>Edit on GitHub</a>
+        </p>
+      </article>
+    ))
+  }
+</Base>

@@ -1,0 +1,45 @@
+slug: bit-boilerplate
+name: bit Boilerplate
+url: https://bitplatform.dev
+repo: https://github.com/bitfoundation/bitfabric
+starsRepo: bitfoundation/bitplatform
+license: FCL-1.0-MIT
+openSource: false
+licenseNote: Source-available under the Fair Core Licence. You can use it for any purpose except a competing product, apps you build are yours, and each version becomes MIT two years after release. The bit UI libraries themselves are MIT.
+status: active
+dotnet: .NET 10 or 11
+frontend: [Blazor, .NET MAUI (Android, iOS, Windows, macOS)]
+database: [SQL Server, PostgreSQL, MySQL, SQLite]
+install: |
+  dotnet tool install -g Bit.Cli
+  bit new MyApp
+summary: A full-stack Blazor template that also builds native mobile and desktop apps from one codebase, with tenants, an admin panel, an offline client database, localisation and an AI chatbot.
+features:
+  auth:
+    status: yes
+    note: "Passwordless, two-factor and single sign-on"
+  multiTenancy:
+    status: yes
+    note: "Tenants with seeded demo accounts"
+  billing:
+    status: no
+  adminUi:
+    status: yes
+    note: "Admin panel with real-time dashboard"
+  email:
+    status: unknown
+  backgroundJobs:
+    status: unknown
+  deploy:
+    status: yes
+    note: "GitHub Actions pipelines"
+  tests:
+    status: unknown
+notes:
+  - The template moved from MIT to the source-available FCL-1.0-MIT licence.
+sources:
+  - title: bit Boilerplate README
+    url: https://github.com/bitfoundation/bitfabric/blob/main/src/Boilerplate/Readme.md
+  - title: bitfabric licence
+    url: https://github.com/bitfoundation/bitfabric
+checked: 2026-11-26

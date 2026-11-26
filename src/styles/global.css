@@ -122,3 +122,17 @@ table.packages tbody tr:hover { background: var(--panel); }
 .alt-head { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
 
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.875rem; padding: 1.5rem 0 2rem; }
+
+/* Templates page */
+.center { text-align: center !important; }
+.feat { display: inline-block; min-width: 1.5em; font-weight: 700; cursor: help; }
+.feat-yes { color: var(--fee); }
+.feat-partial { color: var(--revenue); }
+.feat-no { color: var(--muted); }
+.feat-unknown { color: var(--trust); }
+.legend-inline { display: flex; gap: 1.25rem; flex-wrap: wrap; color: var(--muted); }
+table.templates td .badge { margin-top: 0.25rem; margin-right: 0.25rem; }
+.template-card { max-width: 820px; border-top: 1px solid var(--line); padding-top: 1.5rem; margin-top: 2rem; scroll-margin-top: 1rem; }
+.template-card h2 { margin-bottom: 0.25rem; }
+.template-card .facts { grid-template-columns: 260px 1fr; }
+@media (max-width: 640px) { .template-card .facts { grid-template-columns: 1fr; } }

@@ -49,4 +49,55 @@ const packages = defineCollection({
   }),
 });
 
-export const collections = { packages };
+const feature = z.object({
+  status: z.enum(["yes", "partial", "no", "unknown"]),
+  note: text.optional(),
+});
+
+const templates = defineCollection({
+  loader: glob({ pattern: "*.yml", base: "./data/templates" }),
+  schema: z.object({
+    slug: z.string().regex(/^[a-z0-9-]+$/, "slug must be lowercase letters, numbers and dashes"),
+    name: z.string(),
+    url: z.url().optional(),
+    repo: z.url().optional(),
+    /** GitHub "owner/name" to read stars from, if different from repo. */
+    starsRepo: z.string().optional(),
+    license: z.string(),
+    openSource: z.boolean(),
+    licenseNote: text.optional(),
+    status: z.enum(["active", "stale", "unmaintained", "reference"]),
+    statusNote: text.optional(),
+    dotnet: text,
+    frontend: z.array(z.string()).min(1),
+    database: z.array(z.string()).optional(),
+    install: text,
+    summary: text,
+    features: z.object({
+      multiTenancy: feature,
+      auth: feature,
+      billing: feature,
+      adminUi: feature,
+      email: feature,
+      backgroundJobs: feature,
+      deploy: feature,
+      tests: feature,
+    }),
+    paidDependencies: z
+      .array(
+        z.object({
+          package: z.string(),
+          version: text,
+          /** Slug of the matching entry in data/packages, for a link. */
+          packageSlug: z.string().optional(),
+          note: text,
+        }),
+      )
+      .optional(),
+    notes: z.array(text).optional(),
+    sources: z.array(z.object({ title: z.string(), url: z.url() })).min(1),
+    checked: date(/^\d{4}-\d{2}-\d{2}$/, "checked must be YYYY-MM-DD").optional(),
+  }),
+});
+
+export const collections = { packages, templates };
