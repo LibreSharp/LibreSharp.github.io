@@ -29,6 +29,11 @@ alternatives:
     nuget: NetVips
     license: MIT
     note: .NET bindings for libvips. Very fast and low on memory.
+  - name: System.Drawing.Common
+    kind: built-in
+    nuget: System.Drawing.Common
+    license: MIT
+    note: Microsoft's GDI+ wrapper. Only supported on Windows since .NET 6, so not an option for Linux or containers.
   - name: Pin 2.1.13
     kind: pin
     note: Stays Apache-2.0.

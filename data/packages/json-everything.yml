@@ -24,6 +24,18 @@ alternatives:
     kind: built-in
     nuget: Microsoft.AspNetCore.JsonPatch
     note: Microsoft's JSON Patch support for ASP.NET Core.
+  - name: JsonCons.Net
+    kind: replacement
+    url: https://github.com/danielaparker/JsonCons.Net
+    nuget: JsonCons.JsonPath
+    license: Apache-2.0
+    note: JSONPath, JMESPath, JSON Pointer and JSON Patch on top of System.Text.Json. Quiet since early 2024.
+  - name: Hyperbee.Json
+    kind: replacement
+    url: https://github.com/Stillpoint-Software/hyperbee.json
+    nuget: Hyperbee.Json
+    license: MIT
+    note: JSONPath, JSON Pointer and JSON Patch for System.Text.Json. Small but active.
   - name: Pay the fee
     kind: pay
     note: The fee supports the maintainer and keeps the libraries open source.

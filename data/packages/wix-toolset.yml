@@ -23,6 +23,10 @@ alternatives:
     kind: replacement
     url: https://nsis.sourceforge.io
     note: Free scriptable installer system for Windows.
+  - name: Visual Studio Installer Projects
+    kind: replacement
+    url: https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects
+    note: Free Microsoft extension for building MSI installers inside Visual Studio. Simpler than WiX.
   - name: Pay the fee
     kind: pay
     note: The fee supports the maintainers and keeps WiX open source.

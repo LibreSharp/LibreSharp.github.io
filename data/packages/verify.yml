@@ -15,6 +15,12 @@ alternatives:
     url: https://github.com/SwissLife-OSS/snapshooter
     nuget: Snapshooter.Xunit
     note: Snapshot testing for xUnit, NUnit and MSTest.
+  - name: ApprovalTests.Net
+    kind: replacement
+    url: https://github.com/approvals/ApprovalTests.Net
+    nuget: ApprovalTests
+    license: Apache-2.0
+    note: Approval (snapshot) testing library.
   - name: Pin 32.0.1
     kind: pin
     note: Last release before the new terms.

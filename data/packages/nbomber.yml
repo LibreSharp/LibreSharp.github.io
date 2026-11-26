@@ -15,6 +15,16 @@ alternatives:
     url: https://github.com/grafana/k6
     license: AGPL-3.0
     note: Popular load testing tool. Tests are written in JavaScript, not C#.
+  - name: Apache JMeter
+    kind: replacement
+    url: https://github.com/apache/jmeter
+    license: Apache-2.0
+    note: Long-established load testing tool (Java), with a GUI for building test plans.
+  - name: Artillery
+    kind: replacement
+    url: https://github.com/artilleryio/artillery
+    license: MPL-2.0
+    note: Load testing tool (Node.js). Tests are written in YAML or JavaScript.
   - name: Pin 4.1.2
     kind: pin
     note: Stays Apache-2.0.

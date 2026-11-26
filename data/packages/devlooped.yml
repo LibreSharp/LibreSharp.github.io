@@ -30,6 +30,8 @@ alternatives:
   - name: Pay the fee
     kind: pay
     note: The fee supports the maintainer and keeps the packages open source.
+notes:
+  - The source code is still MIT, so you can also build the packages yourself from source instead of using the official binaries.
 sources:
   - title: Open Source Maintenance Fee project list
     url: https://opensourcemaintenancefee.org/consumers/list/

@@ -21,6 +21,12 @@ alternatives:
     nuget: FakeItEasy
     license: MIT
     note: Mature mocking library.
+  - name: TUnit.Mocks
+    kind: replacement
+    url: https://github.com/thomhurst/TUnit
+    nuget: TUnit.Mocks
+    license: MIT
+    note: Mocking library from the TUnit testing framework.
 notes:
   - Moq is still open source and still free. This entry is here because many people ask about it.
 sources:

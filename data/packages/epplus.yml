@@ -29,6 +29,12 @@ alternatives:
     nuget: DocumentFormat.OpenXml
     license: MIT
     note: Microsoft's low-level library for Office files.
+  - name: NPOI
+    kind: replacement
+    url: https://github.com/nissl-lab/npoi
+    nuget: NPOI
+    license: Apache-2.0
+    note: Reads and writes .xls and .xlsx. From 2.8.0 its official packages carry a maintenance fee for larger organisations; 2.7.6 is the last release without it.
   - name: Pin 4.5.3.3
     kind: pin
     note: Stays LGPL, but it is old and gets no fixes.

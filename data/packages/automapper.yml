@@ -30,6 +30,12 @@ alternatives:
   - name: Manual mapping
     kind: built-in
     note: Plain C# mapping methods or extension methods. No dependency at all, and easy for AI coding tools to write.
+  - name: ForgeMap
+    kind: replacement
+    url: https://github.com/superyyrrzz/forgemap
+    nuget: ForgeMap
+    license: MIT
+    note: A small, new mapping library. Check its activity before depending on it.
   - name: FastCSharp.Mapper
     kind: fork
     url: https://github.com/pmartins/FastCSharp.Mapper
