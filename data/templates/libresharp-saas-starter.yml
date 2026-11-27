@@ -1,0 +1,57 @@
+slug: libresharp-saas-starter
+name: SaaS Starter (LibreSharp)
+url: https://www.nuget.org/packages/LibreSharp.Templates.SaasStarter
+repo: https://github.com/LibreSharp/saas-starter
+license: MIT
+openSource: true
+status: active
+statusNote: Maintained by LibreSharp. First released as the WolverineFx + React template (v0.1.0, 26 November 2026); renamed the SaaS Starter in v0.4.1 (27 November 2026), which added billing and a full back office.
+dotnet: .NET 11
+frontend: [React (Vite, TypeScript, Tailwind, shadcn/ui)]
+database: [PostgreSQL (Marten or EF Core)]
+install: |
+  dotnet new install LibreSharp.Templates.SaasStarter
+  dotnet new saas-starter -n MyApp --Persistence efcore
+summary: A free SaaS starter with organisations, plans, trials, Stripe subscriptions and a back office, on a Wolverine backend and a React front end in one deployable ASP.NET Core host. Wolverine also covers the jobs often given to MediatR and MassTransit (in-process messaging, a message bus and a transactional outbox). Deploys with Docker Compose to a cheap VPS, using only free, open source packages.
+features:
+  auth:
+    status: yes
+    note: "ASP.NET Core Identity with JWT and rotating refresh tokens, email confirmation, lockout, roles, Google/GitHub sign-in and passkeys. --Auth none leaves accounts out"
+  multiTenancy:
+    status: yes
+    note: "Organisations as Wolverine tenants, kept apart by Marten's conjoined tenancy or an EF Core query filter; Owner, Admin and Member roles, email invitations and a switcher. --Auth identity leaves them out"
+  billing:
+    status: yes
+    note: "Stripe Checkout, customer portal and signed webhooks handled from a durable queue. Plan catalogue with versioned prices, a 14-day reverse trial, entitlements, usage limits and a pre-rendered pricing page. Payments sit behind an interface, so Stripe can be replaced"
+  adminUi:
+    status: yes
+    note: "Back office with MRR, trials ending and failed payments, organisations (plan, usage, invoices, suspend), users, feature flags, an audit log and Wolverine's failed messages to replay"
+  email:
+    status: yes
+    note: "MailKit over SMTP, sent through the Wolverine outbox; Mailpit catches emails in development"
+  backgroundJobs:
+    status: yes
+    note: "Wolverine durable local queues and scheduled messages with a transactional outbox; messages are handled in the background and survive restarts"
+  deploy:
+    status: yes
+    note: "Container publishing and a production Docker Compose with PostgreSQL and Caddy (automatic HTTPS), with a guide for a small VPS. Pre-generated Wolverine code, health checks and OpenTelemetry"
+  tests:
+    status: yes
+    note: "xUnit, Alba and Testcontainers against a real Postgres, Vitest client tests and Playwright end-to-end tests. CI builds and tests all 12 option combinations"
+notes:
+  - "Formerly the LibreSharp WolverineFx + React template (LibreSharp.Templates.WolverineFxReact, dotnet new wolverine-react). That package is deprecated; uninstall it and install LibreSharp.Templates.SaasStarter."
+  - "--Auth defaults to saas (organisations and billing); --Auth identity gives accounts without organisations, and --Auth none neither."
+  - "Also includes event sourcing (with Marten), FluentValidation, real-time updates with SignalR, feature flags with Microsoft.FeatureManagement, React Router with pre-rendered public pages, TanStack Query, shadcn/ui with dark mode and a typed API client generated from OpenAPI."
+  - "Generated apps get a docs folder with how-to guides, and an AGENTS.md for AI coding assistants."
+  - "Every dependency is MIT, Apache-2.0 or the PostgreSQL licence. Stripe itself charges fees."
+  - "Maintained by LibreSharp, the project behind this site."
+sources:
+  - title: README
+    url: https://github.com/LibreSharp/saas-starter
+  - title: Roadmap
+    url: https://github.com/LibreSharp/saas-starter/blob/main/ROADMAP.md
+  - title: v0.4.1 release notes
+    url: https://github.com/LibreSharp/saas-starter/releases/tag/v0.4.1
+  - title: NuGet package
+    url: https://www.nuget.org/packages/LibreSharp.Templates.SaasStarter
+checked: 2026-11-27
