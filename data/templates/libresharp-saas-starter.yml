@@ -5,7 +5,7 @@ repo: https://github.com/LibreSharp/saas-starter
 license: MIT
 openSource: true
 status: active
-statusNote: Maintained by LibreSharp. First released as the WolverineFx + React template (v0.1.0, 26 November 2026); renamed the SaaS Starter in v0.4.1 (27 November 2026), which added billing and a full back office.
+statusNote: Maintained by LibreSharp. First released as the WolverineFx + React template (v0.1.0, 26 November 2026); renamed the SaaS Starter in v0.4.1 (27 November 2026), which added billing and a full back office. v0.5.0 (28 November 2026) added API keys, an MCP endpoint, webhooks and notifications.
 dotnet: .NET 11
 frontend: [React (Vite, TypeScript, Tailwind, shadcn/ui)]
 database: [PostgreSQL (Marten or EF Core)]
@@ -41,6 +41,8 @@ features:
 notes:
   - "Formerly the LibreSharp WolverineFx + React template (LibreSharp.Templates.WolverineFxReact, dotnet new wolverine-react). That package is deprecated; uninstall it and install LibreSharp.Templates.SaasStarter."
   - "--Auth defaults to saas (organisations and billing); --Auth identity gives accounts without organisations, and --Auth none neither."
+  - "Integrations with --Auth saas: API keys with scopes and rate limits, an MCP endpoint so AI assistants can use the app, signed outgoing webhooks with retries and a delivery log, incoming webhooks, and encrypted secrets per organisation."
+  - "Notifications under a bell in the header, sent by email too with a one-click unsubscribe, and a 'Download your data' export for users and organisations."
   - "Also includes event sourcing (with Marten), FluentValidation, real-time updates with SignalR, feature flags with Microsoft.FeatureManagement, React Router with pre-rendered public pages, TanStack Query, shadcn/ui with dark mode and a typed API client generated from OpenAPI."
   - "Generated apps get a docs folder with how-to guides, and an AGENTS.md for AI coding assistants."
   - "Every dependency is MIT, Apache-2.0 or the PostgreSQL licence. Stripe itself charges fees."
@@ -52,6 +54,8 @@ sources:
     url: https://github.com/LibreSharp/saas-starter/blob/main/ROADMAP.md
   - title: v0.4.1 release notes
     url: https://github.com/LibreSharp/saas-starter/releases/tag/v0.4.1
+  - title: v0.5.0 release notes
+    url: https://github.com/LibreSharp/saas-starter/releases/tag/v0.5.0
   - title: NuGet package
     url: https://www.nuget.org/packages/LibreSharp.Templates.SaasStarter
-checked: 2026-11-27
+checked: 2026-11-28
