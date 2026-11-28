@@ -1,0 +1,23 @@
+slug: duplicati
+name: Duplicati
+category: backup
+url: https://duplicati.com
+repo: https://github.com/duplicati/duplicati
+license: MIT
+licenseNote: MIT, except for anything in a proprietary/ folder, which has its own licence.
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+  - Windows
+  - Linux
+  - macOS
+builtWith: .NET
+summary: Encrypted, incremental backups to cloud storage, SFTP or local disks, managed from a web page.
+sources:
+  - title: Source code
+    url: https://github.com/duplicati/duplicati
+  - title: Website
+    url: https://duplicati.com
+  - title: Licence
+    url: https://github.com/duplicati/duplicati/blob/master/LICENSE

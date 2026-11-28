@@ -1,0 +1,14 @@
+slug: jackett
+name: Jackett
+category: media-automation
+repo: https://github.com/Jackett/Jackett
+license: GPL-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: A proxy that turns hundreds of torrent sites into one standard search API for other apps.
+sources:
+  - title: Source code
+    url: https://github.com/Jackett/Jackett

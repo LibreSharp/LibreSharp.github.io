@@ -1,0 +1,16 @@
+slug: webvella-erp
+name: WebVella ERP
+category: business
+url: https://webvella.com
+repo: https://github.com/WebVella/WebVella-ERP
+license: Apache-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core and Razor Pages
+summary: A pluggable ERP and CRM platform on PostgreSQL. You define entities and pages, and add plugins for your own processes.
+sources:
+  - title: Source code
+    url: https://github.com/WebVella/WebVella-ERP
+  - title: Website
+    url: https://webvella.com

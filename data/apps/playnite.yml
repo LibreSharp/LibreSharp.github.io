@@ -1,0 +1,16 @@
+slug: playnite
+name: Playnite
+category: games
+url: https://playnite.link
+repo: https://github.com/JosefNemec/Playnite
+license: MIT
+status: active
+runsOn:
+  - Windows
+builtWith: WPF
+summary: A single library for all your games from Steam, Epic, GOG, emulators and other stores, with themes and extensions.
+sources:
+  - title: Source code
+    url: https://github.com/JosefNemec/Playnite
+  - title: Website
+    url: https://playnite.link

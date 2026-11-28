@@ -1,0 +1,13 @@
+slug: ilspy
+name: ILSpy
+category: developer
+repo: https://github.com/icsharpcode/ILSpy
+license: MIT
+status: active
+runsOn:
+  - Windows
+builtWith: WPF
+summary: Decompiles .NET assemblies back to C#. The decompiler engine is also published as a NuGet package for other tools to use.
+sources:
+  - title: Source code
+    url: https://github.com/icsharpcode/ILSpy

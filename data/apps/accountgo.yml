@@ -1,0 +1,16 @@
+slug: accountgo
+name: AccountGo
+category: business
+url: https://app.accountgo.dev
+repo: https://github.com/AccountGo/accountgo
+license: AGPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core and React
+summary: "A multi-tenant accounting and ERP suite: general ledger, sales, purchasing and inventory."
+sources:
+  - title: Source code
+    url: https://github.com/AccountGo/accountgo
+  - title: Website
+    url: https://app.accountgo.dev

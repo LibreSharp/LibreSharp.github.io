@@ -1,0 +1,18 @@
+slug: docfx
+name: Docfx
+category: community
+url: https://dotnet.github.io/docfx/
+repo: https://github.com/dotnet/docfx
+license: MIT
+status: active
+runsOn:
+  - Windows
+  - Linux
+  - macOS
+builtWith: Command-line tool
+summary: Builds a documentation website from Markdown and your .NET API comments.
+sources:
+  - title: Source code
+    url: https://github.com/dotnet/docfx
+  - title: Website
+    url: https://dotnet.github.io/docfx/

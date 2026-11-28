@@ -1,0 +1,15 @@
+slug: sourcegit
+name: SourceGit
+category: developer
+repo: https://github.com/sourcegit-org/sourcegit
+license: MIT
+status: active
+runsOn:
+  - Windows
+  - Linux
+  - macOS
+builtWith: Avalonia
+summary: A fast, cross-platform Git client.
+sources:
+  - title: Source code
+    url: https://github.com/sourcegit-org/sourcegit

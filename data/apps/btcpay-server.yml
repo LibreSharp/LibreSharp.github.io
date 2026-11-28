@@ -1,0 +1,17 @@
+slug: btcpay-server
+name: BTCPay Server
+category: security
+url: https://btcpayserver.org
+repo: https://github.com/btcpayserver/btcpayserver
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: A self-hosted Bitcoin payment processor with invoices, a point of sale and e-commerce plugins, without a middleman.
+sources:
+  - title: Source code
+    url: https://github.com/btcpayserver/btcpayserver
+  - title: Website
+    url: https://btcpayserver.org

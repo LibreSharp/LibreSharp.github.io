@@ -1,0 +1,17 @@
+slug: simplcommerce
+name: SimplCommerce
+category: ecommerce
+url: http://www.simplcommerce.com
+repo: https://github.com/simplcommerce/SimplCommerce
+license: Apache-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: A simple, modular e-commerce system. A good codebase to learn from or to build a small shop on.
+sources:
+  - title: Source code
+    url: https://github.com/simplcommerce/SimplCommerce
+  - title: Website
+    url: http://www.simplcommerce.com

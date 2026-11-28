@@ -1,0 +1,16 @@
+slug: dnn-platform
+name: DNN Platform
+category: cms
+url: https://dnncommunity.org
+repo: https://github.com/dnnsoftware/Dnn.Platform
+license: MIT
+status: active
+runsOn:
+  - Windows server (IIS)
+builtWith: ASP.NET on .NET Framework
+summary: One of the oldest .NET CMSs (formerly DotNetNuke), with a large range of modules and themes.
+sources:
+  - title: Source code
+    url: https://github.com/dnnsoftware/Dnn.Platform
+  - title: Website
+    url: https://dnncommunity.org

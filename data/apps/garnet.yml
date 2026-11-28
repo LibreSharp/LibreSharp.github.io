@@ -1,0 +1,19 @@
+slug: garnet
+name: Garnet
+category: devops
+url: https://microsoft.github.io/garnet/
+repo: https://github.com/microsoft/garnet
+license: MIT
+status: active
+runsOn:
+  - Docker
+  - Windows
+  - Linux
+  - macOS
+builtWith: .NET
+summary: A fast cache server from Microsoft Research that speaks the Redis protocol, so existing Redis clients work with it.
+sources:
+  - title: Source code
+    url: https://github.com/microsoft/garnet
+  - title: Website
+    url: https://microsoft.github.io/garnet/

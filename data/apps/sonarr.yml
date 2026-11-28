@@ -1,0 +1,17 @@
+slug: sonarr
+name: Sonarr
+category: media-automation
+url: https://sonarr.tv
+repo: https://github.com/Sonarr/Sonarr
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and React
+summary: Watches for new episodes of TV series, fetches them from Usenet or BitTorrent, and renames and files them.
+sources:
+  - title: Source code
+    url: https://github.com/Sonarr/Sonarr
+  - title: Website
+    url: https://sonarr.tv

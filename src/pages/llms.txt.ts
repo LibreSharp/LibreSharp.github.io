@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
+import { APP_CATEGORIES } from "../lib/apps";
 import { CATEGORIES } from "../lib/categories";
-import { getPackages, getTemplates, realAlternatives } from "../lib/data";
+import { getApps, getPackages, getTemplates, realAlternatives } from "../lib/data";
 import { SITE } from "../lib/site";
 
 /** Plain-text summary for AI coding assistants, at /llms.txt. */
@@ -38,6 +39,10 @@ export const GET: APIRoute = async () => {
       `- ${t.name} (${t.license}, ${t.status}): ${t.frontend.join("/")}. Includes: ${has || "basics only"}.` +
         (paid ? ` Uses paid packages: ${paid}.` : ""),
     );
+  }
+  lines.push("", "## Open source apps built with .NET", "", `List: ${SITE.url}/apps/ (JSON: ${SITE.url}/apps.json)`, "");
+  for (const a of await getApps()) {
+    lines.push(`- ${a.name} (${APP_CATEGORIES[a.category].label}, ${a.license}): ${a.summary} ${a.repo}`);
   }
   return new Response(lines.join("\n") + "\n", {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

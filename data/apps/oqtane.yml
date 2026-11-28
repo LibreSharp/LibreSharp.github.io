@@ -1,0 +1,16 @@
+slug: oqtane
+name: Oqtane
+category: cms
+url: https://www.oqtane.org
+repo: https://github.com/oqtane/oqtane.framework
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core and Blazor
+summary: A modular CMS and application framework built on Blazor, from the creator of DNN.
+sources:
+  - title: Source code
+    url: https://github.com/oqtane/oqtane.framework
+  - title: Website
+    url: https://www.oqtane.org

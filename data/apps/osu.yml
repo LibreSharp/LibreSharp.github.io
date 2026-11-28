@@ -1,0 +1,21 @@
+slug: osu
+name: osu!
+category: games
+url: https://osu.ppy.sh
+repo: https://github.com/ppy/osu
+license: MIT
+licenseNote: The code is MIT. Game resources such as the default skin and some sounds are under a separate licence.
+status: active
+runsOn:
+  - Windows
+  - Linux
+  - macOS
+  - iOS
+  - Android
+builtWith: osu!framework
+summary: A free rhythm game with millions of players, rewritten as open source on .NET (the "lazer" version).
+sources:
+  - title: Source code
+    url: https://github.com/ppy/osu
+  - title: Website
+    url: https://osu.ppy.sh

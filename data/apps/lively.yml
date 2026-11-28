@@ -1,0 +1,16 @@
+slug: lively
+name: Lively Wallpaper
+category: desktop
+url: https://livelywallpaper.net
+repo: https://github.com/lively-community/lively
+license: GPL-3.0
+status: active
+runsOn:
+  - Windows
+builtWith: .NET
+summary: Sets videos, GIFs and web pages as animated desktop wallpapers.
+sources:
+  - title: Source code
+    url: https://github.com/lively-community/lively
+  - title: Website
+    url: https://livelywallpaper.net

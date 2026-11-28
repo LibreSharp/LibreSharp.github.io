@@ -1,0 +1,16 @@
+slug: powertoys
+name: PowerToys
+category: desktop
+url: https://learn.microsoft.com/windows/powertoys/
+repo: https://github.com/microsoft/PowerToys
+license: MIT
+status: active
+runsOn:
+  - Windows
+builtWith: C# and C++
+summary: "Microsoft's set of power-user tools for Windows: FancyZones, PowerRename, Color Picker, a command palette and many more."
+sources:
+  - title: Source code
+    url: https://github.com/microsoft/PowerToys
+  - title: Website
+    url: https://learn.microsoft.com/windows/powertoys/

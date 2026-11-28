@@ -1,0 +1,16 @@
+slug: yaf-net
+name: YAF.NET
+category: community
+url: https://yetanotherforum.net
+repo: https://github.com/YAFNET/YAFNET
+license: Apache-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core
+summary: "Yet Another Forum: a full discussion forum with categories, private messages, polls and moderation tools."
+sources:
+  - title: Source code
+    url: https://github.com/YAFNET/YAFNET
+  - title: Website
+    url: https://yetanotherforum.net

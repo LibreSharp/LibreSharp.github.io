@@ -1,0 +1,17 @@
+slug: smartstore
+name: Smartstore
+category: ecommerce
+url: https://www.smartstore.com
+repo: https://github.com/smartstore/Smartstore
+license: AGPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: An all-in-one shop system with multi-store, multiple languages, a page builder and built-in marketing tools.
+sources:
+  - title: Source code
+    url: https://github.com/smartstore/Smartstore
+  - title: Website
+    url: https://www.smartstore.com

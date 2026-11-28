@@ -1,0 +1,14 @@
+slug: openbudgeteer
+name: OpenBudgeteer
+category: business
+repo: https://github.com/TheAxelander/OpenBudgeteer
+license: AGPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: Blazor
+summary: A personal and household budgeting app based on the bucket budgeting method.
+sources:
+  - title: Source code
+    url: https://github.com/TheAxelander/OpenBudgeteer

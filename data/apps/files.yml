@@ -1,0 +1,16 @@
+slug: files
+name: Files
+category: desktop
+url: https://files.community
+repo: https://github.com/files-community/Files
+license: MIT
+status: active
+runsOn:
+  - Windows
+builtWith: WinUI
+summary: A modern file manager for Windows with tabs, dual panes, tags and Git support.
+sources:
+  - title: Source code
+    url: https://github.com/files-community/Files
+  - title: Website
+    url: https://files.community

@@ -1,0 +1,18 @@
+slug: powershell
+name: PowerShell
+category: developer
+url: https://microsoft.com/PowerShell
+repo: https://github.com/PowerShell/PowerShell
+license: MIT
+status: active
+runsOn:
+  - Windows
+  - Linux
+  - macOS
+builtWith: .NET
+summary: A cross-platform shell and scripting language that passes .NET objects between commands instead of text.
+sources:
+  - title: Source code
+    url: https://github.com/PowerShell/PowerShell
+  - title: Website
+    url: https://microsoft.com/PowerShell

@@ -1,0 +1,16 @@
+slug: unigetui
+name: UniGetUI
+category: desktop
+url: https://devolutions.net/unigetui/
+repo: https://github.com/Devolutions/UniGetUI
+license: MIT
+status: active
+runsOn:
+  - Windows
+builtWith: WinUI
+summary: One app to install and update software through WinGet, Scoop, Chocolatey, npm, pip and other package managers.
+sources:
+  - title: Source code
+    url: https://github.com/Devolutions/UniGetUI
+  - title: Website
+    url: https://devolutions.net/unigetui/

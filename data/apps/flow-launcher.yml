@@ -1,0 +1,16 @@
+slug: flow-launcher
+name: Flow Launcher
+category: desktop
+url: https://flowlauncher.com
+repo: https://github.com/Flow-Launcher/Flow.Launcher
+license: MIT
+status: active
+runsOn:
+  - Windows
+builtWith: WPF
+summary: A keyboard launcher for Windows to find files, open apps and run plugins.
+sources:
+  - title: Source code
+    url: https://github.com/Flow-Launcher/Flow.Launcher
+  - title: Website
+    url: https://flowlauncher.com

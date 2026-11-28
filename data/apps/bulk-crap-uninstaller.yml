@@ -1,0 +1,16 @@
+slug: bulk-crap-uninstaller
+name: Bulk Crap Uninstaller
+category: desktop
+url: https://www.bcuninstaller.com
+repo: https://github.com/BCUninstaller/Bulk-Crap-Uninstaller
+license: Apache-2.0
+status: active
+runsOn:
+  - Windows
+builtWith: Windows Forms
+summary: Removes many programs at once, including leftovers that normal uninstallers miss.
+sources:
+  - title: Source code
+    url: https://github.com/BCUninstaller/Bulk-Crap-Uninstaller
+  - title: Website
+    url: https://www.bcuninstaller.com

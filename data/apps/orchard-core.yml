@@ -1,0 +1,16 @@
+slug: orchard-core
+name: Orchard Core
+category: cms
+url: https://orchardcore.net
+repo: https://github.com/OrchardCMS/OrchardCore
+license: BSD-3-Clause
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core
+summary: A modular, multi-tenant CMS and application framework. It can run websites, headless content APIs or your own modules.
+sources:
+  - title: Source code
+    url: https://github.com/OrchardCMS/OrchardCore
+  - title: Website
+    url: https://orchardcore.net

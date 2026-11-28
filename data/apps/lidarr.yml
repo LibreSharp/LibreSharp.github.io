@@ -1,0 +1,17 @@
+slug: lidarr
+name: Lidarr
+category: media-automation
+url: https://lidarr.audio
+repo: https://github.com/Lidarr/Lidarr
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and React
+summary: A music collection manager in the same family as Sonarr and Radarr.
+sources:
+  - title: Source code
+    url: https://github.com/Lidarr/Lidarr
+  - title: Website
+    url: https://lidarr.audio

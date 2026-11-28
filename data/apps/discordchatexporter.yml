@@ -1,0 +1,15 @@
+slug: discordchatexporter
+name: DiscordChatExporter
+category: developer
+repo: https://github.com/Tyrrrz/DiscordChatExporter
+license: MIT
+status: active
+runsOn:
+  - Windows
+  - Linux
+  - macOS
+builtWith: Avalonia and a command-line tool
+summary: Exports Discord chats to HTML, text, CSV or JSON files.
+sources:
+  - title: Source code
+    url: https://github.com/Tyrrrz/DiscordChatExporter

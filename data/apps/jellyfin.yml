@@ -1,0 +1,20 @@
+slug: jellyfin
+name: Jellyfin
+category: media
+url: https://jellyfin.org
+repo: https://github.com/jellyfin/jellyfin
+license: GPL-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+  - Windows
+  - Linux
+  - macOS
+builtWith: ASP.NET Core
+summary: A free media server for your own films, TV, music and photos, with apps for TVs, phones and browsers.
+sources:
+  - title: Source code
+    url: https://github.com/jellyfin/jellyfin
+  - title: Website
+    url: https://jellyfin.org

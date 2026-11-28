@@ -1,0 +1,13 @@
+slug: keepass2android
+name: Keepass2Android
+category: security
+repo: https://github.com/PhilippC/keepass2android
+license: GPL-3.0
+status: active
+runsOn:
+  - Android
+builtWith: .NET for Android
+summary: A password manager for Android that reads and writes KeePass databases.
+sources:
+  - title: Source code
+    url: https://github.com/PhilippC/keepass2android

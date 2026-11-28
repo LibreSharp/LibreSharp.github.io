@@ -1,0 +1,17 @@
+slug: radarr
+name: Radarr
+category: media-automation
+url: https://radarr.video
+repo: https://github.com/Radarr/Radarr
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and React
+summary: "A fork of Sonarr for films: tracks a film collection and fetches, renames and files new releases."
+sources:
+  - title: Source code
+    url: https://github.com/Radarr/Radarr
+  - title: Website
+    url: https://radarr.video

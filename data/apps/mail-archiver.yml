@@ -1,0 +1,14 @@
+slug: mail-archiver
+name: Mail Archiver
+category: backup
+repo: https://github.com/s1t5/mail-archiver
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: Archives email from several IMAP accounts, so you can search and export it.
+sources:
+  - title: Source code
+    url: https://github.com/s1t5/mail-archiver

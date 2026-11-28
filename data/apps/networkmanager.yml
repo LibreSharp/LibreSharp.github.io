@@ -1,0 +1,16 @@
+slug: networkmanager
+name: NETworkManager
+category: developer
+url: https://borntoberoot.net/NETworkManager/
+repo: https://github.com/BornToBeRoot/NETworkManager
+license: GPL-3.0
+status: active
+runsOn:
+  - Windows
+builtWith: WPF
+summary: "Network tools in one app: remote desktop, PowerShell, SSH, IP and port scanners, traceroute, DNS lookup and more."
+sources:
+  - title: Source code
+    url: https://github.com/BornToBeRoot/NETworkManager
+  - title: Website
+    url: https://borntoberoot.net/NETworkManager/

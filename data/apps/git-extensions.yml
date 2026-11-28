@@ -1,0 +1,16 @@
+slug: git-extensions
+name: Git Extensions
+category: developer
+url: https://gitextensions.github.io
+repo: https://github.com/gitextensions/gitextensions
+license: GPL-3.0
+status: active
+runsOn:
+  - Windows
+builtWith: Windows Forms
+summary: A full Git client for Windows with a commit graph, file history and Visual Studio integration.
+sources:
+  - title: Source code
+    url: https://github.com/gitextensions/gitextensions
+  - title: Website
+    url: https://gitextensions.github.io

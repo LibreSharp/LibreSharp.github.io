@@ -1,0 +1,17 @@
+slug: onlyoffice-community-server
+name: ONLYOFFICE Community Server
+category: business
+url: https://www.onlyoffice.com
+repo: https://github.com/ONLYOFFICE/CommunityServer
+license: Apache-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: .NET (Mono)
+summary: "The server behind ONLYOFFICE Workspace Community Edition: documents, CRM, projects, mail and calendar for a team."
+sources:
+  - title: Source code
+    url: https://github.com/ONLYOFFICE/CommunityServer
+  - title: Website
+    url: https://www.onlyoffice.com

@@ -1,0 +1,17 @@
+slug: ombi
+name: Ombi
+category: media-automation
+url: https://ombi.io
+repo: https://github.com/Ombi-app/Ombi
+license: GPL-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and Angular
+summary: Lets the users of your Plex, Emby or Jellyfin server request films and shows.
+sources:
+  - title: Source code
+    url: https://github.com/Ombi-app/Ombi
+  - title: Website
+    url: https://ombi.io

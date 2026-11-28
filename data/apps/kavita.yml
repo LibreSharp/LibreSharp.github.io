@@ -1,0 +1,17 @@
+slug: kavita
+name: Kavita
+category: media
+url: https://www.kavitareader.com
+repo: https://github.com/Kareadita/Kavita
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and Angular
+summary: A reading server for comics, manga and ebooks, with a web reader, users and OPDS support.
+sources:
+  - title: Source code
+    url: https://github.com/Kareadita/Kavita
+  - title: Website
+    url: https://www.kavitareader.com

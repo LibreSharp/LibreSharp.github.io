@@ -1,0 +1,20 @@
+slug: nopcommerce
+name: nopCommerce
+category: ecommerce
+url: https://www.nopcommerce.com
+repo: https://github.com/nopSolutions/nopCommerce
+license: nopCommerce Public License 4.0 (AGPL-3.0 plus attribution)
+licenseNote: 'The licence is the AGPL-3.0 plus one extra term: every page must show a "powered by nopCommerce" link. Removing it needs a paid copyright removal key.'
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: The most popular .NET shopping cart, with multi-store support, many payment and shipping plugins, and a large marketplace of themes.
+sources:
+  - title: Source code
+    url: https://github.com/nopSolutions/nopCommerce
+  - title: Website
+    url: https://www.nopcommerce.com
+  - title: nopCommerce licence
+    url: https://www.nopcommerce.com/license

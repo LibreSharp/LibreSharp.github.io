@@ -9,7 +9,7 @@ LibreSharp is a non-profit, community project. We respect maintainers: open sour
 - A searchable list of affected packages: what changed, when, the last free version, and free alternatives (community forks, replacements, and features built into .NET).
 - A page per package with sources, security notes and a version-pinning snippet.
 - A Popular page: the 100 most downloaded community .NET open source projects, with licences, activity and sponsor links. Built by `scripts/update-popular.mjs` (settings in `data/popular-config.yml`), refreshed weekly.
-- Open data: [`/packages.json`](https://libresharp.github.io/packages.json) and [`/llms.txt`](https://libresharp.github.io/llms.txt) for AI coding assistants, plus `/templates.json` and `/popular.json`.
+- Open data: [`/packages.json`](https://libresharp.github.io/packages.json) and [`/llms.txt`](https://libresharp.github.io/llms.txt) for AI coding assistants, plus `/templates.json`, `/popular.json` and `/apps.json`.
 
 ## Contributing
 

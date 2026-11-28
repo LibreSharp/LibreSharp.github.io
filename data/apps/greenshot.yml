@@ -1,0 +1,16 @@
+slug: greenshot
+name: Greenshot
+category: desktop
+url: https://getgreenshot.org
+repo: https://github.com/greenshot/greenshot
+license: GPL-3.0
+status: active
+runsOn:
+  - Windows
+builtWith: Windows Forms
+summary: A light screenshot tool that lets you annotate, highlight or blur parts of a capture.
+sources:
+  - title: Source code
+    url: https://github.com/greenshot/greenshot
+  - title: Website
+    url: https://getgreenshot.org

@@ -1,0 +1,17 @@
+slug: featbit
+name: FeatBit
+category: devops
+url: https://www.featbit.co
+repo: https://github.com/featbit/featbit
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and Angular
+summary: A feature flag platform you host yourself, with targeting, gradual rollouts and experiments.
+sources:
+  - title: Source code
+    url: https://github.com/featbit/featbit
+  - title: Website
+    url: https://www.featbit.co

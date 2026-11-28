@@ -1,0 +1,16 @@
+slug: mremoteng
+name: mRemoteNG
+category: developer
+url: https://mremoteng.org
+repo: https://github.com/mRemoteNG/mRemoteNG
+license: GPL-2.0
+status: active
+runsOn:
+  - Windows
+builtWith: Windows Forms
+summary: A tabbed remote connections manager for RDP, VNC, SSH, Telnet and other protocols.
+sources:
+  - title: Source code
+    url: https://github.com/mRemoteNG/mRemoteNG
+  - title: Website
+    url: https://mremoteng.org

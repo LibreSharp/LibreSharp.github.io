@@ -100,4 +100,40 @@ const templates = defineCollection({
   }),
 });
 
-export const collections = { packages, templates };
+const apps = defineCollection({
+  loader: glob({ pattern: "*.yml", base: "./data/apps" }),
+  schema: z.object({
+    slug: z.string().regex(/^[a-z0-9-]+$/, "slug must be lowercase letters, numbers and dashes"),
+    name: z.string(),
+    category: z.enum([
+      "cms",
+      "ecommerce",
+      "community",
+      "business",
+      "media",
+      "media-automation",
+      "security",
+      "devops",
+      "backup",
+      "desktop",
+      "developer",
+      "games",
+    ]),
+    url: z.url().optional(),
+    repo: z.url(),
+    /** GitHub "owner/name" to read stars from, if different from repo. */
+    starsRepo: z.string().optional(),
+    license: z.string(),
+    licenseNote: text.optional(),
+    status: z.enum(["active", "stale", "unmaintained"]),
+    /** Where it runs, e.g. Docker, Windows, Linux, macOS. */
+    runsOn: z.array(z.string()).min(1),
+    builtWith: text.optional(),
+    summary: text,
+    notes: z.array(text).optional(),
+    sources: z.array(z.object({ title: z.string(), url: z.url() })).min(1),
+    checked: date(/^\d{4}-\d{2}-\d{2}$/, "checked must be YYYY-MM-DD").optional(),
+  }),
+});
+
+export const collections = { packages, templates, apps };

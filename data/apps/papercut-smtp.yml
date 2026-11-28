@@ -1,0 +1,14 @@
+slug: papercut-smtp
+name: Papercut SMTP
+category: devops
+repo: https://github.com/ChangemakerStudios/Papercut-SMTP
+license: Apache-2.0
+status: active
+runsOn:
+  - Windows
+  - Docker
+builtWith: .NET
+summary: A desktop app and service that catches emails sent during development so you can view them.
+sources:
+  - title: Source code
+    url: https://github.com/ChangemakerStudios/Papercut-SMTP

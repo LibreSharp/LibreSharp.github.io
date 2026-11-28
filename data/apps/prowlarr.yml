@@ -1,0 +1,17 @@
+slug: prowlarr
+name: Prowlarr
+category: media-automation
+url: https://prowlarr.com
+repo: https://github.com/Prowlarr/Prowlarr
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and React
+summary: Manages indexers for Sonarr, Radarr, Lidarr and similar apps in one place.
+sources:
+  - title: Source code
+    url: https://github.com/Prowlarr/Prowlarr
+  - title: Website
+    url: https://prowlarr.com

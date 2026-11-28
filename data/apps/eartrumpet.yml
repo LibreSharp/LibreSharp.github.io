@@ -1,0 +1,19 @@
+slug: eartrumpet
+name: EarTrumpet
+category: desktop
+url: https://eartrumpet.app
+repo: https://github.com/File-New-Project/EarTrumpet
+license: MIT (with named exclusions)
+licenseNote: MIT for everyone except three companies named at the top of the licence file, which may not use it.
+status: active
+runsOn:
+  - Windows
+builtWith: WPF
+summary: Volume control for Windows that lets you set the volume of each app separately.
+sources:
+  - title: Source code
+    url: https://github.com/File-New-Project/EarTrumpet
+  - title: Website
+    url: https://eartrumpet.app
+  - title: Licence
+    url: https://github.com/File-New-Project/EarTrumpet/blob/master/LICENSE

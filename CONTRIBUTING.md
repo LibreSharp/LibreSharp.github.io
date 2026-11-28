@@ -34,6 +34,10 @@ Create `data/packages/<slug>.yml`. The slug must match the file name and use low
 
 Templates live in `data/templates/<slug>.yml`, checked against the schema in `src/content.config.ts`. Copy an existing file. Each feature (`auth`, `multiTenancy`, `billing`, `adminUi`, `email`, `backgroundJobs`, `deploy`, `tests`) has a `status` of `yes`, `partial`, `no` or `unknown`, plus an optional `note`. Use `unknown` rather than guessing. List any paid packages the template depends on under `paidDependencies`.
 
+## Adding an app
+
+Open source apps built with .NET live in `data/apps/<slug>.yml`, checked against the schema in `src/content.config.ts`. Copy an existing file. Only add complete applications people can install and use (not libraries, frameworks or templates) with an open source licence. Pick a `category` from the list in the schema, describe any extra licence terms in `licenseNote`, and list where it runs in `runsOn`. Stars are read from GitHub when the site builds.
+
 ## Rules
 
 - Every fact needs a source.

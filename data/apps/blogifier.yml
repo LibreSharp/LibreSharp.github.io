@@ -1,0 +1,16 @@
+slug: blogifier
+name: Blogifier
+category: community
+url: https://blogifier.net
+repo: https://github.com/blogifierdotnet/Blogifier
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core and Blazor
+summary: A simple blogging platform for one or more authors, with a Markdown editor.
+sources:
+  - title: Source code
+    url: https://github.com/blogifierdotnet/Blogifier
+  - title: Website
+    url: https://blogifier.net

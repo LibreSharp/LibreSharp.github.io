@@ -1,0 +1,17 @@
+slug: squidex
+name: Squidex
+category: cms
+url: https://squidex.io
+repo: https://github.com/Squidex/squidex
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: "A headless CMS: editors manage content, and your apps read it through REST and GraphQL APIs."
+sources:
+  - title: Source code
+    url: https://github.com/Squidex/squidex
+  - title: Website
+    url: https://squidex.io

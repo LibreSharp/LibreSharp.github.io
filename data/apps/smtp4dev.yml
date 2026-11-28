@@ -1,0 +1,17 @@
+slug: smtp4dev
+name: smtp4dev
+category: devops
+repo: https://github.com/rnwood/smtp4dev
+license: BSD-3-Clause
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+  - Windows
+  - Linux
+  - macOS
+builtWith: ASP.NET Core and Vue
+summary: A fake SMTP server for development and testing. It catches every email your app sends and shows it in a web page.
+sources:
+  - title: Source code
+    url: https://github.com/rnwood/smtp4dev

@@ -1,0 +1,16 @@
+slug: pop-forums
+name: POP Forums
+category: community
+url: https://popworldmedia.github.io/POPForums/
+repo: https://github.com/POPWorldMedia/POPForums
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core
+summary: A forum app with real-time updates, available in seven languages. You can run it alone or add it to an existing site.
+sources:
+  - title: Source code
+    url: https://github.com/POPWorldMedia/POPForums
+  - title: Website
+    url: https://popworldmedia.github.io/POPForums/

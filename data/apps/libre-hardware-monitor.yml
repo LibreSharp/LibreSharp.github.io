@@ -1,0 +1,13 @@
+slug: libre-hardware-monitor
+name: Libre Hardware Monitor
+category: desktop
+repo: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+license: MPL-2.0
+status: active
+runsOn:
+  - Windows
+builtWith: Windows Forms
+summary: Shows temperatures, fan speeds, voltages, load and clock speeds. Also available as a library for your own apps.
+sources:
+  - title: Source code
+    url: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor

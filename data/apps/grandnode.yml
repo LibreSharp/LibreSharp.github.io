@@ -1,0 +1,17 @@
+slug: grandnode
+name: GrandNode
+category: ecommerce
+url: https://grandnode.com
+repo: https://github.com/grandnode/grandnode2
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core and MongoDB
+summary: A headless-capable, multi-store e-commerce platform that stores its data in MongoDB.
+sources:
+  - title: Source code
+    url: https://github.com/grandnode/grandnode2
+  - title: Website
+    url: https://grandnode.com

@@ -1,0 +1,18 @@
+slug: umbraco
+name: Umbraco
+category: cms
+url: https://umbraco.com
+repo: https://github.com/umbraco/Umbraco-CMS
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core
+summary: A content management system with a friendly editor, used for company websites and intranets.
+notes:
+  - The CMS is free. Umbraco also sells hosting (Umbraco Cloud), support and some add-ons, such as Umbraco Forms and Umbraco Deploy.
+sources:
+  - title: Source code
+    url: https://github.com/umbraco/Umbraco-CMS
+  - title: Website
+    url: https://umbraco.com

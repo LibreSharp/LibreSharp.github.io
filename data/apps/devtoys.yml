@@ -1,0 +1,18 @@
+slug: devtoys
+name: DevToys
+category: developer
+url: https://devtoys.app
+repo: https://github.com/DevToys-app/DevToys
+license: MIT
+status: active
+runsOn:
+  - Windows
+  - Linux
+  - macOS
+builtWith: .NET
+summary: "A Swiss Army knife for developers: formatters, encoders, converters, generators and testers in one offline app."
+sources:
+  - title: Source code
+    url: https://github.com/DevToys-app/DevToys
+  - title: Website
+    url: https://devtoys.app

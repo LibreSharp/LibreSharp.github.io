@@ -1,0 +1,20 @@
+slug: bitwarden-server
+name: Bitwarden server
+category: security
+url: https://bitwarden.com
+repo: https://github.com/bitwarden/server
+license: AGPL-3.0 and Bitwarden License
+licenseNote: Most of the code is AGPL-3.0. Code in the bitwarden_license folder (mostly business features) is under the source-available Bitwarden License.
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: "The back end for the Bitwarden password manager: API, identity, admin and database. You can host it yourself."
+sources:
+  - title: Source code
+    url: https://github.com/bitwarden/server
+  - title: Website
+    url: https://bitwarden.com
+  - title: Licence
+    url: https://github.com/bitwarden/server/blob/main/LICENSE.txt

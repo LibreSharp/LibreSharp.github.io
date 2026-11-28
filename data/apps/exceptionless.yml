@@ -1,0 +1,17 @@
+slug: exceptionless
+name: Exceptionless
+category: devops
+url: https://exceptionless.com
+repo: https://github.com/exceptionless/Exceptionless
+license: Apache-2.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+builtWith: ASP.NET Core
+summary: Error and event tracking for your apps, like a self-hosted Sentry, with a hosted paid option.
+sources:
+  - title: Source code
+    url: https://github.com/exceptionless/Exceptionless
+  - title: Website
+    url: https://exceptionless.com

@@ -1,0 +1,18 @@
+slug: openra
+name: OpenRA
+category: games
+url: https://www.openra.net
+repo: https://github.com/OpenRA/OpenRA
+license: GPL-3.0
+status: active
+runsOn:
+  - Windows
+  - Linux
+  - macOS
+builtWith: .NET
+summary: A real-time strategy game engine that recreates and modernises classic Westwood games such as Command & Conquer and Red Alert.
+sources:
+  - title: Source code
+    url: https://github.com/OpenRA/OpenRA
+  - title: Website
+    url: https://www.openra.net

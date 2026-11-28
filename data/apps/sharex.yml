@@ -1,0 +1,16 @@
+slug: sharex
+name: ShareX
+category: desktop
+url: https://getsharex.com
+repo: https://github.com/ShareX/ShareX
+license: GPL-3.0
+status: active
+runsOn:
+  - Windows
+builtWith: Windows Forms
+summary: Captures or records any part of your screen, then annotates, uploads and shares it in one step.
+sources:
+  - title: Source code
+    url: https://github.com/ShareX/ShareX
+  - title: Website
+    url: https://getsharex.com

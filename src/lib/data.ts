@@ -1,5 +1,5 @@
 import { getCollection } from "astro:content";
-import type { Package, Template } from "./types";
+import type { App, Package, Template } from "./types";
 
 /** All packages, sorted by name. Fails the build if a slug doesn't match its file name. */
 export async function getPackages(): Promise<Package[]> {
@@ -23,6 +23,17 @@ export async function getTemplates(): Promise<Template[]> {
   for (const e of entries) {
     if (e.data.slug !== e.id) {
       throw new Error(`data/templates/${e.id}.yml: slug "${e.data.slug}" must match the file name`);
+    }
+  }
+  return entries.map((e) => e.data).sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/** All open source apps, sorted by name. Fails the build if a slug doesn't match its file name. */
+export async function getApps(): Promise<App[]> {
+  const entries = await getCollection("apps");
+  for (const e of entries) {
+    if (e.data.slug !== e.id) {
+      throw new Error(`data/apps/${e.id}.yml: slug "${e.data.slug}" must match the file name`);
     }
   }
   return entries.map((e) => e.data).sort((a, b) => a.name.localeCompare(b.name));

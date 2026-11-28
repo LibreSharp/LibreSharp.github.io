@@ -1,0 +1,131 @@
+---
+import Base from "../layouts/Base.astro";
+import { APP_CATEGORIES, APP_STATUS } from "../lib/apps";
+import { getApps } from "../lib/data";
+import { formatStars, getStars, repoPath } from "../lib/github";
+import { SITE } from "../lib/site";
+import type { AppCategory } from "../lib/types";
+
+const apps = await getApps();
+const rows = await Promise.all(
+  apps.map(async (a) => {
+    const repo = a.starsRepo ?? repoPath(a.repo);
+    return { a, stars: repo ? await getStars(repo) : null };
+  }),
+);
+// Most starred first within each category.
+rows.sort((x, y) => (y.stars ?? 0) - (x.stars ?? 0) || x.a.name.localeCompare(y.a.name));
+
+const sections = (Object.keys(APP_CATEGORIES) as AppCategory[])
+  .map((key) => ({ key, ...APP_CATEGORIES[key], rows: rows.filter((r) => r.a.category === key) }))
+  .filter((s) => s.rows.length > 0);
+---
+
+<Base
+  title="Open source .NET apps"
+  description="Popular open source applications written in .NET: CMS, e-commerce, forums, CRM and ERP, media servers, self-hosted tools and desktop apps."
+>
+  <section class="hero">
+    <h1>Open source apps built with .NET</h1>
+    <p class="lead">
+      Complete, ready-to-use applications written in .NET that you can run, study or build on:
+      content management, online shops, forums, business software, media servers and desktop
+      tools.
+    </p>
+    <p class="muted small">
+      {apps.length} apps in {sections.length} categories, most GitHub stars first. Every app here
+      has an open source licence; we note any extra terms. Looking for libraries instead? See{" "}
+      <a href="/popular/">the most popular .NET open source projects</a>.
+    </p>
+    <p class="app-jump small">
+      {sections.map((s) => <a href={`#${s.key}`}>{s.label}</a>)}
+    </p>
+  </section>
+
+  <div class="filters">
+    <input id="q" type="search" placeholder="Search apps…" aria-label="Search apps" />
+  </div>
+  <p class="muted small">Showing <span id="count">{apps.length}</span> of {apps.length} apps.</p>
+
+  {
+    sections.map((s) => (
+      <section class="app-section" id={s.key}>
+        <h2>{s.label}</h2>
+        <p class="muted">{s.blurb}</p>
+        <div class="table-scroll">
+          <table class="packages apps">
+            <thead>
+              <tr>
+                <th>App</th>
+                <th>What it is</th>
+                <th>Runs on</th>
+                <th>Stars</th>
+              </tr>
+            </thead>
+            <tbody>
+              {s.rows.map(({ a, stars }) => (
+                <tr
+                  id={a.slug}
+                  data-search={[a.name, a.summary, a.license, a.builtWith ?? "", s.label, ...a.runsOn]
+                    .join(" ")
+                    .toLowerCase()}
+                >
+                  <td>
+                    <a href={a.url ?? a.repo} class="pkg-name">{a.name}</a>
+                    <div class="muted small">{a.license}</div>
+                    {a.status !== "active" && <div class="badge badge-abandoned">{APP_STATUS[a.status]}</div>}
+                  </td>
+                  <td>
+                    {a.summary}
+                    {a.licenseNote && (
+                      <div class="small muted">
+                        <strong>Licence:</strong> {a.licenseNote}
+                      </div>
+                    )}
+                    {a.notes?.map((n) => <div class="small muted">{n}</div>)}
+                    <div class="small">
+                      {a.builtWith && <span class="muted">{a.builtWith} · </span>}
+                      <a href={a.repo}>Source</a>
+                      {a.url && <> · <a href={a.url}>Website</a></>} ·{" "}
+                      <a href={`${SITE.repo}/edit/main/data/apps/${a.slug}.yml`}>Edit</a>
+                    </div>
+                  </td>
+                  <td class="small">{a.runsOn.join(", ")}</td>
+                  <td class="small nowrap">{stars !== null ? `★ ${formatStars(stars)}` : "–"}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="callout">
+    <strong>Gaps.</strong> We found few mature, open source CRM, help desk and forum apps written
+    in .NET; most popular ones use PHP, Ruby or JavaScript. If you know a good one, or an app we
+    missed, <a href={`${SITE.repo}/blob/main/CONTRIBUTING.md`}>please add it</a>.
+  </section>
+</Base>
+
+<script>
+  const q = document.querySelector<HTMLInputElement>("#q")!;
+  const count = document.querySelector<HTMLSpanElement>("#count")!;
+  const sections = Array.from(document.querySelectorAll<HTMLElement>(".app-section"));
+
+  q.addEventListener("input", () => {
+    const text = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const s of sections) {
+      let inSection = 0;
+      for (const r of s.querySelectorAll<HTMLTableRowElement>("tbody tr")) {
+        const match = !text || r.dataset.search!.includes(text);
+        r.hidden = !match;
+        if (match) inSection++;
+      }
+      s.hidden = inSection === 0;
+      shown += inSection;
+    }
+    count.textContent = String(shown);
+  });
+</script>

@@ -1,0 +1,13 @@
+slug: quicklook
+name: QuickLook
+category: desktop
+repo: https://github.com/QL-Win/QuickLook
+license: GPL-3.0
+status: active
+runsOn:
+  - Windows
+builtWith: WPF
+summary: "Brings the macOS Quick Look feature to Windows: press Space on a file to preview it."
+sources:
+  - title: Source code
+    url: https://github.com/QL-Win/QuickLook

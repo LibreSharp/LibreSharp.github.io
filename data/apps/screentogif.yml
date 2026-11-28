@@ -1,0 +1,16 @@
+slug: screentogif
+name: ScreenToGif
+category: desktop
+url: https://www.screentogif.com
+repo: https://github.com/NickeManarin/ScreenToGif
+license: MS-PL
+status: active
+runsOn:
+  - Windows
+builtWith: WPF
+summary: Records your screen, webcam or sketches, then lets you edit the frames and save a GIF or video.
+sources:
+  - title: Source code
+    url: https://github.com/NickeManarin/ScreenToGif
+  - title: Website
+    url: https://www.screentogif.com

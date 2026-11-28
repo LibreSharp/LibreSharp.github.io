@@ -1,0 +1,20 @@
+slug: technitium-dns-server
+name: Technitium DNS Server
+category: security
+url: https://technitium.com/dns/
+repo: https://github.com/TechnitiumSoftware/DnsServer
+license: GPL-3.0
+status: active
+runsOn:
+  - Self-hosted web app
+  - Docker
+  - Windows
+  - Linux
+  - macOS
+builtWith: ASP.NET Core
+summary: "A DNS server with a web console: ad blocking, DNS-over-HTTPS, DHCP and clustering for home and office networks."
+sources:
+  - title: Source code
+    url: https://github.com/TechnitiumSoftware/DnsServer
+  - title: Website
+    url: https://technitium.com/dns/

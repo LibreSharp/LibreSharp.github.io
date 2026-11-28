@@ -13,3 +13,6 @@ export interface NuGetStats {
 export type Template = CollectionEntry<"templates">["data"];
 export type FeatureKey = keyof Template["features"];
 export type FeatureStatus = Template["features"][FeatureKey]["status"];
+
+export type App = CollectionEntry<"apps">["data"];
+export type AppCategory = App["category"];

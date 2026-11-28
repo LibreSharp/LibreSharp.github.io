@@ -1,0 +1,16 @@
+slug: piranha-cms
+name: Piranha CMS
+category: cms
+url: https://piranhacms.org
+repo: https://github.com/PiranhaCMS/piranha.core
+license: MIT
+status: active
+runsOn:
+  - Self-hosted web app
+builtWith: ASP.NET Core
+summary: A lightweight, editor-focused CMS that you can add to an existing ASP.NET Core app or run on its own.
+sources:
+  - title: Source code
+    url: https://github.com/PiranhaCMS/piranha.core
+  - title: Website
+    url: https://piranhacms.org
